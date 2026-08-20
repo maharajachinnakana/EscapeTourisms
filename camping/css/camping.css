@@ -1,0 +1,45 @@
+/* ==========================================================
+   CAMPING SECTION
+========================================================== */
+
+.campingSection {
+    padding: 90px 6vw;
+    background: var(--white);
+}
+
+.campingContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.campingGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.campingCard {
+    padding: 26px 22px;
+    border-radius: 20px;
+    background: #F4F7F6;
+    border: 1px solid rgba(15, 118, 110, .10);
+}
+
+.campingCard i {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.campingCard h3 {
+    font-size: 1rem;
+    color: #0B1F1C;
+    margin-bottom: 8px;
+}
+
+.campingCard p {
+    font-size: .86rem;
+    color: #4B5A57;
+    line-height: 1.6;
+}
