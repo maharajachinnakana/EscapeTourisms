@@ -1,0 +1,62 @@
+/* ==========================================================
+   ITINERARY TIMELINE
+========================================================== */
+
+.itinerarySection {
+    padding: 90px 6vw;
+    background: var(--white);
+}
+
+.itineraryContainer {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.itineraryList {
+    list-style: none;
+    position: relative;
+    padding-left: 28px;
+    border-left: 2px solid rgba(15, 118, 110, .18);
+}
+
+.itineraryItem {
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.itineraryItem:last-child {
+    padding-bottom: 0;
+}
+
+.itineraryItem::before {
+    content: "";
+    position: absolute;
+    left: -34px;
+    top: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 0 4px rgba(15, 118, 110, .15);
+}
+
+.itineraryTime {
+    display: inline-block;
+    font-size: .78rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    letter-spacing: .04em;
+    margin-bottom: 6px;
+}
+
+.itineraryItem h3 {
+    font-size: 1.02rem;
+    color: #0B1F1C;
+    margin-bottom: 4px;
+}
+
+.itineraryItem p {
+    font-size: .88rem;
+    color: #4B5A57;
+    line-height: 1.6;
+}
