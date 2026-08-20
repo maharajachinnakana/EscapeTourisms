@@ -1,0 +1,681 @@
+/* ==========================================================
+   MAIN SERVICES — CINEMATIC SERVICE SYSTEM
+========================================================== */
+
+.mainServices {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #07110f;
+    color: #fff;
+    overflow: visible;
+}
+
+
+/* ==========================================================
+   MAIN SERVICES INTRO
+========================================================== */
+
+.mainServicesIntro {
+    position: relative;
+    width: min(1100px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 120px 0 80px;
+    z-index: 10;
+}
+
+.mainServicesEyebrow,
+.serviceEyebrow {
+    display: block;
+    color: #8dd8d2;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.mainServicesEyebrow {
+    margin-bottom: 20px;
+}
+
+.mainServicesTitle {
+    margin: 0 0 24px;
+    max-width: 850px;
+    color: #fff;
+    font-size: clamp(50px, 7vw, 92px);
+    line-height: .9;
+    letter-spacing: -5px;
+    font-weight: 800;
+}
+
+.mainServicesIntroText {
+    max-width: 540px;
+    margin: 0;
+    color: rgba(255, 255, 255, .55);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   SERVICE SCENES
+========================================================== */
+
+.serviceScenes {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.serviceScene {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==========================================================
+   VEHICLE SCENES
+   TAXI + JEEP
+========================================================== */
+
+.serviceScene--vehicle {
+    height: 220vh;
+}
+
+
+/* ==========================================================
+   VIDEO SCENES
+========================================================== */
+
+.serviceScene--video {
+    height: 100svh;
+    min-height: 680px;
+}
+
+
+/* ==========================================================
+   STICKY VIEWPORT
+========================================================== */
+
+.serviceStickyStage {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 100svh;
+    min-height: 650px;
+
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+
+/* ==========================================================
+   TOP HEADING
+========================================================== */
+
+.serviceTopHeading {
+    position: absolute;
+
+    top: 30vh;
+    left: 6vw;
+
+    z-index: 20;
+
+    color: rgba(255, 255, 255, .78);
+
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.2;
+
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+
+    pointer-events: none;
+}
+
+.serviceTopHeading::after {
+    content: "";
+
+    display: block;
+
+    width: 38px;
+    height: 1px;
+
+    margin-top: 12px;
+
+    background: rgba(141, 216, 210, .65);
+}
+
+
+/* ==========================================================
+   LEFT VISUAL — BASE
+========================================================== */
+
+/*
+   Left visual zone = 60% viewport width.
+
+   Center of 60% = 30vw.
+*/
+
+.serviceVisual {
+    position: absolute;
+
+    left: 30%;
+    top: 50%;
+
+    width: 54%;
+    max-width: 820px;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+}
+
+
+/* ==========================================================
+   TAXI + JEEP
+   BOTTOM → TOP
+========================================================== */
+
+.serviceScene--vehicle .serviceVisual {
+    position: absolute;
+
+    left: 30%;
+    top: 0;
+
+    width: clamp(550px,
+            165vw,
+            800px);
+    max-width: none;
+
+    transform:
+        translate(-50%,
+            100vh);
+
+    z-index: 3;
+
+    will-change: transform;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   VEHICLE IMAGE
+========================================================== */
+
+.serviceScene--vehicle .serviceVisual img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+
+    filter:
+        drop-shadow(0 30px 30px rgba(0, 0, 0, .45));
+}
+
+
+/* ==========================================================
+   VIDEO / IMAGE FRAME
+========================================================== */
+
+.serviceVideoFrame {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255, 255, 255, .14);
+
+    border-radius: 24px;
+
+    background:
+        rgba(255, 255, 255, .035);
+
+    box-shadow:
+        0 35px 90px rgba(0, 0, 0, .34),
+
+        inset 0 1px 0 rgba(255, 255, 255, .10);
+}
+
+
+/* ==========================================================
+   VIDEO / POSTER
+========================================================== */
+
+.serviceVideoFrame>img,
+.serviceVideoFrame>video {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: inherit;
+}
+
+
+/* ==========================================================
+   RIGHT CONTENT
+   EXACT RIGHT 40% AREA
+========================================================== */
+
+.serviceScene .serviceContent {
+    position: absolute;
+
+    /*
+     * Right 40% starts around 60%.
+     * Keep breathing room from edge.
+     */
+
+    right: 6vw;
+    bottom: 9vh;
+
+    width: 32%;
+    max-width: 440px;
+
+    margin: 0;
+    padding: 0;
+
+    z-index: 15;
+
+    opacity: 1;
+
+    transform: none;
+
+    text-align: left;
+}
+
+
+/* ==========================================================
+   SERVICE EYEBROW
+========================================================== */
+
+.serviceScene .serviceEyebrow {
+    margin-bottom: 16px;
+}
+
+
+/* ==========================================================
+   SERVICE TITLE
+========================================================== */
+
+.serviceTitle {
+    margin: 0 0 20px;
+
+    color: #fff;
+
+    font-size:
+        clamp(42px,
+            5vw,
+            72px);
+
+    line-height: .9;
+
+    letter-spacing: -3.5px;
+
+    font-weight: 800;
+}
+
+
+/* ==========================================================
+   SERVICE DESCRIPTION
+========================================================== */
+
+.serviceDescription {
+    max-width: 390px;
+
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, .56);
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   SERVICE LINK
+========================================================== */
+
+.serviceLink {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 24px;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    transition:
+        gap .25s ease,
+        opacity .25s ease;
+}
+
+.serviceLink i {
+    font-size: 9px;
+}
+
+.serviceLink:hover {
+    gap: 13px;
+    opacity: .72;
+}
+
+
+/* ==========================================================
+   VIDEO SCENES
+   LEFT 60% — CENTERED
+========================================================== */
+
+.serviceScene--video .serviceVisual {
+    position: absolute;
+
+    left: 30%;
+    top: 65%;
+
+    width: 54%;
+    max-width: 820px;
+
+    transform:
+        translate(-50%,
+            -50%);
+
+    z-index: 3;
+}
+
+
+/* ==========================================================
+   ==========================================================
+   MOBILE
+   ==========================================================
+========================================================== */
+
+@media (max-width: 768px) {
+
+
+    /* ======================================================
+       INTRO
+    ====================================================== */
+
+    .mainServicesIntro {
+        width: calc(100% - 32px);
+
+        padding:
+            80px 0 55px;
+    }
+
+    .mainServicesEyebrow {
+        margin-bottom: 17px;
+
+        font-size: 9px;
+    }
+
+    .mainServicesTitle {
+        margin-bottom: 20px;
+
+        font-size:
+            clamp(44px,
+                13vw,
+                62px);
+
+        line-height: .9;
+
+        letter-spacing: -3px;
+    }
+
+    .mainServicesIntroText {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    /* ======================================================
+       VEHICLE SCENES
+    ====================================================== */
+
+    .serviceScene--vehicle {
+        height: 200vh;
+    }
+
+
+    /* ======================================================
+       STICKY STAGE
+    ====================================================== */
+
+    .serviceScene .serviceStickyStage {
+        width: 100%;
+        height: 100svh;
+
+        min-height: 620px;
+    }
+
+
+    /* ======================================================
+       TOP HEADING
+    ====================================================== */
+
+    .serviceTopHeading {
+        top: 6%;
+        left: 6%;
+
+        font-size: 9px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    /* ======================================================
+       TAXI + JEEP
+    ====================================================== */
+
+    .serviceScene--vehicle .serviceVisual {
+        left: 50%;
+        top: 0;
+
+
+        width:
+            min(88vw,
+                410px);
+
+        max-width: none;
+
+        transform:
+            translate(-50%,
+                100vh);
+    }
+
+
+    /* ======================================================
+       VEHICLE CONTENT
+    ====================================================== */
+
+    .serviceScene--vehicle .serviceContent {
+        left: 7%;
+        right: 7%;
+
+        bottom: 7vh;
+
+        width: 86%;
+
+        max-width: none;
+    }
+
+
+    /* ======================================================
+       VIDEO SCENES
+    ====================================================== */
+
+    .serviceScene--video {
+        height: auto;
+
+        min-height: 0;
+    }
+
+
+    .serviceScene--video .serviceStickyStage {
+        height: auto;
+
+        min-height: 0;
+
+        padding:
+            14vh 0 9vh;
+
+        overflow: visible;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    /* ======================================================
+       VIDEO LEFT → FULL MOBILE WIDTH
+    ====================================================== */
+
+    .serviceScene--video .serviceVisual {
+        position: relative;
+
+        left: auto;
+        top: auto;
+
+        width: 100%;
+        max-width: none;
+
+        padding:
+            0 6%;
+
+        box-sizing: border-box;
+
+        transform: none;
+    }
+
+
+    .serviceVideoFrame {
+        aspect-ratio: 16 / 10;
+
+        border-radius: 19px;
+    }
+
+
+    /* ======================================================
+       VIDEO CONTENT BELOW
+    ====================================================== */
+
+    .serviceScene--video .serviceContent {
+        position: relative;
+
+        left: auto;
+        right: auto;
+        bottom: auto;
+
+        width: auto;
+        max-width: none;
+
+        margin:
+            55px 7% 0;
+    }
+
+
+    /* ======================================================
+       MOBILE TYPOGRAPHY
+    ====================================================== */
+
+    .serviceScene .serviceEyebrow {
+        margin-bottom: 13px;
+
+        font-size: 9px;
+    }
+
+
+    .serviceTitle {
+        margin-bottom: 17px;
+
+        font-size:
+            clamp(40px,
+                11vw,
+                56px);
+
+        line-height: .9;
+
+        letter-spacing: -2.5px;
+    }
+
+
+    .serviceDescription {
+        max-width: 100%;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+    }
+
+
+    .serviceLink {
+        margin-top: 21px;
+
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 420px) {
+
+    .mainServicesIntro {
+        padding-top: 70px;
+    }
+
+    .serviceScene--vehicle .serviceVisual {
+        width: 92vw;
+    }
+
+    .serviceScene--vehicle .serviceContent {
+        bottom: 6vh;
+    }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .serviceScene--vehicle .serviceVisual {
+        will-change: auto;
+    }
+
+}

@@ -1,0 +1,980 @@
+/* ==========================================================
+   MUNNAR — FROM DAWN TO NIGHT
+   LIQUID GLASS CINEMATIC UI
+========================================================== */
+
+.munnarDaySection {
+
+    position: relative;
+
+    height: auto;
+
+    min-height: 600svh;
+
+
+    background: #07110f;
+
+    color: #fff;
+
+    overflow: visible;
+
+
+}
+
+.munnarDayWrap {
+
+    position: sticky;
+
+    top: 0;
+
+    width:
+        min(1400px, calc(100% - 80px));
+
+    height: 690px;
+
+    min-height: 0;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    box-sizing: border-box;
+}
+
+/* ==========================================================
+   TOP INTRO
+========================================================== */
+
+.munnarDayTop {
+
+
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    grid-template-rows: auto auto;
+
+    align-items: flex-end;
+
+
+
+    gap: 35px;
+
+    padding-top: 40px;
+
+
+
+}
+
+
+.munnarDayEyebrow {
+
+    display: block;
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+    color: #8dd8d2;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.munnarDayTitle {
+
+    grid-column: 2;
+
+    grid-row: 1/ 3;
+
+    justify-self: end;
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(48px, 5vw, 82px);
+
+    line-height: .88;
+
+    white-space: nowrap;
+
+    letter-spacing: -4px;
+
+    font-weight: 900;
+
+    margin-top: 0px;
+
+
+
+}
+
+
+.munnarDayIntro {
+
+    max-width: 360px;
+
+    grid-column: 1;
+
+    grid-row: 2;
+
+    color:
+        rgba(255, 255, 255, .52);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   CINEMATIC FRAME
+========================================================== */
+
+.munnarDayFrame {
+
+    position: relative;
+
+    height: auto;
+
+    min-height: 580px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255, 255, 255, .12);
+
+    border-radius: 30px;
+
+    background: #102321;
+
+    isolation: isolate;
+
+    box-shadow:
+        0 40px 100px rgba(0, 0, 0, .35);
+}
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.munnarDayImageWrap {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 0;
+
+    overflow: hidden;
+}
+
+
+.munnarDayImage {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    opacity: 1;
+
+    transform: scale(1.015);
+
+    transition:
+        opacity .55s ease,
+        transform 1.8s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.munnarDayFrame:hover .munnarDayImage {
+
+    transform: scale(1.045);
+}
+
+
+/* ==========================================================
+   IMAGE OVERLAY
+========================================================== */
+
+.munnarDayImageOverlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    background:
+
+        linear-gradient(180deg,
+            rgba(0, 0, 0, .18),
+            transparent 32%,
+            rgba(0, 0, 0, .12) 55%,
+            rgba(0, 0, 0, .72)),
+
+        linear-gradient(90deg,
+            rgba(0, 0, 0, .38),
+            transparent 55%,
+            rgba(0, 0, 0, .18));
+}
+
+
+/* ==========================================================
+   LOCATION PILL
+========================================================== */
+
+.munnarDayLocation {
+
+    position: absolute;
+
+    top: 28px;
+
+    left: 28px;
+
+    z-index: 5;
+
+    padding:
+        9px 15px;
+
+    border:
+        1px solid rgba(255, 255, 255, .20);
+
+    border-radius: 999px;
+
+    background:
+        rgba(255, 255, 255, .08);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    color:
+        rgba(255, 255, 255, .90);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+}
+
+
+/* ==========================================================
+   CURRENT TIME
+========================================================== */
+
+.munnarDayCurrentTime {
+
+    position: absolute;
+
+    top: 30px;
+
+    right: 30px;
+
+    z-index: 5;
+
+    color:
+        rgba(255, 255, 255, .75);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ==========================================================
+   LIQUID GLASS CARD
+========================================================== */
+
+.munnarDayGlassCard {
+
+    position: absolute;
+
+    left: 7%;
+
+    bottom: 9%;
+
+    z-index: 4;
+
+    width: min(470px, 42%);
+
+    padding: 30px;
+
+    border:
+        1px solid rgba(255, 255, 255, .20);
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, .15),
+            rgba(255, 255, 255, .055));
+
+    backdrop-filter:
+        blur(28px) saturate(125%);
+
+    -webkit-backdrop-filter:
+        blur(28px) saturate(125%);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, .35),
+        inset 0 1px 0 rgba(255, 255, 255, .10);
+
+    transition:
+        transform .45s cubic-bezier(.22, 1, .36, 1),
+        opacity .35s ease;
+}
+
+
+.munnarDayGlassCard::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    border-radius: inherit;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, .10),
+            transparent 35%);
+}
+
+
+.munnarDayCardTop {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+}
+
+
+.munnarDayCardLabel {
+
+    color: #8dd8d2;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.munnarDayCounter {
+
+    color:
+        rgba(255, 255, 255, .48);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+.munnarDayCardTitle {
+
+    position: relative;
+
+    margin: 0 0 20px;
+
+    color: #fff;
+
+    font-size:
+        clamp(38px, 4vw, 58px);
+
+    line-height: .94;
+
+    letter-spacing: -2.5px;
+
+    font-weight: 800;
+}
+
+
+.munnarDayCardText {
+
+    position: relative;
+
+    max-width: 390px;
+
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, .72);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+.munnarDayCardMeta {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-top: 28px;
+
+    padding-top: 18px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, .14);
+
+    color:
+        rgba(255, 255, 255, .48);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+}
+
+
+/* ==========================================================
+   TIMELINE
+========================================================== */
+
+.munnarDayTimeline {
+
+    position: absolute;
+
+    left: 50%;
+
+    bottom: 28px;
+
+    z-index: 6;
+
+    width: min(600px, 48%);
+
+    display: flex;
+
+    align-items: center;
+
+    transform:
+        translateX(-10%);
+}
+
+
+/* Connecting line */
+
+.munnarDayTimeline::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 0;
+
+    right: 0;
+
+    height: 1px;
+
+    background:
+        rgba(255, 255, 255, .28);
+
+    transform:
+        translateY(-50%);
+
+}
+
+
+/* Timeline buttons */
+
+.munnarDayPoint {
+
+    position: relative;
+
+    z-index: 2;
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-width: 0;
+
+    padding: 8px 5px;
+
+    border: 0;
+
+    background: transparent;
+
+    color:
+        rgba(255, 255, 255, .45);
+
+    font-family: inherit;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    cursor: pointer;
+}
+
+
+.munnarDayPoint span {
+
+    position: absolute;
+
+    bottom: 23px;
+
+    white-space: nowrap;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+}
+
+
+.munnarDayPoint i {
+
+    display: block;
+
+    width: 9px;
+
+    height: 9px;
+
+    border:
+        2px solid rgba(255, 255, 255, .50);
+
+    border-radius: 50%;
+
+    background: #07110f;
+
+    transition:
+        background .3s ease,
+        border-color .3s ease,
+        transform .35s ease,
+        box-shadow .35s ease;
+}
+
+
+.munnarDayPoint:hover span,
+.munnarDayPoint.active span {
+
+    color: #fff;
+
+    transform:
+        translateY(-2px);
+}
+
+
+.munnarDayPoint:hover i,
+.munnarDayPoint.active i {
+
+    border-color: #8dd8d2;
+
+    background: #0b5f58;
+
+    transform: scale(1.45);
+
+    box-shadow:
+        0 0 0 6px rgba(141, 216, 210, .10),
+        0 0 18px rgba(11, 95, 88, .55);
+}
+
+
+/* ==========================================================
+   RESPONSIVE — TABLET
+========================================================== */
+
+@media (max-width: 1000px) {
+
+    .munnarDayGlassCard {
+
+        left: 5%;
+
+        width: min(460px, 55%);
+
+    }
+
+
+    .munnarDayTimeline {
+
+        width: 50%;
+
+        transform:
+            translateX(-4%);
+
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .munnarDaySection {
+
+        padding-top: 0;
+
+        margin-top: -10%;
+
+
+
+
+
+    }
+
+
+    /* Wrap must NOT be sticky on mobile — it needs to be a tall,
+       normal-flow container so .munnarDayFrame (its sticky child)
+       has real scroll room to travel through before/while sticking.
+       Two nested sticky elements pinned to the same 100svh box was
+       the root cause of the frame never properly centering/sticking. */
+    .munnarDayWrap {
+
+        position: static;
+
+        width:
+            calc(100% - 28px);
+
+        height: auto;
+
+        min-height: 650svh;
+
+        display: block;
+
+
+
+    }
+
+
+    /* ------------------------------------------
+       INTRO
+    ------------------------------------------ */
+
+    .munnarDayTop {
+
+        display: block;
+
+        margin-bottom: 100%;
+
+        padding-top: 0;
+
+
+    }
+
+
+    .munnarDayEyebrow {
+
+        margin-bottom: 10px;
+
+    }
+
+
+    .munnarDayTitle {
+
+        font-size:
+            clamp(54px, 15vw, 76px);
+
+        line-height: .88;
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .munnarDayIntro {
+
+
+        font-size: 14px;
+
+    }
+
+
+    /* ------------------------------------------
+       FRAME
+    ------------------------------------------ */
+    .munnarDayFrame {
+        height: 600px;
+        min-height: 0;
+        position: sticky;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 24px;
+        margin-top: 40px;
+    }
+
+    /* ------------------------------------------
+       IMAGE
+    ------------------------------------------ */
+
+    .munnarDayImageWrap {
+
+        position: absolute;
+
+        inset: 0;
+
+    }
+
+
+    .munnarDayImage {
+
+        object-position: center;
+
+    }
+
+
+    /* ------------------------------------------
+       TOP META
+    ------------------------------------------ */
+
+    .munnarDayLocation {
+
+        top: 18px;
+
+        left: 18px;
+
+        padding:
+            8px 12px;
+
+        font-size: 9px;
+
+    }
+
+
+    .munnarDayCurrentTime {
+
+        top: 20px;
+
+        right: 18px;
+
+        font-size: 10px;
+
+    }
+
+
+    /* ------------------------------------------
+       GLASS CARD
+    ------------------------------------------ */
+
+    .munnarDayGlassCard {
+
+        left: 14px;
+
+        right: 14px;
+
+        bottom: 95px;
+
+        width: auto;
+
+        padding: 23px 20px;
+
+        border-radius: 22px;
+
+        background:
+            linear-gradient(135deg,
+                rgba(10, 28, 27, .68),
+                rgba(8, 18, 18, .48));
+
+        backdrop-filter:
+            blur(24px) saturate(130%);
+
+        -webkit-backdrop-filter:
+            blur(24px) saturate(130%);
+
+    }
+
+
+    .munnarDayCardTop {
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .munnarDayCardLabel {
+
+        font-size: 10px;
+
+    }
+
+
+    .munnarDayCounter {
+
+        font-size: 9px;
+
+    }
+
+
+    .munnarDayCardTitle {
+
+        margin-bottom: 16px;
+
+        font-size: 38px;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .munnarDayCardText {
+
+        font-size: 13px;
+
+        line-height: 1.65;
+
+    }
+
+
+    .munnarDayCardMeta {
+
+        margin-top: 20px;
+
+        padding-top: 14px;
+
+        font-size: 8px;
+
+    }
+
+
+    /* ------------------------------------------
+       TIMELINE
+    ------------------------------------------ */
+
+    .munnarDayTimeline {
+
+        left: 18px;
+
+        right: 18px;
+
+        bottom: 22px;
+
+        width: auto;
+
+        transform: none;
+
+    }
+
+
+    .munnarDayTimeline::before {
+
+        left: 4%;
+
+        right: 4%;
+
+    }
+
+
+    .munnarDayPoint {
+
+        padding: 6px 2px;
+
+    }
+
+
+    .munnarDayPoint span {
+
+        bottom: 22px;
+
+        font-size: 8px;
+
+    }
+
+
+    .munnarDayPoint i {
+
+        width: 8px;
+
+        height: 8px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   VERY SMALL MOBILE
+========================================================== */
+
+@media (max-width: 380px) {
+
+    .munnarDayFrame {
+
+        min-height: 660px;
+
+    }
+
+
+    .munnarDayGlassCard {
+
+        bottom: 90px;
+
+        padding: 20px 17px;
+
+    }
+
+
+    .munnarDayCardTitle {
+
+        font-size: 34px;
+
+    }
+
+
+    .munnarDayCardText {
+
+        font-size: 12px;
+
+    }
+
+}

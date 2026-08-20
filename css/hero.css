@@ -1,0 +1,399 @@
+/* ==========================================================
+   CINEMATIC HERO
+========================================================== */
+
+.heroStory {
+
+    position: relative;
+
+    height: 400svh;
+
+    background: #07110f;
+}
+
+
+/* ==========================================================
+   STICKY VIEWPORT
+========================================================== */
+
+.heroSticky {
+
+    position: sticky;
+
+    top: 0;
+
+    width: 100%;
+
+    height: 100svh;
+
+    overflow: hidden;
+
+    isolation: isolate;
+}
+
+
+/* ==========================================================
+   HERO CANVAS — SCROLL-SCRUBBED FRAME SEQUENCE
+========================================================== */
+
+.heroCanvas {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    z-index: 0;
+
+    display: block;
+}
+
+
+.heroFrameLoader {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #07110f;
+
+    color: rgba(255, 255, 255, .55);
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    transition: opacity .4s ease;
+}
+
+
+.heroFrameLoader.isHidden {
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   OVERLAY
+========================================================== */
+
+.heroOverlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, .68),
+            rgba(0, 0, 0, .35),
+            rgba(0, 0, 0, .10)),
+        linear-gradient(180deg,
+            rgba(0, 0, 0, .15),
+            transparent 50%,
+            rgba(0, 0, 0, .45));
+}
+
+
+/* ==========================================================
+   CONTENT COMMON
+========================================================== */
+
+.heroContainer {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 3;
+
+    width: min(1400px, calc(100% - 80px));
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: flex-end;
+
+
+
+    pointer-events: none;
+}
+
+
+.heroContent {
+
+    width: min(680px, 60%);
+
+    color: #fff;
+}
+
+
+.heroContent01 {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+.heroContent02 {
+
+    opacity: 0;
+
+    transform: translateY(60px);
+}
+
+
+.heroEyebrow {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 8px 15px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid rgba(255, 255, 255, .20);
+
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(14px);
+
+    -webkit-backdrop-filter: blur(14px);
+
+    color: rgba(255, 255, 255, .92);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.heroTitle {
+
+    margin: 0 0 22px;
+
+    color: #fff;
+
+    font-size: clamp(52px, 6.2vw, 72px);
+
+    line-height: .98;
+
+    letter-spacing: -3px;
+
+    font-weight: 800;
+}
+
+
+.heroDescription {
+
+    max-width: 530px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, .84);
+
+    font-size: 17px;
+
+    line-height: 1.75;
+}
+
+
+/* ==========================================================
+   BUTTONS
+========================================================== */
+
+.heroActions {
+
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+
+    flex-wrap: wrap;
+
+    pointer-events: auto;
+}
+
+
+.heroPrimaryBtn,
+.heroSecondaryBtn {
+
+    min-height: 52px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 0 23px;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.heroPrimaryBtn {
+
+    background: #0b5f58;
+
+    color: #fff;
+}
+
+
+.heroSecondaryBtn {
+
+    border: 1px solid rgba(255, 255, 255, .28);
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(14px);
+
+    color: #fff;
+}
+
+
+/* ==========================================================
+   SCROLL INDICATOR
+========================================================== */
+
+.heroScroll {
+
+    position: absolute;
+
+    right: 40px;
+
+    bottom: 35px;
+
+    z-index: 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: rgba(255, 255, 255, .75);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.heroScrollLine {
+
+    width: 1px;
+
+    height: 55px;
+
+    background:
+        linear-gradient(to bottom,
+            transparent,
+            rgba(255, 255, 255, .9));
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .heroStory {
+
+        height: 400svh;
+    }
+
+    .heroContainer {
+
+        width: calc(100% - 28px);
+
+        align-items: flex-end;
+
+        padding-bottom: 100px;
+    }
+
+    .heroContent {
+
+
+
+        width: 100%;
+    }
+
+    .heroTitle {
+
+        font-size: clamp(40px,
+                12vw,
+                58px);
+
+        letter-spacing: -1.8px;
+    }
+
+    .heroDescription {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+    .heroActions {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .heroPrimaryBtn,
+    .heroSecondaryBtn {
+
+        width: 100%;
+    }
+
+    .heroScroll {
+
+        display: none;
+    }
+}

@@ -1,0 +1,1176 @@
+/* ==========================================================
+   THE JOURNEY — CURATED
+========================================================== */
+
+.journeySection {
+
+    position: relative;
+
+    padding: 100px 0;
+
+    background: #07110f;
+
+    color: #fff;
+
+    overflow: hidden;
+
+
+
+}
+
+
+.journeyContainer {
+
+    width: min(1400px, calc(100% - 80px));
+
+    margin: 0 auto;
+
+}
+
+
+/* ==========================================================
+   INTRO
+========================================================== */
+
+.journeyIntro {
+    display: grid;
+
+    grid-template-columns: 1fr 1.6fr;
+
+    grid-template-rows: auto auto;
+
+    column-gap: 60px;
+    row-gap: 25px;
+
+    align-items: start;
+
+    margin-bottom: 7px;
+}
+
+
+.journeyEyebrow {
+    grid-column: 1;
+    grid-row: 1;
+
+    margin: 0;
+
+    color: #8dd8d2;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+.journeyIntroText {
+    grid-column: 1;
+    grid-row: 2;
+
+    max-width: 420px;
+
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, .58);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+.journeyTitle {
+    grid-column: 2;
+    grid-row: 1 / 3;
+
+    align-self: start;
+
+    margin: 0;
+
+    max-width: 760px;
+
+    color: #fff;
+
+    font-size:
+        clamp(56px, 7vw, 100px);
+
+    line-height: .88;
+
+    letter-spacing: -5px;
+
+    font-weight: 800;
+}
+
+/* ==========================================================
+   THE JOURNEY — DESKTOP FEATURE
+========================================================== */
+
+.journeyFeature {
+
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    min-height: 570px;
+
+    overflow: hidden;
+
+    border:
+        1px solid rgba(255, 255, 255, .14);
+
+    border-radius: 30px;
+
+    background: #102321;
+
+    box-shadow:
+        0 35px 90px rgba(0, 0, 0, .35),
+        inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.journeyVisual {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    border-radius: inherit;
+
+    background: #102321;
+}
+
+
+.journeyVisual img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 1;
+
+    transition:
+        opacity .35s ease,
+        transform 1.2s cubic-bezier(.22, 1, .36, 1);
+}
+
+
+.journeyFeature:hover .journeyVisual img {
+
+    transform: scale(1.035);
+}
+
+
+.journeyVisualOverlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(180deg,
+            rgba(0, 0, 0, .02),
+            transparent 42%,
+            rgba(0, 0, 0, .58));
+}
+
+
+.journeyVisualLabel {
+
+    position: absolute;
+
+    left: 25px;
+    bottom: 25px;
+
+    z-index: 2;
+
+    padding:
+        8px 13px;
+
+    border: var(--liquid-glass-border);
+
+    border-radius: 999px;
+
+    background: var(--liquid-glass-bg);
+
+    backdrop-filter:
+        blur(28px) saturate(135%);
+
+    -webkit-backdrop-filter:
+        blur(28px) saturate(135%);
+
+    box-shadow: var(--liquid-glass-shadow);
+
+    color:
+        rgba(255, 255, 255, .88);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ==========================================================
+   FLOATING CONTENT — RIGHT SIDE
+========================================================== */
+.journeyFeatureContent {
+    position: absolute;
+
+    top: 32px;
+    right: 32px;
+
+    z-index: 5;
+
+    width: 360px;
+    height: 420px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 38px 40px;
+
+    border:
+        1px solid rgba(255, 255, 255, .18);
+
+    border-radius: 26px;
+
+    background:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, .13),
+            rgba(255, 255, 255, .045));
+
+    backdrop-filter:
+        blur(28px) saturate(135%);
+
+    -webkit-backdrop-filter:
+        blur(28px) saturate(135%);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, .28),
+        inset 0 1px 0 rgba(255, 255, 255, .10);
+}
+
+/* ==========================================================
+   JOURNEY — DESKTOP FLOATING GLASS CONTENT
+========================================================== */
+
+@media (min-width: 769px) {
+
+    .journeyFeatureContent {
+
+        position: absolute;
+
+        top: 34px;
+        right: 34px;
+        bottom: 88px;
+
+        width: min(380px, 32%);
+
+        padding: 48px 40px;
+
+        border: 1px solid rgba(255, 255, 255, .20);
+
+        border-radius: 28px;
+
+        background:
+            rgba(20, 28, 25, .28);
+
+        backdrop-filter:
+            blur(28px) saturate(135%);
+
+        -webkit-backdrop-filter:
+            blur(28px) saturate(135%);
+
+        box-shadow:
+            0 24px 60px rgba(0, 0, 0, .28),
+            inset 0 1px 0 rgba(255, 255, 255, .12);
+
+        border-left: 1px solid rgba(255, 255, 255, .20);
+
+        z-index: 5;
+
+    }
+
+}
+
+/* ==========================================================
+   CONTENT TYPOGRAPHY
+========================================================== */
+
+.journeyFeatureNumber {
+
+    margin-bottom: 28px;
+
+    color:
+        rgba(255, 255, 255, .22);
+
+    font-size: 68px;
+
+    line-height: .8;
+
+    letter-spacing: -4px;
+
+    font-weight: 700;
+}
+
+
+.journeyFeatureEyebrow {
+
+    margin-bottom: 14px;
+
+    color: #8dd8d2;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.journeyFeatureContent h3 {
+
+    margin: 0 0 22px;
+
+    color: #fff;
+
+    font-size: 54px;
+
+    line-height: .94;
+
+    letter-spacing: -2px;
+}
+
+
+.journeyFeatureContent p {
+
+    max-width: 320px;
+
+    margin: 0 0 28px;
+
+    color:
+        rgba(255, 255, 255, .62);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+.journeyLink {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    width: fit-content;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    transition:
+        gap .3s ease;
+}
+
+
+.journeyLink:hover {
+
+    gap: 18px;
+}
+
+
+.journeyLink i {
+
+    font-size: 11px;
+}
+
+
+/* ==========================================================
+   FLOATING NAVIGATION — BOTTOM CENTER
+========================================================== */
+.journeyNav {
+    position: absolute;
+
+    left: 50%;
+    bottom: 20px;
+
+    z-index: 10;
+
+    transform: translateX(-50%);
+
+    width: min(700px, calc(100% - 48px));
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 4px;
+
+    padding: 5px;
+
+    box-sizing: border-box;
+
+    border: var(--liquid-glass-border);
+
+    border-radius: 40px;
+
+    background: var(--liquid-glass-bg);
+
+    backdrop-filter:
+        blur(28px) saturate(135%);
+
+    -webkit-backdrop-filter:
+        blur(28px) saturate(135%);
+
+    box-shadow: var(--liquid-glass-shadow);
+}
+
+/* ==========================================================
+   NAV ITEMS
+========================================================== */
+.journeyNavItem {
+    min-height: 52px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 9px 13px;
+
+    border: 0;
+
+    border-radius: 40px;
+
+    background: transparent;
+
+    color: #fff;
+
+    text-align: left;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        transform .3s ease;
+}
+
+.journeyNavItem:hover {
+
+    background:
+        rgba(255, 255, 255, .07);
+}
+
+
+.journeyNavItem.active {
+
+    background: rgba(0, 0, 0, 0.514);
+
+
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+
+
+.journeyNavNumber {
+
+    color:
+        rgba(255, 255, 255, .38);
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+
+.journeyNavText {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.journeyNavText strong {
+
+    color: #fff;
+
+    font-size: 10px;
+
+    letter-spacing: 1.4px;
+}
+
+
+.journeyNavText small {
+
+    color:
+        rgba(255, 255, 255, .42);
+
+    font-size: 9px;
+}
+
+
+.journeyNavItem>i {
+
+    margin-left: auto;
+
+    color:
+        rgba(255, 255, 255, .45);
+
+    font-size: 10px;
+
+    opacity: 0;
+
+    transform:
+        translateX(-4px);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+
+.journeyNavItem:hover>i,
+.journeyNavItem.active>i {
+
+    opacity: 1;
+
+    transform:
+        translateX(0);
+}
+
+/* ==========================================================
+   THE JOURNEY — MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    /* ======================================================
+       SECTION
+    ====================================================== */
+
+    .journeySection {
+
+        padding: 64px 0 80px;
+
+        overflow: hidden;
+
+    }
+
+
+    .journeyContainer {
+
+        width:
+            calc(100% - 28px);
+
+        max-width: none;
+
+        margin: 0 auto;
+
+    }
+
+
+    /* ======================================================
+       INTRO
+    ====================================================== */
+
+    .journeyIntro {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: auto;
+
+        gap: 16px;
+
+        margin-bottom: 32px;
+
+    }
+
+
+    .journeyEyebrow {
+
+        grid-column: auto;
+
+        grid-row: auto;
+
+        margin: 0;
+
+        font-size: 10px;
+
+        letter-spacing: 1.8px;
+
+    }
+
+
+    .journeyTitle {
+
+        grid-column: auto;
+
+        grid-row: auto;
+
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size:
+            clamp(48px,
+                14vw,
+                68px);
+
+        line-height: .88;
+
+        letter-spacing: -3.5px;
+
+    }
+
+
+    .journeyIntroText {
+
+        grid-column: auto;
+
+        grid-row: auto;
+
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* ======================================================
+       MAIN JOURNEY WRAPPER
+    ====================================================== */
+
+    .journeyFeature {
+
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+
+        min-height: 0;
+
+        height: auto;
+
+        overflow: visible;
+
+        border: 0;
+
+        border-radius: 0;
+
+        background: transparent;
+
+        box-shadow: none;
+
+    }
+
+
+    /* ======================================================
+       IMAGE
+       
+       NAVIGATION WILL LIVE INSIDE THIS AREA
+    ====================================================== */
+
+    .journeyVisual {
+
+        position: relative;
+
+        inset: auto;
+
+        width: 100%;
+
+        height: 54svh;
+
+        min-height: 360px;
+
+        max-height: 520px;
+
+        overflow: hidden;
+
+        border-radius: 24px;
+
+        background: #102321;
+
+    }
+
+
+    .journeyVisual img {
+
+        display: block;
+
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        object-position: center;
+
+        transform: none;
+
+    }
+
+
+    .journeyFeature:hover .journeyVisual img {
+
+        transform: none;
+
+    }
+
+
+    /* ======================================================
+       IMAGE OVERLAY
+    ====================================================== */
+
+    .journeyVisualOverlay {
+
+        position: absolute;
+
+        inset: 0;
+
+        z-index: 1;
+
+        pointer-events: none;
+
+        background:
+            linear-gradient(180deg,
+                rgba(0, 0, 0, .02) 0%,
+                transparent 48%,
+                rgba(0, 0, 0, .50) 100%);
+
+    }
+
+
+    /* ======================================================
+       IMAGE LABEL
+    ====================================================== */
+
+    .journeyVisualLabel {
+
+        left: 16px;
+
+        bottom: 82px;
+
+        z-index: 3;
+
+        padding:
+            7px 11px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.3px;
+
+    }
+
+
+    /* ======================================================
+       FLOATING NAVIGATION
+       
+       IMPORTANT:
+       This stays INSIDE the image.
+       Bottom center.
+    ====================================================== */
+
+    .journeyNav {
+
+        position: absolute !important;
+
+        top: auto !important;
+
+        right: auto !important;
+
+        left: 50% !important;
+
+        bottom: 16px !important;
+
+        z-index: 20;
+
+        transform:
+            translateX(-50%) !important;
+
+        width:
+            calc(100% - 28px);
+
+        max-width: none;
+
+        height: auto;
+
+        min-height: 0;
+
+        margin: 0;
+
+        display: grid;
+
+        grid-template-columns:
+            repeat(4, 1fr);
+
+        gap: 3px;
+
+        padding: 5px;
+
+        box-sizing: border-box;
+
+        border:
+            var(--liquid-glass-border);
+
+        border-radius: 40px;
+
+        background:
+            var(--liquid-glass-bg);
+
+        backdrop-filter:
+            blur(24px) saturate(140%);
+
+        -webkit-backdrop-filter:
+            blur(24px) saturate(140%);
+
+        box-shadow:
+            var(--liquid-glass-shadow);
+
+    }
+
+
+    /* ======================================================
+       NAV ITEM
+    ====================================================== */
+
+    .journeyNavItem {
+
+        position: relative;
+
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 52px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 4px;
+
+        padding:
+            7px 3px;
+
+        border: 0;
+
+        border-radius: 40px;
+
+        background: transparent;
+
+        color: #fff;
+
+        text-align: center;
+
+        font-family: inherit;
+
+        cursor: pointer;
+
+        transform: none;
+
+    }
+
+
+    .journeyNavItem:hover {
+
+        background:
+            rgba(255, 255, 255, .06);
+
+    }
+
+
+    .journeyNavItem.active {
+
+        background: rgba(0, 0, 0, 0.514);
+
+        box-shadow:
+            inset 0 1px 0 rgba(255, 255, 255, .16),
+
+            inset 0 -1px 0 rgba(0, 0, 0, .10);
+
+    }
+
+
+    /* ======================================================
+       NAV NUMBER
+    ====================================================== */
+
+    .journeyNavNumber {
+
+        flex-shrink: 0;
+
+        color:
+            rgba(255, 255, 255, .42);
+
+        font-size: 8px;
+
+        line-height: 1;
+
+        font-weight: 700;
+
+    }
+
+
+    /* ======================================================
+       NAV TEXT
+    ====================================================== */
+
+    .journeyNavText {
+
+        min-width: 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 0;
+
+    }
+
+
+    .journeyNavText strong {
+
+        color: #fff;
+
+        font-size: 9px;
+
+        line-height: 1;
+
+        letter-spacing: 1px;
+
+        white-space: nowrap;
+
+    }
+
+
+    .journeyNavText small {
+
+        display: none;
+
+    }
+
+
+    .journeyNavItem>i {
+
+        display: none;
+
+    }
+
+
+    /* ======================================================
+       CONTENT
+       
+       IMPORTANT:
+       This is OUTSIDE / BELOW the image.
+       Navigation remains inside image.
+    ====================================================== */
+
+    .journeyFeatureContent {
+
+        position: relative !important;
+
+        top: auto !important;
+
+        right: auto !important;
+
+        bottom: auto !important;
+
+        left: auto !important;
+
+        inset: auto !important;
+
+        z-index: 5;
+
+        width: 100% !important;
+
+        height: auto !important;
+
+        min-height: 0;
+
+        margin:
+            14px 0 0;
+
+        padding:
+            32px 24px 34px;
+
+        box-sizing: border-box;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: flex-start;
+
+        border-radius: 24px;
+
+    }
+
+
+    /* ======================================================
+       CONTENT NUMBER
+    ====================================================== */
+
+    .journeyFeatureNumber {
+
+        margin:
+            0 0 20px;
+
+        font-size: 54px;
+
+        line-height: .8;
+
+        letter-spacing: -3px;
+
+    }
+
+
+    /* ======================================================
+       CONTENT EYEBROW
+    ====================================================== */
+
+    .journeyFeatureEyebrow {
+
+        margin:
+            0 0 12px;
+
+        font-size: 10px;
+
+        line-height: 1;
+
+        letter-spacing: 1.8px;
+
+    }
+
+
+    /* ======================================================
+       CONTENT TITLE
+    ====================================================== */
+
+    .journeyFeatureContent h3 {
+
+        width: 100%;
+
+        margin:
+            0 0 18px;
+
+        font-size:
+            clamp(42px,
+                12vw,
+                56px);
+
+        line-height: .92;
+
+        letter-spacing: -2.5px;
+
+    }
+
+
+    /* ======================================================
+       CONTENT DESCRIPTION
+    ====================================================== */
+
+    .journeyFeatureContent p {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin:
+            0 0 24px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+
+    }
+
+
+    /* ======================================================
+       CONTENT LINK
+    ====================================================== */
+
+    .journeyLink {
+
+        gap: 10px;
+
+        font-size: 12px;
+
+    }
+
+
+    .journeyLink:hover {
+
+        gap: 10px;
+
+    }
+
+
+    /* ======================================================
+       MOBILE GLASS CONTENT
+       
+       Uses reusable liquidGlass system.
+    ====================================================== */
+
+    .journeyFeatureContent.liquidGlass {
+
+        border-radius: 24px;
+
+    }
+
+}

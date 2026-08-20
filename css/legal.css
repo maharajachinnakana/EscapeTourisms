@@ -1,0 +1,48 @@
+/* ==========================================================
+   LEGAL PAGES — Privacy Policy / Terms
+========================================================== */
+
+.legalSection {
+    padding: 140px 6vw 90px;
+    background: var(--white);
+}
+
+.legalContainer {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.legalContainer h1 {
+    font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+    color: #0B1F1C;
+    margin-bottom: 10px;
+}
+
+.legalUpdated {
+    font-size: .82rem;
+    color: #7C8A87;
+    margin-bottom: 34px;
+}
+
+.legalContainer h2 {
+    font-size: 1.15rem;
+    color: #0B1F1C;
+    margin: 32px 0 12px;
+}
+
+.legalContainer p,
+.legalContainer li {
+    font-size: .92rem;
+    line-height: 1.75;
+    color: #4B5A57;
+}
+
+.legalContainer ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.legalContainer a {
+    color: var(--primary-dark);
+    font-weight: 600;
+}

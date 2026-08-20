@@ -1,0 +1,828 @@
+/* ==========================================================
+   WHY ESCAPE TOURISMS
+   CINEMATIC FULLSCREEN GLASS EXPERIENCE
+========================================================== */
+
+.whyEscape {
+    position: relative;
+    width: 100%;
+    height: 100svh;
+    min-height: 720px;
+    overflow: hidden;
+    background: #07110f;
+    color: #fff;
+}
+
+
+/* ==========================================================
+   STAGE
+========================================================== */
+
+.whyEscapeStage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+   FULLSCREEN VISUAL
+========================================================== */
+
+.whyEscapeVisual {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.whyEscapeVisual>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/* ==========================================================
+   DARK CINEMATIC OVERLAY
+========================================================== */
+
+.whyEscapeOverlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+
+    background:
+        linear-gradient(90deg,
+            rgba(4, 13, 11, .78) 0%,
+            rgba(4, 13, 11, .42) 36%,
+            rgba(4, 13, 11, .12) 62%,
+            rgba(4, 13, 11, .40) 100%),
+        linear-gradient(180deg,
+            rgba(4, 13, 11, .58) 0%,
+            transparent 30%,
+            transparent 68%,
+            rgba(4, 13, 11, .68) 100%);
+}
+
+
+/* ==========================================================
+   TOP HEADING
+========================================================== */
+
+.whyEscapeHeader {
+    position: absolute;
+    top: 10vh;
+    left: 6vw;
+
+    width: min(620px, 46vw);
+
+    z-index: 10;
+}
+
+
+.whyEscapeEyebrow {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #8dd8d2;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2.4px;
+    line-height: 1.2;
+
+    text-transform: uppercase;
+}
+
+
+.whyEscapeTitle {
+    margin: 0;
+
+    max-width: 650px;
+
+    color: #fff;
+
+    font-size: clamp(48px,
+            5.7vw,
+            86px);
+
+    font-weight: 800;
+
+    line-height: .92;
+
+    letter-spacing: -4.5px;
+}
+
+
+.whyEscapeDescription {
+    max-width: 510px;
+
+    margin: 28px 0 0;
+
+    color: rgba(255, 255, 255, .66);
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   RIGHT FLOATING GLASS PANEL
+========================================================== */
+
+.whyEscapePanel {
+    position: absolute;
+
+    top: 65%;
+    right: 6vw;
+
+    width: min(510px,
+            38vw);
+
+    transform: translateY(-50%);
+
+    z-index: 20;
+
+    padding: 14px 34px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255,
+            255,
+            255,
+            .15);
+
+    border-radius: 28px;
+
+    background:
+        rgba(8,
+            25,
+            22,
+            .42);
+
+    box-shadow:
+        0 35px 90px rgba(0,
+            0,
+            0,
+            .38),
+        inset 0 1px 0 rgba(255,
+            255,
+            255,
+            .12);
+
+    backdrop-filter:
+        blur(18px) saturate(120%);
+
+    -webkit-backdrop-filter:
+        blur(18px) saturate(120%);
+}
+
+
+/* ==========================================================
+   VALUE ITEM
+========================================================== */
+
+.whyEscapeValue {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        64px minmax(0, 1fr) 28px;
+
+    align-items: center;
+
+    gap: 22px;
+
+    min-height: 150px;
+
+    padding: 24px 0;
+}
+
+
+.whyEscapeValue+.whyEscapeValue {
+    border-top: 1px solid rgba(255,
+            255,
+            255,
+            .13);
+}
+
+
+/* ==========================================================
+   ICON
+========================================================== */
+
+.whyEscapeValueIcon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 64px;
+    height: 64px;
+
+    border: 1px solid rgba(255, 255, 255, .12);
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(180deg,
+            rgba(255, 255, 255, .10) 0%,
+            rgba(255, 255, 255, .025) 45%,
+            rgba(0, 0, 0, .16) 100%);
+
+    color: #b5ebe5;
+
+    font-size: 20px;
+
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, .16),
+        inset 0 -3px 5px rgba(0, 0, 0, .22),
+        0 8px 22px rgba(0, 0, 0, .18);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+   NUMBER
+========================================================== */
+
+.whyEscapeNumber {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #8dd8d2;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+/* ==========================================================
+   VALUE CONTENT
+========================================================== */
+
+.whyEscapeValueContent {
+    min-width: 0;
+}
+
+
+.whyEscapeValueContent h3 {
+    margin: 0 0 8px;
+
+    color: #fff;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -.4px;
+}
+
+
+.whyEscapeValueContent p {
+    max-width: 330px;
+
+    margin: 0;
+
+    color: rgba(255,
+            255,
+            255,
+            .55);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================================
+   ARROW
+========================================================== */
+
+.whyEscapeValueArrow {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255,
+            255,
+            255,
+            .65);
+
+    font-size: 12px;
+
+    transition:
+        transform .3s ease,
+        color .3s ease;
+}
+
+
+.whyEscapeValue:hover .whyEscapeValueArrow {
+    color: #8dd8d2;
+
+    transform:
+        translateX(4px);
+}
+
+
+/* ==========================================================
+   MUNNAR LOCATION CARD
+========================================================== */
+
+.whyEscapeLocation {
+    position: absolute;
+
+    left: 6vw;
+    bottom: 7vh;
+
+    z-index: 15;
+
+    width: min(330px,
+            28vw);
+
+    padding: 24px 26px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255,
+            255,
+            255,
+            .16);
+
+    border-radius: 22px;
+
+    background:
+        rgba(8,
+            25,
+            22,
+            .38);
+
+    box-shadow:
+        0 25px 70px rgba(0,
+            0,
+            0,
+            .30);
+
+    backdrop-filter:
+        blur(15px) saturate(120%);
+
+    -webkit-backdrop-filter:
+        blur(15px) saturate(120%);
+}
+
+
+.whyEscapeLocationLabel {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    margin-bottom: 13px;
+
+    color: #9de0da;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+}
+
+
+.whyEscapeLocationLabel i {
+    font-size: 11px;
+}
+
+
+.whyEscapeLocationTitle {
+    display: block;
+
+    max-width: 260px;
+
+    color: #fff;
+
+    font-family: inherit;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.25;
+
+    letter-spacing: -.5px;
+}
+
+
+/* ==========================================================
+   LIQUID GLASS CANVAS
+========================================================== */
+
+.whyEscapePanel .liquidGlassCanvas,
+
+.whyEscapeLocation .liquidGlassCanvas {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+
+    pointer-events: none;
+
+    border-radius: inherit;
+}
+
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 1100px) {
+
+    .whyEscapeHeader {
+        left: 5vw;
+
+        width: 48vw;
+    }
+
+
+    .whyEscapePanel {
+        right: 4vw;
+
+        width: 43vw;
+
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
+
+    .whyEscapeValue {
+        grid-template-columns:
+            54px minmax(0, 1fr) 20px;
+
+        gap: 16px;
+    }
+
+
+    .whyEscapeValueIcon {
+        width: 54px;
+        height: 54px;
+
+        font-size: 17px;
+    }
+
+
+    .whyEscapeValueContent h3 {
+        font-size: 17px;
+    }
+
+
+    .whyEscapeValueContent p {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .whyEscape {
+        height: 100svh;
+        min-height: 680px;
+    }
+
+
+    .whyEscapeStage {
+        min-height: 680px;
+    }
+
+
+    /* ----------------------------------------------
+       FULLSCREEN IMAGE
+    ---------------------------------------------- */
+
+    .whyEscapeVisual {
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .whyEscapeVisual>img {
+        object-position:
+            55% center;
+    }
+
+
+    /* ----------------------------------------------
+       MOBILE OVERLAY
+    ---------------------------------------------- */
+
+    .whyEscapeOverlay {
+        background:
+            linear-gradient(180deg,
+                rgba(4, 13, 11, .68) 0%,
+                rgba(4, 13, 11, .15) 35%,
+                rgba(4, 13, 11, .12) 48%,
+                rgba(4, 13, 11, .78) 100%);
+    }
+
+
+    /* ----------------------------------------------
+       HEADER
+    ---------------------------------------------- */
+
+    .whyEscapeHeader {
+        top: 8vh;
+        left: 7%;
+
+        width: 86%;
+
+        z-index: 10;
+    }
+
+
+    .whyEscapeEyebrow {
+        margin-bottom: 14px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .whyEscapeTitle {
+        max-width: 100%;
+
+        font-size: clamp(40px,
+                11.5vw,
+                58px);
+
+        line-height: .94;
+
+        letter-spacing: -2.8px;
+    }
+
+
+    .whyEscapeDescription {
+        max-width: 92%;
+
+        margin-top: 18px;
+
+        font-size: 12px;
+
+        line-height: 1.65;
+    }
+
+
+    /* ----------------------------------------------
+       GLASS PANEL
+    ---------------------------------------------- */
+
+    .whyEscapePanel {
+        top: auto;
+        right: 6%;
+
+        bottom: 5%;
+
+        width: 88%;
+
+        transform: none;
+
+        padding:
+            6px 22px;
+
+        border-radius: 24px;
+
+        background:
+            rgba(8,
+                25,
+                22,
+                .50);
+    }
+
+
+    /* ----------------------------------------------
+       VALUE
+    ---------------------------------------------- */
+
+    .whyEscapeValue {
+        grid-template-columns:
+            48px minmax(0, 1fr) 18px;
+
+        gap: 14px;
+
+        min-height: 88px;
+
+        padding: 14px 0;
+    }
+
+
+    .whyEscapeValueIcon {
+        box-shadow:
+            inset 0 1.5px 3px rgba(255, 255, 255, .15),
+            inset 0 -2px 4px rgba(0, 0, 0, .22),
+            0 6px 16px rgba(0, 0, 0, .18);
+    }
+
+    .whyEscapeNumber {
+        margin-bottom: 4px;
+
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .whyEscapeValueContent h3 {
+        margin-bottom: 4px;
+
+        font-size: 14px;
+
+        letter-spacing: -.2px;
+    }
+
+
+    .whyEscapeValueContent p {
+        max-width: none;
+
+        font-size: 10px;
+
+        line-height: 1.5;
+    }
+
+
+    .whyEscapeValueArrow {
+        font-size: 9px;
+    }
+
+
+    /* ----------------------------------------------
+       LOCATION CARD
+       
+       Mobile:
+       small floating card over image,
+       positioned above the main glass panel.
+    ---------------------------------------------- */
+
+    .whyEscapeLocation {
+        left: 7%;
+
+        bottom: calc(5% + 285px);
+
+        width: auto;
+        max-width: 250px;
+
+        padding: 14px 17px;
+
+        border-radius: 17px;
+    }
+
+
+    .whyEscapeLocationLabel {
+        gap: 7px;
+
+        margin-bottom: 7px;
+
+        font-size: 8px;
+
+        letter-spacing: 1px;
+    }
+
+
+    .whyEscapeLocationTitle {
+        max-width: 210px;
+
+        font-size: 14px;
+
+        line-height: 1.25;
+    }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 420px) {
+
+    .whyEscape {
+        min-height: 650px;
+    }
+
+
+    .whyEscapeStage {
+        min-height: 650px;
+    }
+
+
+    .whyEscapeHeader {
+        top: 7vh;
+    }
+
+
+    .whyEscapeTitle {
+        font-size: 39px;
+
+        letter-spacing: -2.3px;
+    }
+
+
+    .whyEscapeDescription {
+        max-width: 100%;
+
+        font-size: 11px;
+    }
+
+
+    .whyEscapePanel {
+        right: 5%;
+
+        bottom: 4%;
+
+        width: 90%;
+
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+
+    .whyEscapeValue {
+        grid-template-columns:
+            42px minmax(0, 1fr) 14px;
+
+        gap: 11px;
+
+        min-height: 80px;
+
+        padding: 11px 0;
+    }
+
+
+    .whyEscapeValueIcon {
+        width: 42px;
+        height: 42px;
+
+        font-size: 13px;
+    }
+
+
+    .whyEscapeValueContent h3 {
+        font-size: 12px;
+    }
+
+
+    .whyEscapeValueContent p {
+        font-size: 9px;
+
+        line-height: 1.45;
+    }
+
+
+    .whyEscapeLocation {
+        bottom: calc(4% + 260px);
+
+        max-width: 220px;
+
+        padding: 12px 14px;
+    }
+
+
+    .whyEscapeLocationTitle {
+        font-size: 12px;
+    }
+
+}

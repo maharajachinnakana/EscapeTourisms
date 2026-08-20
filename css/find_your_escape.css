@@ -1,0 +1,2901 @@
+/* ==========================================================
+
+   FIND YOUR NEXT ESCAPE
+
+   CINEMATIC TRAVEL PLANNER
+
+\========================================================== */
+
+.findEscape {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100svh;
+
+    min-height: 760px;
+
+    overflow: hidden;
+
+    background: #06100e;
+
+    color: #fff;
+
+}
+
+.findEscapeStage {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    isolation: isolate;
+
+}
+
+
+
+/* ==========================================================
+
+   BACKGROUND
+
+\========================================================== */
+
+.findEscapeBackground {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -3;
+
+}
+
+.findEscapeBackground img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+}
+
+
+
+/* ==========================================================
+
+   CINEMATIC OVERLAY
+
+\========================================================== */
+
+.findEscapeOverlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: -2;
+
+    pointer-events: none;
+
+    background:
+
+        linear-gradient(90deg,
+
+            rgba(4, 13, 11, .84) 0%,
+
+            rgba(4, 13, 11, .64) 32%,
+
+            rgba(4, 13, 11, .25) 62%,
+
+            rgba(4, 13, 11, .62) 100%),
+
+        linear-gradient(180deg,
+
+            rgba(3, 11, 9, .68) 0%,
+
+            rgba(3, 11, 9, .08) 34%,
+
+            rgba(3, 11, 9, .16) 66%,
+
+            rgba(3, 11, 9, .76) 100%);
+
+}
+
+
+
+/* ==========================================================
+
+   TOP HEADING
+
+\========================================================== */
+
+.findEscapeHeader {
+
+    position: absolute;
+
+    top: 3vh;
+
+    left: 6vw;
+
+    z-index: 10;
+
+    width: min(520px, 40vw);
+
+}
+
+.findEscapeEyebrow {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #FCCF31;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.2px;
+
+    line-height: 1.2;
+
+    text-transform: uppercase;
+
+}
+
+.findEscapeTitle {
+
+    margin: 0;
+
+    color: #fff;
+
+    font-size: clamp(48px,
+
+            5.6vw,
+
+            84px);
+
+    font-weight: 900;
+
+    line-height: .9;
+
+    letter-spacing: -4px;
+
+}
+
+.findEscapeTitle em {
+
+    background-image:
+
+        linear-gradient(135deg,
+
+            #FCCF31 10%,
+
+            #F55555 100%);
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    font-style: italic;
+
+    font-weight: 900;
+
+    padding-right: 15px;
+
+
+
+    filter:
+
+        drop-shadow(0 8px 18px rgba(245, 85, 85, .16));
+
+}
+
+.findEscapeIntro {
+
+    margin: 24px 0 0;
+
+    max-width: 390px;
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .62);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* ==========================================================
+
+   LEFT BUILDER
+
+\========================================================== */
+
+.findEscapeBuilder {
+
+    position: absolute;
+
+    top: 38vh;
+
+    left: 6vw;
+
+    bottom: auto;
+
+    z-index: 12;
+
+    width: min(720px,
+
+            48vw);
+
+}
+
+
+
+/* ==========================================================
+
+   STEP
+
+\========================================================== */
+
+.findEscapeStep {
+
+    margin-bottom: 18px;
+
+}
+
+.findEscapeStepHeading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 10px;
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .86);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+}
+
+.findEscapeStepNumber {
+
+    color: #FCCF31;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+/* ==========================================================
+
+   CHOICE ROW
+
+\========================================================== */
+
+.findEscapeChoices {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+/* ==========================================================
+
+   CIRCULAR PEOPLE / EXPERIENCE BUTTONS
+
+\========================================================== */
+
+.findEscapeChoice {
+
+    appearance: none;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 76px;
+
+    min-width: 76px;
+
+    height: 76px;
+
+    padding: 7px;
+
+    border: 1px solid rgba(255,
+
+            255,
+
+            255,
+
+            .22);
+
+    border-radius: 50%;
+
+    background:
+
+        rgba(5,
+
+            18,
+
+            15,
+
+            .48);
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .76);
+
+    cursor: pointer;
+
+    backdrop-filter:
+
+        blur(10px);
+
+    -webkit-backdrop-filter:
+
+        blur(10px);
+
+    box-shadow:
+
+        inset 0 1px 2px rgba(255,
+
+            255,
+
+            255,
+
+            .08),
+
+        inset 0 -5px 10px rgba(0,
+
+            0,
+
+            0,
+
+            .18),
+
+        0 8px 22px rgba(0,
+
+            0,
+
+            0,
+
+            .16);
+
+    transition:
+
+        transform .25s ease,
+
+        border-color .25s ease,
+
+        background .25s ease,
+
+        color .25s ease,
+
+        box-shadow .25s ease;
+
+}
+
+.findEscapeChoice:hover {
+
+    transform: translateY(-3px);
+
+    border-color:
+
+        rgba(141,
+
+            216,
+
+            210,
+
+            .62);
+
+    color: #fff;
+
+}
+
+.findEscapeChoice.is-selected {
+
+    border-color: #FCCF31;
+
+    background:
+        radial-gradient(circle at 50% 25%,
+            rgba(252, 207, 49, .20),
+            rgba(80, 30, 20, .45) 70%);
+
+    color: #fff;
+
+    box-shadow:
+        inset 0 2px 4px rgba(255, 255, 255, .14),
+        inset 0 -7px 13px rgba(0, 0, 0, .22),
+        0 0 0 1px rgba(252, 207, 49, .08),
+        0 8px 28px rgba(245, 85, 85, .22);
+
+}
+
+.findEscapeIcon {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 29px;
+    height: 29px;
+
+    margin-bottom: 4px;
+
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 50%;
+
+    color: rgba(255, 255, 255, .78);
+
+    font-size: 12px;
+
+}
+
+.findEscapeChoiceLabel {
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .2px;
+    white-space: nowrap;
+
+}
+
+.findEscapeChoice.is-selected .findEscapeIcon {
+
+    border-color: rgba(252, 207, 49, .42);
+
+    color: #FCCF31;
+
+    box-shadow:
+        inset 0 1px 3px rgba(255, 255, 255, .12),
+        0 3px 12px rgba(245, 85, 85, .16);
+
+}
+
+
+
+/* ==========================================================
+
+   DURATION BUTTONS
+
+\========================================================== */
+
+.findEscapeChoices--duration {
+
+    gap: 10px;
+
+}
+
+.findEscapeDuration {
+
+    appearance: none;
+
+    min-width: 100px;
+
+    height: 42px;
+
+    padding: 0 20px;
+
+    border: 1px solid rgba(255,
+
+            255,
+
+            255,
+
+            .20);
+
+    border-radius: 40px;
+
+    background:
+
+        rgba(5,
+
+            18,
+
+            15,
+
+            .46);
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .78);
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    backdrop-filter:
+
+        blur(10px);
+
+    -webkit-backdrop-filter:
+
+        blur(10px);
+
+    transition:
+
+        .25s ease;
+
+}
+
+.findEscapeDuration:hover {
+
+    border-color:
+
+        rgba(141,
+
+            216,
+
+            210,
+
+            .58);
+
+    color: #fff;
+
+}
+
+.findEscapeDuration.is-selected {
+
+    border-color: #FCCF31;
+
+    background:
+        linear-gradient(135deg,
+            rgba(252, 207, 49, .22),
+            rgba(245, 85, 85, .18));
+
+    color: #fff;
+
+    box-shadow:
+        0 0 24px rgba(245, 85, 85, .16),
+        inset 0 1px 3px rgba(255, 255, 255, .12);
+
+}
+
+/* ==========================================================
+   LOCATION SELECTOR
+========================================================== */
+
+.findEscapeChoices--location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.findEscapeLocation {
+    appearance: none;
+
+    min-width: 0;
+    height: 36px;
+
+    padding: 0 15px;
+
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 30px;
+
+    background: rgba(5, 18, 15, .46);
+
+    color: rgba(255, 255, 255, .72);
+
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .2px;
+
+    cursor: pointer;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        background .25s ease,
+        color .25s ease,
+        box-shadow .25s ease;
+}
+
+.findEscapeLocation:hover {
+    transform: translateY(-2px);
+
+    border-color: rgba(252, 207, 49, .55);
+
+    color: #fff;
+}
+
+.findEscapeLocation.is-selected {
+    border-color: #FCCF31;
+
+    background:
+        linear-gradient(135deg,
+            rgba(252, 207, 49, .24),
+            rgba(245, 85, 85, .20));
+
+    color: #fff;
+
+    box-shadow:
+        inset 0 1px 3px rgba(255, 255, 255, .10),
+        0 6px 20px rgba(245, 85, 85, .14);
+}
+
+/* ==========================================================
+
+   ACTION
+
+\========================================================== */
+
+.findEscapeAction {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 6px;
+
+}
+
+.findEscapeButton {
+
+    appearance: none;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    min-width: 225px;
+    height: 44px;
+
+    padding: 0 26px;
+
+    border: 1px solid rgba(252, 207, 49, .72);
+    border-radius: 40px;
+
+    background:
+        linear-gradient(135deg,
+            #FCCF31 10%,
+            #F55555 100%);
+
+    color: #17120a;
+
+    font-family: inherit;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.3px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 32px rgba(245, 85, 85, .24),
+        0 5px 18px rgba(252, 207, 49, .16),
+        inset 0 1px 1px rgba(255, 255, 255, .42);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+.findEscapeButton:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+
+        0 16px 38px rgba(214,
+
+            159,
+
+            43,
+
+            .30),
+
+        inset 0 1px 1px rgba(255,
+
+            255,
+
+            255,
+
+            .45);
+
+}
+
+.findEscapeButton i {
+
+    font-size: 10px;
+
+}
+
+.findEscapeMicrocopy {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .58);
+
+    font-size: 9px;
+
+}
+
+.findEscapeMicrocopy i {
+
+    color: #FCCF31;
+
+}
+
+
+
+/* ==========================================================
+
+   RIGHT RESULT PANEL
+
+\========================================================== */
+
+.findEscapeResult {
+
+    position: absolute;
+
+    top: 5vh;
+
+    right: 6vw;
+
+    width: min(400px,
+
+            31vw);
+
+    max-height: calc(100svh - 14vh);
+
+    transform: none;
+
+    z-index: 20;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255,
+
+            255,
+
+            255,
+
+            .16);
+
+    border-radius: 30px;
+
+    background:
+
+        rgba(7,
+
+            22,
+
+            19,
+
+            .50);
+
+    box-shadow:
+
+        0 35px 90px rgba(0,
+
+            0,
+
+            0,
+
+            .42),
+
+        inset 0 1px 0 rgba(255,
+
+            255,
+
+            255,
+
+            .10);
+
+    backdrop-filter:
+
+        blur(20px) saturate(125%);
+
+    -webkit-backdrop-filter:
+
+        blur(20px) saturate(125%);
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+}
+
+.findEscapeResult::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* ==========================================================
+
+   RESULT HEADER
+
+\========================================================== */
+
+.findEscapeResultHeader {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 7px 10px 13px;
+
+}
+
+.findEscapeResultMark {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 28px;
+
+    height: 28px;
+
+    color: #FCCF31;
+
+    font-size: 14px;
+
+}
+
+.findEscapeResultLabel {
+
+    flex: 1;
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .72);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.6px;
+
+    text-transform: uppercase;
+
+}
+
+.findEscapeFavorite {
+
+    appearance: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 34px;
+
+    height: 34px;
+
+    border: 0;
+
+    background: transparent;
+
+    color: #FCCF31;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+}
+
+
+
+/* ==========================================================
+
+   RESULT CARD
+
+\========================================================== */
+
+.findEscapeResultCard {
+
+    padding: 15px;
+
+    border: 1px solid rgba(255,
+
+            255,
+
+            255,
+
+            .12);
+
+    border-radius: 22px;
+
+    background:
+
+        rgba(255,
+
+            255,
+
+            255,
+
+            .045);
+
+    box-shadow:
+
+        inset 0 1px 0 rgba(255,
+
+            255,
+
+            255,
+
+            .08);
+
+}
+
+.findEscapeResultTitle {
+
+    margin: 0;
+
+    color: #fff;
+
+    font-family: inherit;
+
+    font-size: 29px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -1.2px;
+
+}
+
+.findEscapeResultTags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    margin-top: 10px;
+
+    color: #FCCF31;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+}
+
+
+
+/* ==========================================================
+
+   RESULT IMAGE
+
+\========================================================== */
+
+.findEscapeResultImage {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+
+    aspect-ratio: 3 / 2;
+
+    border-radius: 15px;
+
+    background: #0c1815;
+
+}
+
+.findEscapeResultImage img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+
+        transform .7s ease;
+
+}
+
+.findEscapeResultCard:hover .findEscapeResultImage img {
+
+    transform: scale(1.025);
+
+}
+
+
+
+/* ==========================================================
+
+   DETAILS
+
+\========================================================== */
+
+.findEscapeDetails {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-top: 14px;
+
+}
+
+.findEscapeDetail {
+
+    display: grid;
+
+    grid-template-columns: 34px minmax(0, 1fr);
+
+    gap: 10px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid rgba(255,
+
+            255,
+
+            255,
+
+            .08);
+
+}
+
+.findEscapeDetail:last-child {
+
+    border-bottom: 0;
+
+}
+
+.findEscapeDetailIcon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 31px;
+
+    height: 31px;
+
+    border: 1px solid rgba(255,
+
+            255,
+
+            255,
+
+            .18);
+
+    border-radius: 50%;
+
+    color: #FCCF31;
+
+    font-size: 11px;
+
+}
+
+.findEscapeDetail strong {
+
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .84);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+}
+
+.findEscapeDetail p {
+
+    margin: 0;
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .50);
+
+    font-size: 9px;
+
+    line-height: 1.45;
+
+}
+
+
+
+/* ==========================================================
+
+   CUSTOMIZE BUTTON
+
+\========================================================== */
+
+.findEscapeCustomize {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 42px;
+
+    margin-top: 11px;
+    padding: 0 17px;
+
+    border: 1px solid rgba(252, 207, 49, .55);
+    border-radius: 30px;
+
+    background:
+        linear-gradient(135deg,
+            rgba(252, 207, 49, .30),
+            rgba(245, 85, 85, .26));
+
+    color: #fff;
+
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    box-shadow:
+        inset 0 1px 2px rgba(255, 255, 255, .12),
+        0 8px 24px rgba(245, 85, 85, .14);
+
+    transition:
+        transform .25s ease,
+        background .25s ease;
+
+}
+
+.findEscapeCustomize:hover {
+
+    transform: translateY(-2px);
+
+    background:
+
+        linear-gradient(180deg,
+
+            rgba(77,
+
+                211,
+
+                198,
+
+                .45),
+
+            rgba(40,
+
+                157,
+
+                149,
+
+                .28));
+
+}
+
+
+
+/* ==========================================================
+
+   BOTTOM TRUST STRIP
+
+\========================================================== */
+
+.findEscapeTrust {
+
+    position: absolute;
+
+    left: 3vw;
+
+    right: 3vw;
+
+    bottom: 2.4vh;
+
+    z-index: 18;
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(4, 1fr);
+
+    min-height: 64px;
+
+    border: 1px solid rgba(255,
+
+            255,
+
+            255,
+
+            .11);
+
+    border-radius: 18px;
+
+    background:
+
+        rgba(4,
+
+            15,
+
+            13,
+
+            .56);
+
+    box-shadow:
+
+        inset 0 1px 0 rgba(255,
+
+            255,
+
+            255,
+
+            .07);
+
+    backdrop-filter:
+
+        blur(15px);
+
+    -webkit-backdrop-filter:
+
+        blur(15px);
+
+}
+
+.findEscapeTrustItem {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    padding: 10px 22px;
+
+}
+
+.findEscapeTrustItem+.findEscapeTrustItem {
+
+    border-left: 1px solid rgba(255,
+
+            255,
+
+            255,
+
+            .09);
+
+}
+
+.findEscapeTrustIcon {
+
+    display: flex;
+
+    flex-shrink: 0;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 34px;
+
+    height: 34px;
+
+    border: 1px solid rgba(217,
+
+            180,
+
+            90,
+
+            .38);
+
+    border-radius: 50%;
+
+    color: #FCCF31;
+
+    font-size: 11px;
+
+}
+
+.findEscapeTrustItem strong {
+
+    display: block;
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .84);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+}
+
+.findEscapeTrustItem small {
+
+    display: block;
+
+    margin-top: 3px;
+
+    color: rgba(255,
+
+            255,
+
+            255,
+
+            .42);
+
+    font-size: 8px;
+
+}
+
+
+
+/* ==========================================================
+
+   TABLET
+
+\========================================================== */
+
+@media (max-width: 1100px) {
+
+    .findEscapeHeader {
+
+        left: 5vw;
+
+        width: 42vw;
+
+    }
+
+    .findEscapeBuilder {
+
+        left: 5vw;
+
+        width: 52vw;
+
+    }
+
+    .findEscapeResult {
+
+        right: 4vw;
+
+        width: 35vw;
+
+    }
+
+    .findEscapeChoice {
+
+        width: 68px;
+
+        min-width: 68px;
+
+        height: 68px;
+
+    }
+
+    .findEscapeDuration {
+
+        min-width: 82px;
+
+    }
+
+    .findEscapeTrustItem {
+
+        padding-left: 14px;
+
+        padding-right: 14px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+
+   MOBILE
+
+\========================================================== */
+
+@media (max-width: 768px) {
+
+    .findEscape {
+
+        height: auto;
+
+        min-height: 0;
+
+        overflow: visible;
+
+    }
+
+    .findEscapeStage {
+
+        height: auto;
+
+        min-height: 100svh;
+
+        padding:
+
+            8vh 0 8vh;
+
+    }
+
+    .findEscapeBackground {
+
+        position: absolute;
+
+        inset: 0;
+
+    }
+
+    .findEscapeBackground img {
+
+        object-position: 57% center;
+
+    }
+
+    .findEscapeOverlay {
+
+        background:
+
+            linear-gradient(180deg,
+
+                rgba(3, 11, 9, .72) 0%,
+
+                rgba(3, 11, 9, .28) 26%,
+
+                rgba(3, 11, 9, .44) 58%,
+
+                rgba(3, 11, 9, .92) 100%);
+
+    }
+
+
+
+    /* ----------------------------------------------
+
+       HEADER
+
+    \---------------------------------------------- */
+
+    .findEscapeHeader {
+
+        position: relative;
+
+        top: auto;
+
+        left: auto;
+
+        width: 86%;
+
+        margin: 0 auto;
+
+        z-index: 10;
+
+    }
+
+    .findEscapeEyebrow {
+
+        margin-bottom: 15px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.7px;
+
+    }
+
+    .findEscapeTitle {
+
+        font-size: clamp(42px,
+
+                12vw,
+
+                60px);
+
+        line-height: .92;
+
+        letter-spacing: -2.8px;
+
+    }
+
+    .findEscapeIntro {
+
+        margin-top: 17px;
+
+        font-size: 12px;
+
+    }
+
+
+
+    /* ----------------------------------------------
+
+       BUILDER
+
+    \---------------------------------------------- */
+
+    .findEscapeBuilder {
+
+        position: relative;
+
+        left: auto;
+
+        top: auto;
+
+        width: 86%;
+
+        margin: 42px auto 0;
+
+        z-index: 12;
+
+    }
+
+    .findEscapeStep {
+
+        margin-bottom: 27px;
+
+    }
+
+    .findEscapeStepHeading {
+
+        margin-bottom: 13px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.15px;
+
+    }
+
+
+
+    /* ----------------------------------------------
+
+       HORIZONTAL PEOPLE SCROLL
+
+    \---------------------------------------------- */
+
+    .findEscapeChoices--people,
+
+    .findEscapeChoices--experience {
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        padding:
+
+            4px 4px 10px;
+
+        margin:
+
+            0 -4px;
+
+        scrollbar-width: none;
+
+    }
+
+    .findEscapeChoices--people::-webkit-scrollbar,
+
+    .findEscapeChoices--experience::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+    .findEscapeChoice {
+
+        flex:
+
+            0 0 auto;
+
+        width: 70px;
+
+        min-width: 70px;
+
+        height: 70px;
+
+    }
+
+
+
+    .findEscapeIcon {
+
+        width: 29px;
+
+        height: 29px;
+
+        font-size: 12px;
+
+    }
+
+    .findEscapeChoiceLabel {
+
+        font-size: 8px;
+
+    }
+
+
+
+    /* ----------------------------------------------
+
+       DURATION
+
+    \---------------------------------------------- */
+
+    .findEscapeChoices--duration {
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        padding-bottom: 4px;
+
+        scrollbar-width: none;
+
+    }
+
+    .findEscapeChoices--duration::-webkit-scrollbar {
+
+        display: none;
+
+    }
+
+    .findEscapeDuration {
+
+        flex:
+
+            0 0 auto;
+
+        min-width: 88px;
+
+        height: 40px;
+
+        font-size: 10px;
+
+    }
+
+    /* ----------------------------------------------
+
+       location
+
+    \---------------------------------------------- */
+
+    .findEscapeChoices--location {
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        padding:
+            4px 4px 10px;
+
+        margin:
+            0 -4px;
+
+        scrollbar-width: none;
+    }
+
+    .findEscapeChoices--location::-webkit-scrollbar {
+        display: none;
+    }
+
+    .findEscapeLocation {
+        flex: 0 0 auto;
+
+        height: 38px;
+
+        padding: 0 15px;
+
+        font-size: 9px;
+    }
+
+
+    /* ----------------------------------------------
+
+       ACTION
+
+    \---------------------------------------------- */
+
+    .findEscapeAction {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-top: 4px;
+
+    }
+
+    .findEscapeButton {
+
+        width: 100%;
+
+        min-width: 0;
+
+        height: 49px;
+
+    }
+
+    .findEscapeMicrocopy {
+
+        align-self: center;
+
+    }
+
+
+
+    /* ----------------------------------------------
+
+       RESULT CARD
+
+    \---------------------------------------------- */
+
+    .findEscapeResult {
+
+        position: relative;
+
+        top: auto;
+
+        right: auto;
+
+        width: 86%;
+
+        max-height: none;
+
+        margin: 46px auto 0;
+
+        transform: none;
+
+        padding: 10px;
+
+        border-radius: 26px;
+
+        z-index: 20;
+
+    }
+
+    .findEscapeResultHeader {
+
+        padding:
+
+            7px 9px 11px;
+
+    }
+
+    .findEscapeResultLabel {
+
+        font-size: 8px;
+
+    }
+
+    .findEscapeResultCard {
+
+        padding: 13px;
+
+        border-radius: 20px;
+
+    }
+
+    .findEscapeResultTitle {
+
+        font-size: 26px;
+
+    }
+
+    .findEscapeResultTags {
+
+        font-size: 8px;
+
+    }
+
+    .findEscapeResultImage {
+
+        margin-top: 13px;
+
+        border-radius: 14px;
+
+    }
+
+
+
+    /* ----------------------------------------------
+
+       DETAILS
+
+    \---------------------------------------------- */
+
+    .findEscapeDetail {
+
+        padding: 9px 0;
+
+    }
+
+    .findEscapeDetailIcon {
+
+        width: 30px;
+
+        height: 30px;
+
+    }
+
+
+
+    /* ----------------------------------------------
+
+       TRUST
+
+    \---------------------------------------------- */
+
+    .findEscapeTrust {
+
+        position: relative;
+
+        left: auto;
+
+        right: auto;
+
+        bottom: auto;
+
+        width: 86%;
+
+        margin: 22px auto 0;
+
+        grid-template-columns:
+
+            repeat(2, 1fr);
+
+        border-radius: 18px;
+
+    }
+
+    .findEscapeTrustItem {
+
+        padding: 13px 12px;
+
+    }
+
+    .findEscapeTrustItem:nth-child(3) {
+
+        border-left: 0;
+
+        border-top: 1px solid rgba(255,
+
+                255,
+
+                255,
+
+                .09);
+
+    }
+
+    .findEscapeTrustItem:nth-child(4) {
+
+        border-top: 1px solid rgba(255,
+
+                255,
+
+                255,
+
+                .09);
+
+    }
+
+    .findEscapeTrustIcon {
+
+        width: 30px;
+
+        height: 30px;
+
+    }
+
+}
+
+
+
+/* ==========================================================
+
+   SMALL MOBILE
+
+\========================================================== */
+
+@media (max-width: 420px) {
+
+    .findEscapeStage {
+
+        padding-top: 7vh;
+
+    }
+
+    .findEscapeHeader,
+
+    .findEscapeBuilder,
+
+    .findEscapeResult,
+
+    .findEscapeTrust {
+
+        width: 90%;
+
+    }
+
+    .findEscapeBuilder {
+
+        margin-top: 36px;
+
+    }
+
+    .findEscapeChoice {
+
+        width: 66px;
+
+        min-width: 66px;
+
+        height: 66px;
+
+    }
+
+    .findEscapeIcon {
+
+        width: 27px;
+
+        height: 27px;
+
+    }
+
+    .findEscapeChoiceLabel {
+
+        font-size: 7.5px;
+
+    }
+
+    .findEscapeResultTitle {
+
+        font-size: 23px;
+
+    }
+
+    .findEscapeTrustItem {
+
+        gap: 8px;
+
+        padding: 11px 9px;
+
+    }
+
+    .findEscapeTrustItem strong {
+
+        font-size: 8px;
+
+    }
+
+    .findEscapeTrustItem small {
+
+        font-size: 7px;
+
+    }
+
+}
+
+/* ==========================================================
+
+   FIND ESCAPE — DESKTOP FINAL POSITION FIX
+
+\========================================================== */
+
+/* ==========================================================
+   FIND ESCAPE — DESKTOP TWO-VIEWPORT LAYOUT
+   MOBILE IS NOT TOUCHED
+========================================================== */
+
+/* ==========================================================
+   FIND ESCAPE — DESKTOP TWO VIEWPORT
+========================================================== */
+
+@media (min-width: 769px) {
+
+    /* ======================================================
+       WHOLE SECTION
+    ====================================================== */
+
+    .findEscape {
+        height: 170svh;
+        min-height: 1000px;
+        overflow: visible;
+    }
+
+
+    .findEscapeStage {
+        height: 170svh;
+        min-height: 1000px;
+        overflow: visible;
+    }
+
+
+    /* ======================================================
+       VIEWPORT 01
+       HEADING ONLY
+    ====================================================== */
+
+    .findEscapeHeader {
+
+        top: 6vh;
+        left: 6vw;
+
+        width: min(520px, 40vw);
+
+    }
+
+
+    /* ======================================================
+       VIEWPORT 02
+       LEFT — BUILDER
+    ====================================================== */
+
+    .findEscapeBuilder {
+
+        top: 50vh;
+
+        left: 6vw;
+
+        bottom: auto;
+
+        width: min(720px, 48vw);
+
+        margin: 0;
+
+    }
+
+
+    /* ======================================================
+       VIEWPORT 02
+       RIGHT — RECOMMENDATION
+    ====================================================== */
+
+    .findEscapeResult {
+
+        top: 50vh;
+
+        right: 6vw;
+
+        width: min(400px, 31vw);
+
+        max-height:
+            calc(100svh - 0vh);
+
+        transform: none;
+
+        z-index: 20;
+
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        scrollbar-width: none;
+
+    }
+
+
+    .findEscapeResult::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* ======================================================
+       STEPS
+    ====================================================== */
+
+    .findEscapeStep {
+        margin-bottom: 18px;
+    }
+
+
+    .findEscapeStepHeading {
+        margin-bottom: 10px;
+    }
+
+
+    /* ======================================================
+       EXPERIENCE / PEOPLE
+    ====================================================== */
+
+    .findEscapeChoices--people,
+    .findEscapeChoices--experience {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        gap: 10px;
+
+    }
+
+
+    .findEscapeChoice {
+
+        flex: 0 0 auto;
+
+        width: 68px;
+        min-width: 68px;
+        height: 68px;
+
+    }
+
+
+    .findEscapeIcon {
+
+        width: 29px;
+        height: 29px;
+
+        margin-bottom: 4px;
+
+    }
+
+
+    /* ======================================================
+       DURATION
+    ====================================================== */
+
+    .findEscapeChoices--duration {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+
+    }
+
+
+    .findEscapeDuration {
+
+        flex: 0 0 auto;
+
+        min-width: 94px;
+        height: 38px;
+
+    }
+
+
+    /* ======================================================
+       LOCATION
+    ====================================================== */
+
+    .findEscapeChoices--location {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 8px;
+
+        max-width: 700px;
+
+    }
+
+
+    /* ======================================================
+       ACTION
+    ====================================================== */
+
+    .findEscapeAction {
+        margin-top: 2px;
+    }
+
+
+    .findEscapeButton {
+
+        height: 44px;
+
+        min-width: 225px;
+
+    }
+
+
+    /* ======================================================
+       RESULT CARD
+    ====================================================== */
+
+    .findEscapeResultCard {
+        padding: 13px;
+    }
+
+
+    .findEscapeResultImage {
+        aspect-ratio: 16 / 8;
+    }
+
+
+    .findEscapeDetail {
+        padding: 8px 0;
+    }
+
+
+    .findEscapeDetailIcon {
+
+        width: 29px;
+        height: 29px;
+
+    }
+
+
+    .findEscapeCustomize {
+
+        height: 42px;
+
+        margin-top: 11px;
+
+    }
+
+
+    /* ======================================================
+       TRUST STRIP
+    ====================================================== */
+
+    .findEscapeTrust {
+
+        bottom: 1vh;
+
+        border-radius: 40px;
+
+        min-height: 58px;
+
+    }
+
+
+    .findEscapeTrustItem {
+
+        padding-top: 8px;
+        padding-bottom: 8px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   CUSTOMIZE YOUR TRIP
+========================================================== */
+
+.customizeTrip {
+    position: relative;
+    width: 100%;
+    padding: 140px 6vw 120px;
+    background: #07110f;
+    color: #fff;
+    overflow: hidden;
+}
+
+.customizeTripContainer {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+}
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.customizeTripHeader {
+    max-width: 620px;
+    margin-bottom: 65px;
+}
+
+.customizeTripEyebrow,
+.customizeTripOptionsEyebrow {
+    display: block;
+    color: #8dd8d2;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
+
+.customizeTripEyebrow {
+    margin-bottom: 18px;
+}
+
+.customizeTripHeading {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(52px, 7vw, 88px);
+    line-height: .9;
+    letter-spacing: -5px;
+    font-weight: 800;
+}
+
+.customizeTripHeading em {
+    color: #8dd8d2;
+    font-style: normal;
+}
+
+.customizeTripIntro {
+    max-width: 500px;
+    margin: 25px 0 0;
+    color: rgba(255, 255, 255, .52);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================================
+   MAIN LAYOUT
+========================================================== */
+
+.customizeTripLayout {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+
+
+/* ==========================================================
+   LIQUID GLASS
+========================================================== */
+
+.customizeTrip .liquidGlass {
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 32px;
+
+    background:
+        linear-gradient(145deg,
+            rgba(255, 255, 255, .075),
+            rgba(255, 255, 255, .025));
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .10),
+        inset 0 -1px 0 rgba(0, 0, 0, .20),
+        0 30px 80px rgba(0, 0, 0, .28);
+
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+
+/* ==========================================================
+   LEFT SUMMARY
+========================================================== */
+
+.customizeTripSummary {
+    padding: 30px;
+}
+
+.customizeTripSummaryHeader {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 38px;
+}
+
+.customizeTripSummaryIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+    flex: 0 0 46px;
+
+    border: 1px solid rgba(141, 216, 210, .25);
+    border-radius: 50%;
+
+    color: #8dd8d2;
+
+    background:
+        rgba(141, 216, 210, .06);
+
+    box-shadow:
+        inset 0 2px 5px rgba(255, 255, 255, .08),
+        inset 0 -3px 7px rgba(0, 0, 0, .22);
+}
+
+.customizeTripSummaryLabel {
+    display: block;
+    margin-bottom: 5px;
+
+    color: rgba(255, 255, 255, .38);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.customizeTripTitle {
+    margin: 0;
+
+    color: #fff;
+    font-size: clamp(24px, 3vw, 34px);
+    line-height: 1;
+    letter-spacing: -1.5px;
+    font-weight: 800;
+}
+
+
+/* ==========================================================
+   BLOCKS
+========================================================== */
+
+.customizeTripBlock {
+    padding: 22px 0;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.customizeTripBlockLabel {
+    display: block;
+    margin-bottom: 13px;
+
+    color: rgba(255, 255, 255, .35);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+
+/* ==========================================================
+   DESTINATIONS
+========================================================== */
+
+.customizeTripDestinations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.customizeTripDestination {
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 13px;
+
+    border: 1px solid rgba(141, 216, 210, .18);
+    border-radius: 30px;
+
+    color: rgba(255, 255, 255, .78);
+    background: rgba(141, 216, 210, .045);
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* ==========================================================
+   INFO GRID
+========================================================== */
+
+.customizeTripInfoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    padding: 22px 0;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.customizeTripInfo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    min-width: 0;
+}
+
+.customizeTripInfoIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+
+    border: 1px solid rgba(255, 255, 255, .10);
+    border-radius: 50%;
+
+    color: #8dd8d2;
+    background: rgba(255, 255, 255, .035);
+}
+
+.customizeTripInfo small {
+    display: block;
+    margin-bottom: 4px;
+
+    color: rgba(255, 255, 255, .32);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.customizeTripInfo strong {
+    display: block;
+
+    color: rgba(255, 255, 255, .78);
+    font-size: 11px;
+}
+
+
+/* ==========================================================
+   EXPERIENCE TAGS
+========================================================== */
+
+.customizeTripTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.customizeTripTag {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 30px;
+    padding: 0 11px;
+
+    border-radius: 20px;
+
+    color: rgba(255, 255, 255, .58);
+    background: rgba(255, 255, 255, .045);
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+/* ==========================================================
+   RIGHT OPTIONS
+========================================================== */
+
+.customizeTripOptions {
+    padding: 34px;
+}
+
+.customizeTripOptionsHeader {
+    margin-bottom: 30px;
+}
+
+.customizeTripOptionsEyebrow {
+    margin-bottom: 10px;
+}
+
+.customizeTripOptionsHeader h3 {
+    margin: 0;
+
+    color: #fff;
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: .98;
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+
+
+/* ==========================================================
+   FORM FIELDS
+========================================================== */
+
+.customizeTripField {
+    margin-bottom: 22px;
+}
+
+.customizeTripField label {
+    display: block;
+    margin-bottom: 9px;
+
+    color: rgba(255, 255, 255, .42);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.customizeTripField input,
+.customizeTripField select,
+.customizeTripField textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid rgba(255, 255, 255, .11);
+    border-radius: 14px;
+
+    outline: none;
+
+    background: rgba(0, 0, 0, .16);
+    color: rgba(255, 255, 255, .82);
+
+    font: inherit;
+    font-size: 12px;
+
+    transition:
+        border-color .25s ease,
+        background .25s ease,
+        box-shadow .25s ease;
+}
+
+.customizeTripField input,
+.customizeTripField select {
+    height: 48px;
+    padding: 0 14px;
+}
+
+.customizeTripField textarea {
+    min-height: 105px;
+    padding: 13px 14px;
+    resize: vertical;
+}
+
+.customizeTripField input::placeholder,
+.customizeTripField textarea::placeholder {
+    color: rgba(255, 255, 255, .25);
+}
+
+.customizeTripField select option {
+    background: #07110f;
+    color: #fff;
+}
+
+.customizeTripField input:focus,
+.customizeTripField select:focus,
+.customizeTripField textarea:focus {
+    border-color: rgba(141, 216, 210, .45);
+
+    background:
+        rgba(141, 216, 210, .035);
+
+    box-shadow:
+        0 0 0 3px rgba(141, 216, 210, .055);
+}
+
+
+/* ==========================================================
+   ACTION
+========================================================== */
+
+.customizeTripAction {
+    margin-top: 28px;
+    padding-top: 22px;
+
+    border-top: 1px solid rgba(255, 255, 255, .08);
+}
+
+.customizeTripContinue {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 100%;
+    min-height: 52px;
+
+    padding: 0 18px 0 20px;
+
+    border: 0;
+    border-radius: 16px;
+
+    cursor: pointer;
+
+    background:
+        linear-gradient(135deg,
+            #FCCF31 10%,
+            #F55555 100%);
+
+    color: #07110f;
+
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .25),
+        0 12px 30px rgba(245, 85, 85, .12);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.customizeTripContinue i {
+    font-size: 11px;
+}
+
+.customizeTripContinue:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, .25),
+        0 17px 38px rgba(245, 85, 85, .18);
+}
+
+.customizeTripAction small {
+    display: block;
+
+    margin-top: 12px;
+
+    color: rgba(255, 255, 255, .28);
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .customizeTrip {
+        padding: 90px 6% 80px;
+    }
+
+    .customizeTripHeader {
+        margin-bottom: 42px;
+    }
+
+    .customizeTripHeading {
+        font-size: clamp(44px, 13vw, 62px);
+        letter-spacing: -3px;
+    }
+
+    .customizeTripIntro {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .customizeTripLayout {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .customizeTripSummary,
+    .customizeTripOptions {
+        padding: 23px;
+        border-radius: 26px;
+    }
+
+    .customizeTripInfoGrid {
+        gap: 8px;
+    }
+
+    .customizeTripInfo {
+        align-items: flex-start;
+    }
+
+    .customizeTripInfo strong {
+        font-size: 10px;
+    }
+
+    .customizeTripOptionsHeader h3 {
+        font-size: 32px;
+    }
+
+}
+
+/* ==========================================================
+   CUSTOMIZE TRIP — DESKTOP SECTION FIX
+   MOBILE NOT TOUCHED
+========================================================== */
+
+@media (min-width: 769px) {
+
+    .customizeTrip {
+        position: relative;
+        display: block;
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        clear: both;
+        z-index: 1;
+    }
+
+}

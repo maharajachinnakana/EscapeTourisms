@@ -1,0 +1,67 @@
+/* ==========================================================
+   ESCAPE TOURISMS
+   DESIGN VARIABLES
+========================================================== */
+
+:root {
+
+    --primary: #0F766E;
+    --primary-dark: #0B5F58;
+
+    --accent: #F59E0B;
+
+    --white: #FFFFFF;
+
+    --glass-bg: rgba(255, 255, 255, .10);
+
+    --glass-bg-strong: rgba(15, 25, 35, .45);
+
+    --glass-border: rgba(255, 255, 255, .18);
+
+    --glass-highlight: rgba(255, 255, 255, .28);
+
+    --glass-blur: 22px;
+
+    --liquid-glass-bg:
+        linear-gradient(135deg,
+            rgba(255, 255, 255, .13),
+            rgba(255, 255, 255, .045));
+
+    --liquid-glass-border:
+        1px solid rgba(255, 255, 255, .18);
+
+    --liquid-glass-radius:
+        26px;
+
+    --liquid-glass-blur:
+        28px;
+
+    --liquid-glass-shadow:
+        0 25px 60px rgba(0, 0, 0, .28),
+        inset 0 1px 0 rgba(255, 255, 255, .10);
+
+    --text: #FFFFFF;
+
+    --shadow-soft:
+        0 10px 35px rgba(0, 0, 0, .20);
+
+    --shadow-lg:
+        0 20px 60px rgba(0, 0, 0, .30);
+
+    --gradient:
+        linear-gradient(135deg,
+            #0F766E,
+            #14B8A6);
+
+    --transition:
+        .35s cubic-bezier(.22, 1, .36, 1);
+
+    --z-header: 1000;
+
+    --z-floating: 1200;
+
+    --z-menu: 1500;
+
+    --z-book: 1300;
+
+}
