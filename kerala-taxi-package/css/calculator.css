@@ -1,0 +1,136 @@
+/* ==========================================================
+   CALCULATOR SECTION
+========================================================== */
+
+.calcSection {
+    padding: 90px 6vw;
+    background:
+        radial-gradient(700px 400px at 15% 20%, rgba(15, 118, 110, .10), transparent 70%),
+        #0B1F1C;
+}
+
+.calcSection .sectionEyebrow {
+    color: var(--accent);
+}
+
+.calcSection .sectionHeading,
+.calcSection .sectionIntro {
+    color: var(--white);
+}
+
+.calcSection .sectionIntro {
+    color: rgba(255, 255, 255, .68);
+}
+
+.calcContainer {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.calcBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 32px;
+    margin-top: 10px;
+}
+
+.calcField {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.calcField label {
+    font-size: .82rem;
+    color: rgba(255, 255, 255, .75);
+}
+
+.calcField select,
+.calcField input {
+    padding: 13px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, .18);
+    background: rgba(255, 255, 255, .06);
+    color: var(--white);
+    font-size: .92rem;
+}
+
+.calcField select option {
+    color: #0B1F1C;
+}
+
+.calcResult {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .06);
+    margin-top: 6px;
+}
+
+.calcResult span {
+    color: rgba(255, 255, 255, .7);
+    font-size: .88rem;
+}
+
+.calcResult strong {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.calcNote {
+    margin-top: 18px;
+    font-size: .78rem;
+    color: rgba(255, 255, 255, .5);
+    max-width: 60ch;
+}
+
+@media (max-width: 560px) {
+    .calcBox {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================
+   COVERAGE SECTION
+========================================================== */
+
+.coverageSection {
+    padding: 90px 6vw;
+    background: var(--white);
+}
+
+.coverageContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.coverageGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.coverageGrid span {
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: #F4F7F6;
+    border: 1px solid rgba(15, 118, 110, .14);
+    font-size: .85rem;
+    color: #0B1F1C;
+    font-weight: 500;
+}
+
+.coverageNote {
+    font-size: .85rem;
+    color: #7C8A87;
+}
+
+/* ==========================================================
+   HOW IT WORKS / STEPS — see /css/page-shared.css for base
+   .stepsSection / .stepCard / .stepNumber styles
+========================================================== */
