@@ -1,0 +1,57 @@
+/* ==========================================================
+   ABOUT SECTION
+========================================================== */
+
+.aboutSection {
+    padding: 90px 6vw;
+    background: var(--white);
+}
+
+.aboutContainer {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.aboutText {
+    color: #4B5A57;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: .98rem;
+}
+
+/* ==========================================================
+   FLEET SECTION
+========================================================== */
+
+.fleetSection {
+    padding: 90px 6vw;
+    background: #F4F7F6;
+}
+
+.fleetContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.fleetGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.fleetGrid span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    border-radius: 14px;
+    background: var(--white);
+    box-shadow: var(--shadow-soft);
+    font-size: .9rem;
+    font-weight: 500;
+    color: #0B1F1C;
+}
+
+.fleetGrid i {
+    color: var(--primary);
+}
