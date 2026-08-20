@@ -1,0 +1,45 @@
+/* ==========================================================
+   GUIDE SECTION
+========================================================== */
+
+.guideSection {
+    padding: 90px 6vw;
+    background: var(--white);
+}
+
+.guideContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.guideGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.guideCard {
+    padding: 26px 24px;
+    border-radius: 20px;
+    background: #F4F7F6;
+    border: 1px solid rgba(15, 118, 110, .10);
+}
+
+.guideCard i {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 14px;
+    display: block;
+}
+
+.guideCard h3 {
+    font-size: 1.05rem;
+    color: #0B1F1C;
+    margin-bottom: 8px;
+}
+
+.guideCard p {
+    font-size: .88rem;
+    color: #4B5A57;
+    line-height: 1.65;
+}
