@@ -1,0 +1,48 @@
+/* ==========================================================
+   ADD-ONS SECTION
+========================================================== */
+
+.addonsSection {
+    padding: 90px 6vw;
+    background: var(--white);
+}
+
+.addonsContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.addonsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+}
+
+.addonCard {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    border-radius: 18px;
+    background: #F4F7F6;
+    border: 1px solid rgba(15, 118, 110, .10);
+    scroll-margin-top: 100px;
+}
+
+.addonCard i {
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-top: 2px;
+}
+
+.addonCard h3 {
+    font-size: 1rem;
+    color: #0B1F1C;
+    margin-bottom: 6px;
+}
+
+.addonCard p {
+    font-size: .86rem;
+    color: #4B5A57;
+    line-height: 1.6;
+}

@@ -1,0 +1,56 @@
+/* ==========================================================
+   ROUTE DETAIL SECTIONS
+========================================================== */
+
+.routeDetailSection {
+    padding: 90px 6vw;
+    background: #F4F7F6;
+}
+
+.routeDetailSection--alt {
+    background: var(--white);
+}
+
+.routeDetailContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.routeStopsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.routeStop {
+    padding: 24px 22px;
+    border-radius: 18px;
+    background: var(--white);
+    box-shadow: var(--shadow-soft);
+    scroll-margin-top: 100px;
+}
+
+.routeDetailSection--alt .routeStop {
+    background: #F4F7F6;
+    box-shadow: none;
+    border: 1px solid rgba(15, 118, 110, .10);
+}
+
+.routeStop i {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 12px;
+    display: block;
+}
+
+.routeStop h3 {
+    font-size: 1rem;
+    color: #0B1F1C;
+    margin-bottom: 8px;
+}
+
+.routeStop p {
+    font-size: .86rem;
+    color: #4B5A57;
+    line-height: 1.6;
+}
