@@ -1,0 +1,56 @@
+/* ==========================================================
+   PACKAGES SECTION
+========================================================== */
+
+.packagesSection {
+    padding: 90px 6vw;
+    background: var(--white);
+}
+
+.packagesContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.sectionIntro a {
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.packagesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.packageCard {
+    padding: 26px 22px;
+    border-radius: 20px;
+    background: #F4F7F6;
+    border: 1px solid rgba(15, 118, 110, .10);
+}
+
+.packageDays {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--gradient);
+    padding: 5px 12px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+}
+
+.packageCard h3 {
+    font-size: 1.05rem;
+    color: #0B1F1C;
+    margin-bottom: 8px;
+}
+
+.packageCard p {
+    font-size: .86rem;
+    color: #4B5A57;
+    line-height: 1.6;
+}
