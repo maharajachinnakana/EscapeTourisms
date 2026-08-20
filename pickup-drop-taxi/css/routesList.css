@@ -1,0 +1,55 @@
+/* ==========================================================
+   POPULAR ROUTES LIST
+========================================================== */
+
+.routesListSection {
+    padding: 90px 6vw;
+    background: #F4F7F6;
+}
+
+.routesListContainer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.routesList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.routesList li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    background: var(--white);
+    font-size: .9rem;
+    color: #0B1F1C;
+    font-weight: 500;
+}
+
+.routesList li i {
+    color: var(--primary);
+    font-size: .8rem;
+}
+
+.routesListNote {
+    font-size: .85rem;
+    color: #7C8A87;
+}
+
+/* ==========================================================
+   WHY US — reuse stepsSection/stepCard base, icon-style number
+========================================================== */
+
+.stepsSection .stepNumber {
+    font-size: 1rem;
+}
+
+.stepsSection .stepNumber i {
+    line-height: 34px;
+}

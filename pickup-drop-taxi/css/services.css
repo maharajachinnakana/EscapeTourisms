@@ -1,0 +1,58 @@
+/* ==========================================================
+   TRANSFER TYPES GRID
+========================================================== */
+
+.servicesGridSection {
+    padding: 90px 6vw;
+    background: var(--white);
+}
+
+.servicesGridContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.transferGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.transferCard {
+    padding: 28px 24px;
+    border-radius: 20px;
+    background: #F4F7F6;
+    border: 1px solid rgba(15, 118, 110, .10);
+    transition: var(--transition);
+    scroll-margin-top: 100px;
+}
+
+.transferCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+}
+
+.transferIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: var(--gradient);
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+
+.transferCard h3 {
+    font-size: 1.05rem;
+    color: #0B1F1C;
+    margin-bottom: 8px;
+}
+
+.transferCard p {
+    font-size: .88rem;
+    color: #4B5A57;
+    line-height: 1.6;
+}
