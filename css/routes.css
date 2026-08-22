@@ -1,15 +1,31 @@
 /* ==========================================================
-   POPULAR ROUTES & FARES SECTION
+   POPULAR ROUTES & FARES SECTION — dark, liquid glass
+   (matches the cinematic dark theme used across the rest
+   of the homepage — services, journeys, why-escape, etc.)
 ========================================================== */
 
 .routesSection {
 
     position: relative;
     padding: 90px 6vw;
-    background: #F4F7F6;
+    background: #07110f;
+    overflow: hidden;
+}
+
+.routesSection::before {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(650px 340px at 12% 10%, rgba(14, 107, 92, .28), transparent 70%),
+        radial-gradient(500px 280px at 92% 15%, rgba(193, 127, 69, .16), transparent 70%);
+    pointer-events: none;
 }
 
 .routesContainer {
+    position: relative;
+    z-index: 1;
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -21,7 +37,7 @@
     font-weight: 700;
     letter-spacing: .12em;
     text-transform: uppercase;
-    color: var(--primary);
+    color: var(--secondary-light);
     margin-bottom: 14px;
 }
 
@@ -29,7 +45,7 @@
 
     font-size: clamp(1.7rem, 3.2vw, 2.4rem);
     font-weight: 700;
-    color: #0B1F1C;
+    color: var(--white);
     max-width: 18ch;
     line-height: 1.25;
     margin-bottom: 14px;
@@ -37,7 +53,7 @@
 
 .routesIntroText {
 
-    color: #4B5A57;
+    color: rgba(255, 255, 255, .68);
     max-width: 62ch;
     line-height: 1.7;
     margin-bottom: 34px;
@@ -58,9 +74,11 @@
     gap: 8px;
     padding: 12px 18px;
     border-radius: 999px;
-    border: 1px solid rgba(15, 118, 110, .25);
-    background: var(--white);
-    color: #0B1F1C;
+    border: var(--liquid-glass-border);
+    background: var(--liquid-glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    color: var(--white);
     font-weight: 600;
     font-size: .88rem;
     cursor: pointer;
@@ -68,7 +86,7 @@
 }
 
 .routesTab i {
-    color: var(--primary);
+    color: var(--primary-light);
 }
 
 .routesTab.active {
@@ -85,10 +103,13 @@
 .routesPanel {
 
     display: none;
-    background: var(--white);
+    background: var(--liquid-glass-bg);
+    border: var(--liquid-glass-border);
+    backdrop-filter: blur(var(--liquid-glass-blur));
+    -webkit-backdrop-filter: blur(var(--liquid-glass-blur));
     border-radius: 22px;
     padding: 30px clamp(18px, 3vw, 34px);
-    box-shadow: var(--shadow-soft);
+    box-shadow: var(--liquid-glass-shadow);
 }
 
 .routesPanel.active {
@@ -103,7 +124,7 @@
 
 .routesPanelNote {
 
-    color: #4B5A57;
+    color: rgba(255, 255, 255, .65);
     line-height: 1.65;
     max-width: 68ch;
     margin-bottom: 22px;
@@ -128,26 +149,26 @@
     gap: 6px;
     padding: 16px 18px;
     border-radius: 16px;
-    background: #F4F7F6;
-    border: 1px solid rgba(15, 118, 110, .12);
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .10);
 }
 
 .routesCard span {
     font-size: .82rem;
-    color: #4B5A57;
+    color: rgba(255, 255, 255, .65);
     font-weight: 500;
 }
 
 .routesCard strong {
     font-size: 1.25rem;
-    color: var(--primary-dark);
+    color: var(--secondary-light);
     font-weight: 700;
 }
 
 .routesCard strong small {
     font-size: .7rem;
     font-weight: 500;
-    color: #7C8A87;
+    color: rgba(255, 255, 255, .5);
     margin-left: 2px;
 }
 
@@ -156,7 +177,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--primary-dark);
+    color: var(--primary-light);
     font-weight: 600;
     text-decoration: none;
     font-size: .92rem;
@@ -170,7 +191,7 @@
 
     margin-top: 20px;
     font-size: .8rem;
-    color: #7C8A87;
+    color: rgba(255, 255, 255, .45);
     max-width: 68ch;
 }
 

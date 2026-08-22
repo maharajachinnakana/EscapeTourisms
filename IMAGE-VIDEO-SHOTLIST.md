@@ -64,6 +64,32 @@ a photo strip):**
 2. Jeep tackling an offroad/muddy section — builds "adventure" trust signal
 3. Lion Rock Point — short pan shot
 
+## 5. Other pages — image needs
+
+These pages are mostly icon/text driven, but a couple can use photos to look
+less generic. Not urgent, but listed for completeness.
+
+| Page | Slot | What to shoot |
+|---|---|---|
+| About (`/about/`) | Hero background | Team/driver with a vehicle, welcoming shot |
+| Camping (`/camping/`) | Hero background | Currently using `munnar-day/under-stars.webp` (night sky placeholder) — real tent/campsite photo would be much stronger here |
+| Kerala Tour Packages (`/kerala-tour-packages/`) | Hero background | A scenic multi-stop shot — backwaters + hills combined if you have one |
+| Travel Guide (`/travel-guide/`) | Hero background | General Munnar scenery, morning light |
+| Contact (`/contact/`) | Hero background | Optional — current placeholder is fine, low priority |
+
+FAQ, Privacy Policy and Terms pages don't use hero images — text-only by design.
+
+
+## Status: what's placeholder right now vs what's real
+
+Every image path above (`journeys/...`, `munnar-day/...`, `services/...`) is
+currently pointing at photos that already existed in your original project
+zip — nothing is broken or missing, but they're being **reused across
+multiple slots** (e.g. `journeys/beyond.webp` appears on 3 different pages).
+That's fine for launch, but the more of the real shots above you send, the
+more distinct and trustworthy each page will look.
+
+
 ## General notes
 
 - Shoot photos in **landscape orientation**, 16:9 or wider — all image slots

@@ -5,6 +5,8 @@
 ```
 EscapeTourisms/
 ├── index.html                    ← Home page
+├── sitemap.xml                   ← All 13 pages, ready for Search Console
+├── robots.txt                    ← Points to sitemap.xml
 ├── css/                          ← Shared styles (all pages use these)
 │   ├── variables.css             ← Colors, fonts, spacing tokens
 │   ├── reset.css
@@ -12,6 +14,7 @@ EscapeTourisms/
 │   ├── liquid-glass.css          ← Your glass effect system
 │   ├── footer.css
 │   ├── page-shared.css           ← Shared hero/section/related-card styles
+│   ├── legal.css                 ← Shared Privacy Policy / Terms styling
 │   ├── routes.css                ← Homepage "Fares & Routes" tab section
 │   └── ...(existing home page sections: hero, services, journeys, etc.)
 ├── js/
@@ -20,25 +23,21 @@ EscapeTourisms/
 │   ├── footer.js
 │   ├── routes.js
 │   └── ...
-├── munnar-sightseeing/
-│   ├── index.html
-│   ├── css/  (hero, pricing, places, itinerary — page-specific only)
-│   └── js/
-├── kerala-taxi-package/
-│   ├── index.html
-│   ├── css/
-│   └── js/
-├── pickup-drop-taxi/
-│   ├── index.html
-│   ├── css/
-│   └── js/
-├── jeep-safari/
-│   ├── index.html
-│   ├── css/
-│   └── js/
-├── partials/                     ← Master copies of header/footer/booking/
-│                                    floating-buttons — copy from here if you
-│                                    build a new page by hand later
+├── munnar-sightseeing/           ← Google Ads page: pricing, places, itinerary
+├── kerala-taxi-package/          ← Google Ads page: pricing + fare calculator
+├── pickup-drop-taxi/             ← Google Ads page: transfer types, routes
+├── jeep-safari/                  ← Google Ads page: Kolukkumalai, Chaduranga Para
+├── kerala-tour-packages/         ← Multi-day package overview
+├── camping/                      ← Munnar camping page
+├── about/                        ← About Escape Tourisms
+├── contact/                      ← Contact details + CTA
+├── faq/                          ← Site-wide FAQ (all questions combined)
+├── travel-guide/                 ← Munnar trip-planning tips
+├── privacy-policy/               ← Legal
+├── terms/                        ← Legal
+│   (each of the above = index.html + its own css/ + js/ folder)
+├── partials/                     ← Master copy of footer.html — reference if
+│                                    you build a new page by hand later
 └── assets/images/                ← All images
 ```
 

@@ -5,10 +5,22 @@
 
 :root {
 
-    --primary: #0F766E;
-    --primary-dark: #0B5F58;
+    /* ======================================================
+        BRAND PALETTE — deep emerald + warm copper
+        A premium, distinct pairing (not the common teal+amber
+        taxi-site look) — emerald reads "hill station forest",
+        copper reads "tea & spice", gold stays for small accents.
+        ======================================================= */
 
-    --accent: #F59E0B;
+    --primary: #0E6B5C;
+    --primary-dark: #073F35;
+    --primary-light: #1C9C86;
+
+    --secondary: #C17F45;
+    --secondary-dark: #96602F;
+    --secondary-light: #D9A06B;
+
+    --accent: #E3B23C;
 
     --white: #FFFFFF;
 
@@ -50,8 +62,13 @@
 
     --gradient:
         linear-gradient(135deg,
-            #0F766E,
-            #14B8A6);
+            #0E6B5C,
+            #1C9C86);
+
+    --gradient-secondary:
+        linear-gradient(135deg,
+            #C17F45,
+            #96602F);
 
     --transition:
         .35s cubic-bezier(.22, 1, .36, 1);

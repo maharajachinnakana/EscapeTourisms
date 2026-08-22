@@ -33,17 +33,20 @@ main {
 
 /* ==========================================================
    MOBILE BOOK NOW
+   Anchored with left/right offsets (not a fixed % + transform)
+   so it always keeps a safe gap from the floating buttons
+   stack on the right, on any screen width — including narrow
+   phones like the OnePlus Nord 2 (~412px CSS width).
 ========================================================== */
 
 .mobileBookBtn {
 
     position: fixed;
 
-    left: 42%;
+    left: 16px;
+    right: 88px;
 
-    bottom: 10px;
-
-    transform: translateX(-50%);
+    bottom: 16px;
 
     display: flex;
 
@@ -53,9 +56,7 @@ main {
 
     gap: 10px;
 
-    width: 80%;
-
-    height: 52px;
+    height: 54px;
 
     border-radius: 999px;
 
@@ -68,21 +69,21 @@ main {
 
     color: #fff;
 
-    font-weight: 900;
+    font-weight: 700;
 
     z-index: var(--z-book);
 
     transition: var(--transition);
 
-    font-size: 28px;
+    font-size: clamp(15px, 4vw, 18px);
 
+    padding: 0 14px;
 }
 
 .mobileBookBtn:hover {
 
     transform:
-        translateX(-50%) translateY(-4px);
-
+        translateY(-4px);
 }
 
 
@@ -232,8 +233,7 @@ body.uiHidden .floatingButtons {
     .floatingButtons {
 
         right: 10px;
-
-        bottom: 10px;
+        bottom: 16px;
 
     }
 
@@ -250,9 +250,47 @@ body.uiHidden .floatingButtons {
         opacity: 0;
 
         transform:
-            translateX(-50%) translateY(25px);
+            translateY(25px);
 
         pointer-events: none;
+
+    }
+
+}
+
+
+/* ==========================================================
+   VERY NARROW PHONES (e.g. OnePlus Nord 2, ~412px and below)
+   Slightly tighter offsets so the Book Now pill, floating
+   buttons and mobile nav never crowd each other.
+========================================================== */
+
+@media (max-width: 420px) {
+
+    .mobileBookBtn {
+
+        left: 12px;
+        right: 78px;
+
+        height: 50px;
+
+        padding: 0 10px;
+
+    }
+
+    .floatingButtons {
+
+        right: 8px;
+        bottom: 14px;
+        gap: 10px;
+
+    }
+
+    .floatBtn {
+
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
 
     }
 

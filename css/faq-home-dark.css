@@ -1,0 +1,65 @@
+/* ==========================================================
+   HOMEPAGE FAQ — DARK OVERRIDE
+   This file loads ONLY on index.html. The shared faq.css
+   stays untouched so the FAQ section on all inner pages
+   (Munnar Sightseeing, Kerala Taxi Package, etc.) keeps its
+   light theme. This override makes the homepage FAQ match
+   the dark, cinematic look of the rest of the homepage.
+========================================================== */
+
+#faq.faqSection {
+
+    position: relative;
+    background: #06100e;
+    overflow: hidden;
+}
+
+#faq.faqSection::before {
+
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(600px 320px at 88% 0%, rgba(14, 107, 92, .22), transparent 70%);
+    pointer-events: none;
+}
+
+#faq .faqContainer {
+    position: relative;
+    z-index: 1;
+}
+
+#faq .faqEyebrow {
+    color: var(--secondary-light);
+}
+
+#faq .faqHeading {
+    color: var(--white);
+}
+
+#faq .faqItem {
+    background: var(--liquid-glass-bg);
+    border: var(--liquid-glass-border);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+}
+
+#faq .faqQuestion {
+    color: var(--white);
+}
+
+#faq .faqQuestion span {
+    color: var(--white);
+}
+
+#faq .faqIcon {
+    color: var(--primary-light);
+}
+
+#faq .faqAnswer p {
+    color: rgba(255, 255, 255, .68);
+}
+
+#faq .faqAnswer a {
+    color: var(--secondary-light);
+}
