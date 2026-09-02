@@ -75,7 +75,7 @@ main {
 
     transition: var(--transition);
 
-    font-size: clamp(15px, 4vw, 18px);
+    font-size: clamp(16px, 4.6vw, 19px);
 
     padding: 0 14px;
 }
@@ -239,9 +239,11 @@ body.uiHidden .floatingButtons {
 
     .floatBtn {
 
-        width: 52px;
+        width: 58px;
 
-        height: 52px;
+        height: 58px;
+
+        font-size: 22px;
 
     }
 
@@ -288,9 +290,9 @@ body.uiHidden .floatingButtons {
 
     .floatBtn {
 
-        width: 46px;
-        height: 46px;
-        font-size: 18px;
+        width: 54px;
+        height: 54px;
+        font-size: 20px;
 
     }
 

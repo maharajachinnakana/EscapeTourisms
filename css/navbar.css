@@ -609,7 +609,7 @@ body.uiHidden .mobileHeader {
 
     color: #fff;
 
-    font-size: clamp(14px, 4.4vw, 19px);
+    font-size: clamp(16px, 5vw, 21px);
 
     font-weight: 800;
 
