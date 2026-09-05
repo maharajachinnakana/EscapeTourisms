@@ -7,22 +7,30 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    initDesktopMenu();
+    const inits = [
+        initDesktopMenu,
+        initMobileMenu,
+        initScrollUI,
+        initBackToTop,
+        initHeroScroll,
+        initFaqAccordion,
+        initBookingForm,
+    ];
 
-    initMobileMenu();
-
-    initScrollUI();
-
-    initBackToTop();
-
-    initHeroScroll();
-
-    initFaqAccordion();
-
-    initBookingForm();
+    inits.forEach((fn) => {
+        try {
+            fn();
+        } catch (err) {
+            console.error("Escape Tourisms init error in", fn.name, err);
+        }
+    });
 
     if (typeof initJourneySwitcher === "function") {
-        initJourneySwitcher();
+        try {
+            initJourneySwitcher();
+        } catch (err) {
+            console.error("Escape Tourisms init error in initJourneySwitcher", err);
+        }
     }
 
 });
