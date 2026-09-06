@@ -109,4 +109,48 @@
         <priority>0.2</priority>
     </url>
 
+
+    <url>
+        <loc>https://www.escapetourisms.com/kochi-airport-to-munnar-taxi/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>
+
+    <url>
+        <loc>https://www.escapetourisms.com/munnar-to-thekkady-taxi/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.escapetourisms.com/munnar-to-alleppey-taxi/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.escapetourisms.com/munnar-to-madurai-taxi/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.escapetourisms.com/munnar-to-kodaikanal-taxi/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <url>
+        <loc>https://www.escapetourisms.com/jeep-safari/chaduranga-para/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.escapetourisms.com/jeep-safari/kolukkumalai/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
