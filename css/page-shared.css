@@ -178,6 +178,28 @@
 }
 
 /* ==========================================================
+   GOOGLE REVIEWS EMBED
+========================================================== */
+
+.googleReviewsEmbed {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
+    border: 1px solid rgba(11, 95, 88, .12);
+}
+
+.googleReviewsEmbed iframe {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 560px) {
+    .googleReviewsEmbed iframe {
+        height: 320px;
+    }
+}
+
+/* ==========================================================
    SHARED SECTION HEADING STYLES
 ========================================================== */
 
