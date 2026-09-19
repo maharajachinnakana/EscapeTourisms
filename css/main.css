@@ -87,9 +87,10 @@ main {
 
     content: "";
     position: absolute;
-    inset: 3px;
+    inset: 4px;
     border-radius: inherit;
     z-index: -1;
+    filter: blur(12px);
 
     background: var(--gradient);
 }
@@ -192,9 +193,10 @@ body.uiHidden .floatingButtons {
 
     content: "";
     position: absolute;
-    inset: 3px;
+    inset: 4px;
     border-radius: inherit;
     z-index: -1;
+    filter: blur(12px);
 
     background: var(--gradient);
 }
