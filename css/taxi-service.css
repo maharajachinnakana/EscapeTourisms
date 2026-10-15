@@ -1,0 +1,718 @@
+/* ==========================================================
+   ESCAPE TOURISMS — TAXI SERVICE PAGES
+   Shared by: sunrise, sunset, top-station, thekkady, kochi,
+   coimbatore, chinnakanal, resort pickup, bus stand pickup,
+   munnar sightseeing taxi.
+   Visual language is taken from the home page: dark cinematic
+   base, liquid-glass cards, small spaced eyebrows, big tight
+   headings. No images are required — a hero photo can be added
+   later with:  <section class="tsHero" style="--ts-hero-img:url(/assets/...)">
+========================================================== */
+
+.tsMain {
+    min-height: 0;
+    background: #06100e;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* ---------- reveal (only when JS is on) ---------- */
+html.tsJS .tsReveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity .8s cubic-bezier(.22, 1, .36, 1), transform .8s cubic-bezier(.22, 1, .36, 1);
+}
+html.tsJS .tsReveal.isIn {
+    opacity: 1;
+    transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+    html.tsJS .tsReveal { opacity: 1; transform: none; transition: none; }
+    .tsHeroBg::before, .tsHeroBg::after { animation: none !important; }
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+.tsHero {
+    position: relative;
+    isolation: isolate;
+    min-height: min(92svh, 880px);
+    display: flex;
+    align-items: flex-end;
+    padding: 150px 6vw 76px;
+    overflow: hidden;
+    background: #06100e;
+}
+.tsHeroBg {
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+    background:
+        var(--ts-hero-img, none) center / cover no-repeat,
+        radial-gradient(900px 520px at 82% 8%, rgba(28, 156, 134, .34), transparent 65%),
+        radial-gradient(760px 520px at 4% 96%, rgba(193, 127, 69, .22), transparent 62%),
+        linear-gradient(165deg, #0a2d27 0%, #07130f 58%, #06100e 100%);
+}
+.tsHeroBg::before,
+.tsHeroBg::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    pointer-events: none;
+}
+.tsHeroBg::before {
+    width: 46vw; height: 46vw; max-width: 620px; max-height: 620px;
+    right: -8vw; top: 8%;
+    background: rgba(28, 156, 134, .22);
+    animation: tsDrift 16s ease-in-out infinite alternate;
+}
+.tsHeroBg::after {
+    width: 38vw; height: 38vw; max-width: 520px; max-height: 520px;
+    left: -6vw; bottom: -10%;
+    background: rgba(193, 127, 69, .16);
+    animation: tsDrift 20s ease-in-out infinite alternate-reverse;
+}
+@keyframes tsDrift {
+    from { transform: translate3d(0, 0, 0) scale(1); }
+    to   { transform: translate3d(-40px, 30px, 0) scale(1.12); }
+}
+.tsHeroContour {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    opacity: .9;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600' fill='none' stroke='white' stroke-opacity='.075' stroke-width='1.1'%3E%3Cpath d='M489.0,300.0 L490.9,302.5 L491.4,305.0 L490.5,307.5 L488.8,309.9 L486.8,312.0 L484.3,314.0 L481.2,315.7 L477.3,316.7 L473.0,317.2 L468.9,317.3 L465.3,317.6 L462.4,318.4 L459.8,319.8 L456.9,321.2 L453.6,322.2 L450.0,322.4 L446.5,322.0 L443.1,321.4 L439.7,320.9 L436.1,320.6 L432.4,320.2 L428.8,319.5 L425.6,318.2 L422.8,316.7 L420.0,315.1 L416.9,313.6 L413.6,311.9 L410.8,310.0 L409.4,307.5 L409.9,304.9 L411.9,302.3 L414.6,300.0 L416.9,298.0 L418.4,296.1 L419.3,294.3 L420.1,292.4 L421.1,290.5 L422.4,288.7 L423.7,286.8 L424.7,284.5 L425.8,281.9 L427.5,279.4 L430.3,277.4 L434.0,276.3 L438.2,276.1 L442.4,276.5 L446.3,276.8 L450.0,276.8 L453.8,276.6 L457.6,276.6 L461.2,277.3 L464.5,278.5 L467.4,280.0 L470.1,281.5 L472.8,283.0 L475.4,284.4 L477.5,286.2 L478.7,288.2 L479.2,290.4 L479.5,292.5 L480.6,294.3 L482.8,296.0 L485.9,297.8 L489.0,300.0Z'/%3E%3Cpath d='M529.5,300.0 L531.2,304.9 L531.1,309.9 L529.9,314.9 L528.0,319.8 L524.8,324.5 L519.4,328.4 L511.6,331.0 L502.4,332.1 L493.3,332.4 L485.7,332.7 L479.8,334.1 L474.8,336.6 L469.6,339.6 L463.7,342.1 L457.0,343.5 L450.0,344.1 L442.9,344.3 L435.5,344.6 L427.8,344.9 L420.0,344.3 L412.9,342.6 L406.8,339.6 L401.7,336.1 L396.6,332.8 L390.6,329.9 L383.8,327.1 L377.4,323.8 L373.1,319.5 L372.1,314.5 L374.0,309.3 L377.4,304.4 L380.7,300.0 L383.1,296.0 L385.2,292.1 L387.5,288.4 L390.5,284.9 L393.5,281.5 L395.7,277.7 L396.6,273.1 L397.2,267.6 L398.9,261.9 L403.0,256.9 L409.6,253.7 L417.8,252.4 L426.4,252.3 L434.6,252.6 L442.4,252.8 L450.0,252.9 L457.5,253.5 L464.5,255.2 L471.0,257.6 L477.0,260.1 L483.0,262.1 L489.5,263.8 L496.1,265.6 L501.8,268.3 L505.6,272.0 L507.5,276.5 L508.6,280.8 L510.6,284.6 L514.5,288.0 L520.0,291.5 L525.5,295.4 L529.5,300.0Z'/%3E%3Cpath d='M568.0,300.0 L568.9,307.2 L569.5,314.6 L569.8,322.3 L568.1,330.0 L562.5,336.8 L552.2,341.9 L538.7,344.6 L524.6,345.7 L512.3,346.5 L502.7,348.3 L494.9,351.5 L487.4,355.4 L479.2,359.0 L470.0,361.7 L460.3,363.9 L450.0,366.4 L438.9,369.1 L426.8,371.4 L414.4,371.9 L402.9,369.7 L393.3,365.0 L385.5,359.1 L378.2,353.6 L370.0,349.0 L360.6,345.0 L351.2,340.5 L344.1,334.7 L340.6,327.8 L340.5,320.4 L341.9,313.2 L343.5,306.4 L344.8,300.0 L346.8,293.8 L350.6,287.9 L356.2,282.6 L361.9,277.6 L365.6,272.4 L366.7,265.9 L366.2,257.8 L366.7,249.0 L370.7,240.8 L378.7,234.6 L389.7,230.8 L402.0,229.0 L414.4,228.0 L426.5,227.5 L438.4,227.8 L450.0,229.6 L460.8,233.0 L470.4,237.2 L479.2,241.0 L488.3,243.3 L498.5,244.3 L509.5,245.4 L519.8,247.8 L527.8,252.3 L533.1,258.2 L536.8,264.5 L541.0,270.2 L546.8,275.4 L554.0,280.7 L560.9,286.5 L565.6,293.0 L568.0,300.0Z'/%3E%3Cpath d='M603.7,300.0 L605.7,309.4 L608.7,319.3 L610.0,329.8 L606.3,339.7 L595.9,347.8 L580.1,353.3 L562.4,356.5 L546.1,358.9 L532.7,361.8 L521.5,365.6 L510.9,369.8 L499.7,373.6 L488.0,376.9 L476.1,380.5 L463.7,385.5 L450.0,391.7 L434.3,397.5 L417.3,400.7 L400.7,399.5 L386.4,394.2 L374.6,386.5 L364.2,378.7 L353.6,372.0 L342.3,366.0 L331.2,359.7 L322.5,352.2 L317.1,343.5 L314.4,334.4 L312.3,325.6 L309.5,317.1 L306.7,308.6 L306.1,300.0 L309.5,291.5 L316.8,283.8 L325.2,276.8 L331.4,269.9 L333.4,261.8 L332.6,251.9 L332.3,240.8 L335.7,229.9 L343.9,220.8 L356.2,214.0 L370.6,209.0 L385.9,205.1 L401.7,202.3 L418.1,201.6 L434.6,203.9 L450.0,209.3 L463.5,216.0 L475.4,221.8 L487.1,225.0 L500.2,225.7 L514.9,225.6 L529.6,227.0 L542.4,231.0 L552.7,237.1 L561.3,244.0 L569.9,250.9 L579.6,257.6 L589.3,264.6 L597.1,272.7 L601.4,281.5 L602.9,290.8 L603.7,300.0Z'/%3E%3Cpath d='M639.6,300.0 L644.0,311.7 L647.9,324.1 L646.7,336.6 L638.0,347.7 L622.5,356.5 L604.1,363.1 L586.2,368.5 L570.5,373.9 L556.2,379.3 L541.7,384.1 L526.4,387.6 L511.2,390.6 L496.8,394.6 L482.9,401.3 L467.8,410.8 L450.0,420.7 L429.5,427.7 L408.1,429.3 L388.1,425.1 L370.8,417.2 L355.6,408.2 L341.3,399.7 L327.5,391.5 L315.2,382.6 L306.1,372.4 L300.4,361.3 L296.2,350.4 L290.8,340.4 L282.8,331.1 L273.8,321.5 L267.6,311.0 L267.6,300.0 L273.8,289.4 L283.0,279.6 L290.8,270.4 L294.3,260.5 L294.4,249.0 L294.7,236.4 L298.6,223.9 L307.5,212.6 L320.2,203.0 L335.0,194.5 L351.1,186.6 L368.9,179.9 L388.8,176.4 L410.3,177.7 L431.3,183.9 L450.0,192.7 L465.9,200.8 L480.6,205.6 L496.1,206.9 L513.1,206.6 L531.0,207.2 L548.0,210.1 L563.5,215.3 L578.3,221.4 L593.7,227.7 L609.7,234.6 L624.3,242.9 L634.4,253.2 L638.7,264.9 L638.6,277.0 L637.8,288.7 L639.6,300.0Z'/%3E%3Cpath d='M678.1,300.0 L682.3,314.0 L682.2,328.3 L674.9,341.8 L661.3,353.6 L644.9,363.8 L628.9,373.3 L614.1,382.5 L598.7,391.1 L581.0,397.8 L561.1,401.9 L541.2,404.5 L523.1,408.2 L507.2,415.5 L491.2,426.9 L472.5,439.9 L450.0,450.6 L425.0,455.7 L399.9,454.4 L376.5,448.6 L355.0,440.6 L335.0,431.9 L316.9,422.1 L302.3,410.3 L292.7,396.4 L287.5,381.7 L283.5,368.2 L276.4,356.9 L264.4,347.1 L249.3,337.3 L236.4,326.0 L230.1,313.3 L231.7,300.0 L238.1,287.2 L244.4,274.9 L247.7,262.4 L248.9,248.9 L251.2,234.9 L257.8,221.3 L269.0,208.9 L283.0,197.6 L297.8,186.3 L313.1,174.5 L330.7,163.2 L352.3,155.4 L377.6,153.7 L404.1,158.6 L428.7,167.7 L450.0,177.0 L468.7,183.4 L487.0,186.1 L506.0,186.8 L525.8,187.8 L545.4,190.6 L564.9,194.6 L585.5,198.8 L608.3,203.0 L632.6,208.2 L654.6,216.2 L670.1,227.9 L676.8,242.4 L676.5,257.9 L674.2,272.7 L674.4,286.5 L678.1,300.0Z'/%3E%3Cpath d='M716.7,300.0 L714.7,316.0 L706.5,331.3 L693.8,345.3 L680.6,358.5 L669.2,371.8 L658.8,385.5 L645.9,398.5 L627.7,408.9 L604.5,415.4 L579.8,419.0 L557.2,422.9 L538.1,430.3 L520.4,442.2 L500.8,456.5 L477.2,469.3 L450.0,477.1 L421.2,479.2 L392.6,477.0 L364.7,472.4 L337.8,466.0 L313.4,456.7 L294.0,443.1 L281.9,425.5 L276.2,406.5 L272.7,389.2 L265.7,375.5 L252.1,364.8 L233.3,355.0 L214.8,343.7 L201.9,330.3 L196.4,315.3 L195.9,300.0 L196.4,284.7 L195.7,269.0 L195.5,252.7 L199.4,236.4 L209.9,221.3 L225.7,208.2 L243.3,196.0 L259.4,183.2 L274.1,168.7 L290.4,153.6 L311.7,141.4 L338.7,135.4 L369.2,136.7 L399.2,143.5 L426.2,151.6 L450.0,157.9 L472.3,161.5 L494.2,163.9 L515.9,166.9 L537.1,171.1 L558.9,175.1 L583.4,177.6 L612.3,178.8 L644.5,180.8 L675.3,186.7 L698.7,198.1 L711.4,214.4 L714.4,232.9 L713.1,251.1 L712.7,268.0 L714.7,284.0 L716.7,300.0Z'/%3E%3Cpath d='M748.6,300.0 L736.2,317.3 L721.6,333.1 L709.9,348.3 L703.3,364.3 L699.4,381.7 L692.4,399.3 L677.5,414.4 L654.4,425.3 L627.1,432.2 L600.7,438.3 L578.0,446.7 L557.4,458.9 L535.7,473.1 L510.3,485.8 L481.2,494.4 L450.0,498.5 L417.9,499.8 L385.1,499.9 L351.9,498.1 L320.3,491.9 L294.1,478.8 L276.4,459.3 L267.3,436.5 L262.3,415.0 L255.2,398.0 L241.6,385.3 L222.1,374.7 L201.3,363.1 L184.0,349.5 L171.8,333.9 L162.6,317.4 L153.4,300.0 L143.9,281.5 L137.9,261.9 L140.3,242.4 L153.4,224.7 L174.5,209.7 L197.5,196.6 L217.4,183.0 L233.5,167.3 L249.5,150.2 L270.1,134.9 L297.4,125.0 L329.6,121.9 L362.9,124.0 L394.2,128.1 L422.9,131.3 L450.0,133.7 L476.2,136.8 L501.2,142.1 L524.7,149.0 L548.1,154.8 L574.6,157.1 L607.0,155.9 L644.8,154.5 L683.2,157.1 L715.3,166.5 L736.5,182.7 L747.0,202.7 L751.2,223.5 L753.5,243.6 L755.5,262.7 L754.9,281.6 L748.6,300.0Z'/%3E%3Cpath d='M769.1,300.0 L749.5,318.1 L735.9,334.9 L731.6,352.4 L733.4,371.9 L733.3,392.8 L724.6,412.4 L705.5,428.5 L679.7,440.8 L652.9,451.5 L628.2,463.4 L604.7,477.4 L579.5,491.6 L550.5,503.1 L518.2,510.3 L484.4,514.1 L450.0,517.3 L414.4,521.4 L377.0,524.8 L339.4,523.4 L305.6,513.6 L280.1,494.8 L264.1,470.5 L254.1,446.3 L244.3,426.1 L230.1,410.6 L211.3,397.8 L191.2,384.8 L173.2,370.3 L157.4,354.4 L140.7,337.7 L120.8,319.9 L99.5,300.0 L83.1,277.9 L79.2,254.8 L90.9,233.2 L114.7,214.9 L142.8,199.4 L167.8,184.4 L187.8,168.1 L206.2,150.6 L228.1,134.3 L256.1,122.2 L289.1,115.4 L323.3,112.5 L356.2,110.4 L387.6,107.8 L418.8,105.7 L450.0,106.9 L480.1,113.0 L507.7,122.3 L533.8,130.7 L561.9,134.4 L595.8,132.8 L636.1,129.3 L678.9,129.0 L717.8,135.9 L747.7,150.3 L768.0,169.8 L781.7,191.3 L791.8,213.2 L798.1,235.3 L797.5,257.6 L787.2,279.6 L769.1,300.0Z'/%3E%3Cpath d='M782.6,300.0 L764.5,319.0 L758.7,337.6 L762.4,358.1 L767.1,380.5 L764.5,403.0 L751.7,423.6 L731.7,441.7 L709.2,458.9 L686.7,476.8 L662.8,495.2 L634.4,511.5 L600.5,522.6 L562.8,527.8 L524.5,529.7 L487.3,532.2 L450.0,537.9 L410.6,545.0 L369.4,548.4 L329.7,543.1 L296.2,527.6 L271.2,505.1 L252.6,481.0 L236.1,459.7 L218.0,442.2 L198.5,426.5 L180.0,410.6 L164.1,393.7 L148.4,376.6 L128.2,359.8 L100.2,342.6 L67.3,323.1 L38.6,300.0 L24.1,274.3 L29.0,248.7 L50.5,225.7 L79.7,206.0 L108.3,188.1 L133.1,170.2 L156.6,152.4 L183.1,136.4 L214.7,124.3 L249.4,116.0 L283.7,109.3 L315.7,101.3 L346.8,91.5 L379.4,82.4 L414.4,78.4 L450.0,81.9 L483.6,91.2 L514.5,101.2 L545.7,106.7 L580.9,106.3 L621.9,102.9 L666.0,101.9 L708.1,107.2 L744.1,119.7 L773.6,137.2 L798.6,157.2 L820.2,178.7 L835.8,202.1 L840.1,227.5 L829.9,253.7 L807.8,278.4 L782.6,300.0Z'/%3E%3Cpath d='M800.5,300.0 L791.0,320.6 L792.5,341.8 L797.2,364.6 L797.3,388.2 L789.9,411.3 L777.4,434.1 L763.3,457.6 L748.2,482.7 L728.4,507.9 L699.9,529.2 L661.7,542.7 L617.4,547.7 L572.6,547.8 L530.6,548.4 L490.7,553.2 L450.0,561.0 L407.1,566.8 L364.0,564.9 L324.5,553.6 L291.0,535.3 L262.5,515.0 L236.2,496.1 L210.2,479.1 L186.0,461.8 L166.6,442.6 L152.3,421.9 L138.9,401.9 L118.9,384.1 L87.5,367.4 L47.1,349.1 L8.0,326.7 L-17.9,300.0 L-23.5,271.4 L-10.2,243.9 L14.0,218.9 L41.2,196.2 L68.1,174.9 L96.9,155.4 L130.7,139.4 L169.5,128.1 L209.2,120.2 L245.2,112.2 L275.9,100.4 L304.2,84.3 L335.1,67.8 L371.0,56.5 L410.5,54.0 L450.0,59.4 L487.3,67.6 L523.7,73.0 L562.0,73.6 L604.1,71.9 L648.3,72.6 L690.8,79.1 L729.4,91.3 L764.7,107.1 L799.2,124.4 L832.8,143.2 L860.7,165.5 L875.0,192.1 L870.6,221.8 L849.8,251.3 L822.4,277.5 L800.5,300.0Z'/%3E%3Cpath d='M832.2,300.0 L829.9,322.9 L830.5,346.4 L828.0,370.3 L821.7,394.4 L814.7,419.5 L810.0,447.5 L805.8,478.9 L795.1,511.5 L771.3,540.0 L732.4,559.1 L683.2,567.4 L631.3,568.3 L582.7,568.1 L538.0,571.1 L494.5,577.1 L450.0,581.8 L404.9,580.5 L361.8,571.6 L322.4,557.9 L285.5,543.4 L249.0,530.5 L212.7,517.7 L179.8,501.8 L154.7,481.0 L138.3,456.8 L125.4,432.9 L106.9,412.4 L75.9,395.0 L33.5,377.4 L-10.9,356.2 L-44.8,329.9 L-60.6,300.0 L-58.6,269.3 L-45.2,239.6 L-26.3,211.4 L-3.2,185.0 L27.3,161.5 L67.7,143.4 L115.6,131.8 L163.8,124.6 L204.9,117.0 L236.4,104.1 L262.3,84.8 L289.7,62.8 L323.5,44.4 L363.8,34.4 L407.0,32.5 L450.0,34.6 L492.4,35.9 L536.0,35.0 L581.5,34.3 L627.1,37.9 L669.9,47.9 L708.7,62.7 L746.2,78.8 L786.0,94.1 L828.4,109.6 L867.8,128.9 L894.3,154.4 L900.7,185.6 L887.8,218.6 L864.8,249.4 L843.7,276.2 L832.2,300.0Z'/%3E%3Cpath d='M877.0,300.0 L872.7,325.5 L864.2,350.5 L853.7,375.1 L847.4,400.9 L849.1,430.8 L855.3,466.0 L856.2,504.3 L841.5,539.9 L806.9,566.6 L757.0,581.6 L700.8,587.5 L645.9,589.9 L595.0,592.9 L546.3,596.8 L497.9,598.3 L450.0,594.0 L404.3,584.2 L361.5,572.7 L319.5,563.7 L275.5,558.2 L229.6,552.7 L186.1,542.0 L151.2,523.1 L127.3,497.8 L110.1,471.0 L90.2,447.4 L59.9,427.8 L19.0,409.4 L-24.8,388.3 L-60.7,362.3 L-82.2,332.1 L-90.2,300.0 L-89.8,267.4 L-84.4,234.8 L-71.8,203.0 L-46.1,174.0 L-3.9,151.3 L51.1,136.7 L108.6,128.3 L157.5,120.7 L193.4,108.3 L219.7,88.7 L244.8,64.7 L275.8,42.2 L314.2,25.6 L357.6,15.4 L403.1,8.3 L450.0,1.2 L499.1,-5.7 L550.2,-8.7 L600.2,-3.6 L645.6,10.5 L685.5,29.9 L723.5,49.1 L764.8,64.9 L811.2,78.6 L857.7,94.9 L894.4,118.0 L912.9,148.4 L912.6,182.6 L900.8,216.2 L887.9,246.6 L880.3,274.0 L877.0,300.0Z'/%3E%3Cpath d='M924.6,300.0 L910.8,327.8 L893.7,354.1 L883.4,380.6 L886.0,410.7 L898.3,446.9 L908.7,487.8 L903.9,528.3 L877.5,562.0 L832.1,585.4 L776.7,599.7 L719.4,608.9 L663.6,616.0 L608.6,620.4 L553.6,619.1 L499.9,610.3 L450.0,596.5 L404.4,583.6 L360.1,577.1 L312.6,577.7 L260.7,580.1 L208.4,577.0 L162.5,563.7 L127.1,541.2 L99.6,514.7 L72.6,489.8 L39.3,468.2 L-0.8,447.7 L-41.2,424.7 L-73.6,397.3 L-94.5,366.4 L-107.1,333.6 L-117.0,300.0 L-125.8,265.2 L-127.8,229.6 L-113.4,195.3 L-76.4,166.4 L-20.3,145.9 L42.6,133.2 L98.8,123.3 L140.9,110.6 L171.3,91.9 L198.0,68.9 L228.4,45.9 L265.0,26.2 L306.2,9.5 L350.4,-7.0 L397.8,-25.0 L450.0,-41.9 L506.5,-51.7 L563.3,-49.0 L614.9,-33.2 L659.3,-9.7 L699.4,14.0 L741.2,32.9 L787.9,47.7 L836.2,63.3 L877.8,84.8 L905.3,113.5 L917.8,146.7 L921.2,180.4 L923.2,212.0 L927.1,241.8 L929.5,271.1 L924.6,300.0Z'/%3E%3C/svg%3E");
+    background-size: 900px auto;
+    background-position: 70% 20%;
+    -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 55%, transparent 100%);
+            mask-image: linear-gradient(180deg, #000 0%, #000 55%, transparent 100%);
+}
+.tsHeroShade {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, .18) 55%, rgba(0, 0, 0, 0)),
+        linear-gradient(180deg, rgba(0, 0, 0, .10), transparent 45%, #06100e 100%);
+}
+.tsHeroInner {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(300px, .62fr);
+    gap: 56px;
+    align-items: end;
+}
+.tsCrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+    font-size: 12px;
+    letter-spacing: .4px;
+    color: rgba(255, 255, 255, .6);
+}
+.tsCrumb a { color: rgba(255, 255, 255, .82); }
+.tsCrumb a:hover { color: #fff; }
+.tsHeroEyebrow,
+.tsEyebrow {
+    display: block;
+    color: #8dd8d2;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.tsHeroEyebrow { margin-bottom: 20px; }
+.tsHeroTitle {
+    margin: 0 0 24px;
+    font-size: clamp(38px, 6.4vw, 88px);
+    line-height: .96;
+    letter-spacing: -.045em;
+    font-weight: 800;
+    max-width: 14ch;
+    text-wrap: balance;
+}
+.tsHeroTitle em {
+    font-style: normal;
+    background: linear-gradient(120deg, #D9A06B, #E3B23C);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+}
+.tsHeroLead {
+    margin: 0 0 26px;
+    max-width: 58ch;
+    font-size: clamp(15px, 1.5vw, 18px);
+    line-height: 1.75;
+    color: rgba(255, 255, 255, .78);
+}
+.tsHeroChips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+.tsChip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 15px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .18);
+    background: rgba(255, 255, 255, .07);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .88);
+}
+.tsChip i { color: #8dd8d2; font-size: 12px; }
+.tsChip--soft { background: rgba(255, 255, 255, .05); font-size: 12.5px; }
+
+.tsActions { display: flex; flex-wrap: wrap; gap: 14px; }
+.tsBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 16px 28px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .35s cubic-bezier(.22, 1, .36, 1), box-shadow .35s;
+}
+.tsBtn:hover { transform: translateY(-3px); }
+.tsBtn--primary {
+    background: linear-gradient(135deg, #25D366, #128C7E);
+    color: #fff;
+    box-shadow: 0 14px 34px rgba(18, 140, 126, .38);
+}
+.tsBtn--glass {
+    background: rgba(255, 255, 255, .08);
+    border-color: rgba(255, 255, 255, .28);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: #fff;
+}
+.tsBtn--brand {
+    background: var(--gradient);
+    color: #fff;
+    box-shadow: 0 14px 34px rgba(14, 107, 92, .4);
+}
+
+/* hero price card */
+.tsHeroCard { padding: 30px 28px; }
+.tsHeroCard > * { position: relative; z-index: 1; }
+.tsCardLabel {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8dd8d2;
+    margin-bottom: 10px;
+}
+.tsCardPrice {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: clamp(42px, 5vw, 60px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1;
+}
+.tsCardPrice small {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    color: rgba(255, 255, 255, .65);
+}
+.tsCardText {
+    margin: 14px 0 0;
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, .72);
+}
+.tsCardList {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 18px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, .12);
+    display: grid;
+    gap: 11px;
+}
+.tsCardList li {
+    display: flex;
+    gap: 11px;
+    align-items: flex-start;
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .86);
+}
+.tsCardList i { color: #E3B23C; margin-top: 3px; font-size: 12px; }
+.tsCardTitle {
+    font-size: clamp(24px, 2.6vw, 32px);
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+/* ---------- quick jump chips ---------- */
+.tsJump {
+    padding: 0 6vw;
+    background: #06100e;
+}
+.tsJumpRow {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    padding: 6px 0 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.tsJumpRow::-webkit-scrollbar { display: none; }
+.tsJumpRow a {
+    flex: 0 0 auto;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .14);
+    background: rgba(255, 255, 255, .05);
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .8);
+    transition: .3s;
+}
+.tsJumpRow a:hover { background: rgba(255, 255, 255, .13); color: #fff; }
+
+/* ==========================================================
+   SECTIONS
+========================================================== */
+.tsSection {
+    position: relative;
+    padding: clamp(60px, 8vw, 112px) 6vw;
+    scroll-margin-top: 90px;
+}
+.tsSection--tint {
+    background: linear-gradient(180deg, #07130f 0%, #0a1f1b 50%, #07130f 100%);
+}
+.tsSection--glow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(640px 340px at 90% 0%, rgba(14, 107, 92, .22), transparent 70%);
+}
+.tsWrap { position: relative; max-width: 1180px; margin: 0 auto; }
+.tsHead { margin-bottom: clamp(30px, 4vw, 52px); }
+.tsEyebrow { margin-bottom: 18px; }
+.tsTitle {
+    margin: 0 0 18px;
+    max-width: 20ch;
+    font-size: clamp(32px, 5vw, 62px);
+    line-height: .98;
+    letter-spacing: -.045em;
+    font-weight: 800;
+    text-wrap: balance;
+}
+.tsLead {
+    margin: 0;
+    max-width: 66ch;
+    font-size: 16px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, .72);
+}
+.tsLead + .tsLead { margin-top: 14px; }
+.tsSub {
+    margin: 38px 0 16px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--secondary-light);
+}
+.tsFoot {
+    margin: 22px 0 0;
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, .58);
+    max-width: 78ch;
+}
+.tsFoot i { color: var(--secondary-light); margin-right: 6px; }
+
+/* ---------- glass card base ---------- */
+.tsGlass {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, .11), rgba(255, 255, 255, .035));
+    backdrop-filter: blur(22px) saturate(130%);
+    -webkit-backdrop-filter: blur(22px) saturate(130%);
+    box-shadow: 0 22px 50px rgba(0, 0, 0, .26), inset 0 1px 0 rgba(255, 255, 255, .09);
+}
+
+/* ---------- fares ---------- */
+.tsFareGrid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+.tsVeh {
+    padding: 22px 20px 20px;
+    transition: transform .4s cubic-bezier(.22, 1, .36, 1), border-color .3s;
+}
+.tsVeh:hover { transform: translateY(-5px); border-color: rgba(141, 216, 210, .45); }
+.tsVehIcon {
+    width: 40px; height: 40px;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    margin-bottom: 18px;
+    background: rgba(14, 107, 92, .38);
+    border: 1px solid rgba(141, 216, 210, .28);
+    color: #8dd8d2;
+    font-size: 15px;
+}
+.tsVehName { font-size: 14px; font-weight: 600; color: rgba(255, 255, 255, .78); }
+.tsVehPrice {
+    margin-top: 4px;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+.tsVehPrice small { font-size: 12px; font-weight: 500; letter-spacing: 0; color: rgba(255, 255, 255, .55); margin-left: 4px; }
+.tsVehMeta {
+    display: block;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dashed rgba(255, 255, 255, .16);
+    font-size: 12.5px;
+    color: var(--secondary-light);
+    font-weight: 600;
+}
+.tsVehCap { display: block; margin-top: 8px; font-size: 12.5px; color: rgba(255, 255, 255, .6); }
+
+/* ---------- tabs ---------- */
+.tsTabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.tsTab {
+    padding: 11px 19px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .18);
+    background: rgba(255, 255, 255, .06);
+    color: rgba(255, 255, 255, .85);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+.tsTab:hover { background: rgba(255, 255, 255, .12); }
+.tsTab[aria-selected="true"] {
+    background: var(--gradient);
+    border-color: transparent;
+    color: #fff;
+    box-shadow: 0 10px 26px rgba(14, 107, 92, .45);
+}
+.tsPanel[hidden] { display: none; }
+.tsPanelNote { margin: 20px 0 0; }
+
+/* ---------- cards ---------- */
+.tsCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 16px;
+}
+.tsCards--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.tsCards--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tsCard { padding: 28px 26px; display: flex; flex-direction: column; }
+.tsCard > * { position: relative; z-index: 1; }
+.tsCardIcon {
+    width: 44px; height: 44px;
+    display: grid; place-items: center;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    background: var(--gradient);
+    color: #fff;
+    font-size: 17px;
+    box-shadow: 0 10px 24px rgba(14, 107, 92, .4);
+}
+.tsNum {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--secondary-light);
+}
+.tsCard h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    line-height: 1.25;
+    letter-spacing: -.3px;
+    font-weight: 700;
+}
+.tsCard p {
+    margin: 0 0 12px;
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: rgba(255, 255, 255, .72);
+}
+.tsCard p:last-child { margin-bottom: 0; }
+.tsCard .tsPrice {
+    margin-top: auto;
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #E3B23C;
+}
+.tsTags { display: flex; flex-wrap: wrap; gap: 7px; margin: 4px 0 14px; }
+.tsTag {
+    padding: 5px 11px;
+    border-radius: 999px;
+    background: rgba(141, 216, 210, .12);
+    border: 1px solid rgba(141, 216, 210, .22);
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #a9e6e0;
+}
+.tsTag--warm { background: rgba(193, 127, 69, .16); border-color: rgba(217, 160, 107, .32); color: #ecc29a; }
+.tsMeta {
+    margin-top: auto;
+    padding-top: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .6);
+}
+.tsMeta strong { color: rgba(255, 255, 255, .9); font-weight: 600; }
+
+/* ---------- mini list cards (many places) ---------- */
+.tsPlaceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+}
+.tsPlace { padding: 24px 24px 22px; display: flex; flex-direction: column; }
+.tsPlace > * { position: relative; z-index: 1; }
+.tsPlace h3 { margin: 0 0 10px; font-size: 18px; font-weight: 700; letter-spacing: -.3px; line-height: 1.3; }
+.tsPlace p { margin: 0 0 12px; font-size: 14px; line-height: 1.72; color: rgba(255, 255, 255, .7); }
+
+/* ---------- flow ---------- */
+.tsFlow { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.tsFlowStep {
+    padding: 11px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .08);
+    font-size: 13.5px;
+    font-weight: 600;
+}
+.tsFlowStep--hot { background: var(--gradient); border-color: transparent; }
+.tsFlowArrow { color: var(--secondary-light); font-size: 12px; }
+.tsFlowBlock { padding: 24px 26px; margin-bottom: 14px; }
+.tsFlowBlock > * { position: relative; z-index: 1; }
+.tsFlowBlock h3 { margin: 0 0 16px; font-size: 14px; font-weight: 800; letter-spacing: 1.6px; text-transform: uppercase; color: var(--secondary-light); }
+.tsFlowBlock p { margin: 14px 0 0; font-size: 14px; line-height: 1.7; color: rgba(255, 255, 255, .66); }
+
+/* ---------- notes ---------- */
+.tsNote {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    padding: 22px 24px;
+    margin-top: 22px;
+    border-radius: 20px;
+    border: 1px solid rgba(217, 160, 107, .35);
+    border-left: 4px solid var(--secondary);
+    background: linear-gradient(135deg, rgba(193, 127, 69, .16), rgba(193, 127, 69, .05));
+}
+.tsNote > i { color: var(--secondary-light); font-size: 18px; margin-top: 3px; }
+.tsNote h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; }
+.tsNote p { margin: 0 0 8px; font-size: 14.5px; line-height: 1.75; color: rgba(255, 255, 255, .8); }
+.tsNote p:last-child { margin-bottom: 0; }
+.tsNote--info { border-color: rgba(141, 216, 210, .3); border-left-color: #1C9C86; background: linear-gradient(135deg, rgba(28, 156, 134, .16), rgba(28, 156, 134, .04)); }
+.tsNote--info > i { color: #8dd8d2; }
+
+/* ---------- plain text blocks ---------- */
+.tsText { max-width: 72ch; }
+.tsText p { margin: 0 0 16px; font-size: 16px; line-height: 1.85; color: rgba(255, 255, 255, .74); }
+.tsText h3 { margin: 28px 0 10px; font-size: 18px; font-weight: 700; }
+.tsList { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 11px; }
+.tsList li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.6; color: rgba(255, 255, 255, .82); }
+.tsList li i { color: #8dd8d2; font-size: 13px; margin-top: 5px; flex: 0 0 auto; }
+.tsList--x li i { color: var(--secondary-light); }
+.tsChecks {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px;
+}
+.tsChecks li {
+    display: flex; gap: 14px; align-items: center;
+    padding: 16px 18px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, .12);
+    background: rgba(255, 255, 255, .05);
+    font-size: 14.5px; font-weight: 500;
+}
+.tsChecks li span:first-child {
+    flex: 0 0 auto;
+    width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%;
+    background: rgba(28, 156, 134, .3); color: #8dd8d2; font-size: 11px; font-weight: 800;
+}
+
+/* ---------- included / not included ---------- */
+.tsIncl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.tsIncl .tsGlass { padding: 28px 28px 26px; }
+.tsIncl .tsGlass > * { position: relative; z-index: 1; }
+.tsIncl h3 { margin: 0 0 6px; font-size: 20px; font-weight: 700; letter-spacing: -.3px; }
+.tsIncl .tsInclNote { margin: 12px 0 0; font-size: 13px; line-height: 1.7; color: rgba(255, 255, 255, .58); }
+
+/* ---------- timeline ---------- */
+.tsTimeline { position: relative; list-style: none; margin: 0; padding: 0 0 0 30px; display: grid; gap: 14px; max-width: 760px; }
+.tsTimeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, #1C9C86, rgba(193, 127, 69, .6)); }
+.tsTimeline li { position: relative; padding: 18px 22px; }
+.tsTimeline li::before {
+    content: ""; position: absolute; left: -29px; top: 24px; width: 12px; height: 12px; border-radius: 50%;
+    background: #06100e; border: 3px solid #E3B23C; z-index: 2;
+}
+.tsTimeline li > * { position: relative; z-index: 1; }
+.tsTimeline strong { display: block; font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.tsTimeline span { font-size: 14px; line-height: 1.7; color: rgba(255, 255, 255, .7); }
+
+/* ---------- CTA ---------- */
+.tsCta { padding: clamp(60px, 8vw, 100px) 6vw; }
+.tsCtaCard {
+    position: relative;
+    overflow: hidden;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: clamp(36px, 6vw, 72px);
+    border-radius: 34px;
+    border: 1px solid rgba(255, 255, 255, .16);
+    background:
+        radial-gradient(520px 300px at 100% 0%, rgba(28, 156, 134, .38), transparent 70%),
+        radial-gradient(460px 300px at 0% 100%, rgba(193, 127, 69, .28), transparent 70%),
+        linear-gradient(135deg, rgba(255, 255, 255, .09), rgba(255, 255, 255, .03));
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .35);
+}
+.tsCtaCard > * { position: relative; z-index: 1; }
+.tsCtaCard .tsTitle { max-width: 18ch; }
+.tsCtaCard .tsLead { margin-bottom: 14px; }
+.tsCtaRoutes { margin: 6px 0 22px; font-size: 14px; font-weight: 600; color: #8dd8d2; line-height: 1.8; }
+.tsCtaPrice { margin-bottom: 26px; font-size: 15px; color: rgba(255, 255, 255, .8); }
+.tsCtaPrice strong { font-size: 26px; font-weight: 800; letter-spacing: -1px; color: #fff; margin-left: 4px; }
+.tsCtaPhone { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 15px; color: rgba(255, 255, 255, .8); }
+.tsCtaPhone a { font-weight: 700; color: #fff; }
+
+/* ---------- related ---------- */
+.tsRelated { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+.tsRelLink {
+    display: flex; align-items: center; justify-content: space-between; gap: 14px;
+    padding: 20px 22px;
+    transition: transform .35s cubic-bezier(.22, 1, .36, 1), border-color .3s;
+}
+.tsRelLink:hover { transform: translateY(-4px); border-color: rgba(141, 216, 210, .45); }
+.tsRelLink span { font-size: 15px; font-weight: 600; line-height: 1.35; position: relative; z-index: 1; }
+.tsRelLink i { position: relative; z-index: 1; color: var(--secondary-light); }
+
+/* ---------- FAQ + reviews on dark ---------- */
+.tsMain .faqSection { padding: clamp(60px, 8vw, 110px) 6vw; }
+.tsMain .faqList { display: flex; flex-direction: column; gap: 12px; }
+.tsMain .faqContainer { max-width: 900px; }
+.tsMain .googleReviewsEmbed { border-color: rgba(255, 255, 255, .14); box-shadow: 0 20px 50px rgba(0, 0, 0, .35); }
+.tsReviewLink { text-align: center; margin-top: 22px; }
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+@media (max-width: 1000px) {
+    .tsHeroInner { grid-template-columns: 1fr; gap: 36px; }
+    .tsHeroTitle { max-width: 16ch; }
+    .tsFareGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .tsCards--3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+    .tsHero { min-height: 0; padding: 124px 20px 56px; }
+    .tsHeroCard { padding: 24px 22px; }
+    .tsSection, .tsCta, .tsMain .faqSection { padding-left: 20px; padding-right: 20px; }
+    .tsJump { padding: 0 20px; }
+    .tsFareGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .tsVeh { padding: 18px 16px; }
+    .tsVehPrice { font-size: 23px; }
+    .tsIncl, .tsCards--2, .tsCards--3 { grid-template-columns: 1fr; }
+    .tsPlaceGrid { grid-template-columns: 1fr; }
+    .tsActions .tsBtn { flex: 1 1 100%; }
+    .tsTitle { letter-spacing: -.04em; }
+    .tsNote { padding: 18px; flex-direction: column; gap: 10px; }
+    .tsCtaCard { border-radius: 26px; }
+    /* keep the last section clear of the fixed Book Now bar + floating buttons */
+    .tsMain { padding-bottom: 0; }
+}
+@media (max-width: 420px) {
+    .tsFareGrid { gap: 8px; }
+    .tsHeroTitle { font-size: clamp(34px, 11vw, 44px); }
+}
+
+/* ---------- package stop lists ---------- */
+.tsStops {
+    list-style: none;
+    margin: 4px 0 16px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px 16px;
+}
+.tsStops li {
+    position: relative;
+    padding-left: 16px;
+    font-size: 13.5px;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, .82);
+}
+.tsStops li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 7px;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #E3B23C;
+}
+@media (max-width: 480px) { .tsStops { grid-template-columns: 1fr; } }
+
+.tsPlace .tsPrice {
+    margin-top: auto;
+    padding-top: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #E3B23C;
+}
+
+/* ---------- vehicle card extras (hub page) ---------- */
+.tsVeh { position: relative; }
+.tsVehBadge {
+    position: absolute; top: 14px; right: 14px;
+    padding: 4px 10px; border-radius: 999px;
+    background: linear-gradient(135deg, #D9A06B, #E3B23C); color: #1b1305;
+    font-size: 10.5px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase;
+}
+.tsVehBook {
+    display: inline-flex; align-items: center; gap: 8px; margin-top: 14px;
+    padding: 9px 16px; border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, .24); background: rgba(255, 255, 255, .08);
+    font-size: 13px; font-weight: 700; color: #fff; transition: .3s;
+}
+.tsVehBook:hover { background: var(--gradient); border-color: transparent; }
+.tsPlaceImg {
+    width: 100%; aspect-ratio: 16 / 10; object-fit: cover;
+    border-radius: 16px; margin-bottom: 16px; position: relative; z-index: 1;
+}
+
+@media (min-width: 1001px) {
+    .tsFareGrid:has(> :nth-child(5):last-child) { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
