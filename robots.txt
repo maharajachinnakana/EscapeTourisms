@@ -1,4 +1,11 @@
+# Escape Tourisms - https://www.escapetourisms.com
 User-agent: *
 Allow: /
+
+# Internal / non-page files
+Disallow: /partials/
+Disallow: /docs/
+Disallow: /*.md$
+Disallow: /404.html
 
 Sitemap: https://www.escapetourisms.com/sitemap.xml

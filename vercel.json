@@ -1,0 +1,31 @@
+{
+  "redirects": [
+    { "source": "/munnar-sightseeing-taxi", "destination": "/munnar-sightseeing/", "permanent": true },
+    { "source": "/munnar-sightseeing-taxi/", "destination": "/munnar-sightseeing/", "permanent": true },
+    { "source": "/munnar-to-top-station-taxi", "destination": "/munnar-sightseeing/mattupetty-top-station/", "permanent": true },
+    { "source": "/munnar-to-top-station-taxi/", "destination": "/munnar-sightseeing/mattupetty-top-station/", "permanent": true },
+    { "source": "/munnar-to-thekkady-sightseeing-taxi", "destination": "/munnar-sightseeing/thekkady-route/", "permanent": true },
+    { "source": "/munnar-to-thekkady-sightseeing-taxi/", "destination": "/munnar-sightseeing/thekkady-route/", "permanent": true },
+    { "source": "/munnar-to-kochi-sightseeing-taxi", "destination": "/munnar-sightseeing/cochin-direction/", "permanent": true },
+    { "source": "/munnar-to-kochi-sightseeing-taxi/", "destination": "/munnar-sightseeing/cochin-direction/", "permanent": true },
+    { "source": "/munnar-to-coimbatore-sightseeing-taxi", "destination": "/munnar-sightseeing/coimbatore-chinnar-route/", "permanent": true },
+    { "source": "/munnar-to-coimbatore-sightseeing-taxi/", "destination": "/munnar-sightseeing/coimbatore-chinnar-route/", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/(.*)/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }]
+    }
+  ]
+}

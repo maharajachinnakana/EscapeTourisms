@@ -9,30 +9,35 @@
 
     <url>
         <loc>https://www.escapetourisms.com/munnar-sightseeing/</loc>
+        <lastmod>2026-10-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
 
     <url>
         <loc>https://www.escapetourisms.com/munnar-sightseeing/mattupetty-top-station/</loc>
+        <lastmod>2026-10-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://www.escapetourisms.com/munnar-sightseeing/thekkady-route/</loc>
+        <lastmod>2026-10-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://www.escapetourisms.com/munnar-sightseeing/coimbatore-chinnar-route/</loc>
+        <lastmod>2026-10-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
 
     <url>
         <loc>https://www.escapetourisms.com/munnar-sightseeing/cochin-direction/</loc>
+        <lastmod>2026-10-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -162,17 +167,22 @@
 
   <url>
     <loc>https://www.escapetourisms.com/munnar-resort-pickup-drop-taxi/</loc>
+        <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://www.escapetourisms.com/munnar-bus-stand-taxi-pickup-drop/</loc>
+        <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://www.escapetourisms.com/chinnakanal-taxi-service/</loc>
+        <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://www.escapetourisms.com/munnar-sunrise-taxi/</loc>
+        <lastmod>2026-10-15</lastmod>
   </url>
   <url>
     <loc>https://www.escapetourisms.com/munnar-sunset-taxi/</loc>
+        <lastmod>2026-10-15</lastmod>
   </url>
 </urlset>

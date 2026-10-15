@@ -35,6 +35,22 @@
         select(0, false);
     });
 
+    /* ---------- hero video (shared logic for every page) ---------- */
+    document.querySelectorAll(".tsHeroVideo").forEach(function (v) {
+        var conn = navigator.connection || {};
+        var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reduce || conn.saveData) { v.remove(); return; }
+        v.muted = true;
+        var src = v.querySelector("source");
+        if (src) src.addEventListener("error", function () { v.remove(); });
+        v.addEventListener("playing", function () { v.classList.add("isReady"); });
+        var p = v.play && v.play();
+        if (p && p.catch) p.catch(function () {});
+        document.addEventListener("visibilitychange", function () {
+            if (document.hidden) v.pause(); else if (v.parentNode) { var q = v.play(); if (q && q.catch) q.catch(function () {}); }
+        });
+    });
+
     /* ---------- reveal on scroll ---------- */
     var items = document.querySelectorAll(".tsReveal");
     if (!items.length) return;

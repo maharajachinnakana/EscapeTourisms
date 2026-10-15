@@ -595,9 +595,9 @@ body.uiHidden .mobileHeader {
     align-items: center;
     justify-content: flex-end;
 
-    gap: 5px;
+    gap: 4px;
 
-    padding: 0 5px;
+    padding: 0 4px 0 10px;
 
     border:
         1px solid rgba(255, 255, 255, .18);
@@ -627,21 +627,26 @@ body.uiHidden .mobileHeader {
 
     color: #fff;
 
-    font-size: clamp(16px, 5vw, 21px);
+    /* bigger brand name that fills the pill (no empty space left/right) */
+    flex: 1 1 auto;
+
+    text-align: center;
+
+    font-size: clamp(17px, 6.3vw, 28px);
 
     font-weight: 800;
 
-    letter-spacing: -.01em;
+    line-height: 1;
+
+    letter-spacing: -.02em;
 
     white-space: nowrap;
 
     overflow: hidden;
 
-    text-overflow: ellipsis;
+    text-overflow: clip;
 
     min-width: 0;
-
-    flex-shrink: 1;
 }
 
 
@@ -946,3 +951,14 @@ body.uiHidden .mobileHeader {
    (mobileBrand sizing is now handled by the responsive
    clamp() in the base rule above — no override needed here)
 ========================================================== */
+
+/* very narrow phones: keep the bigger brand name inside the pill */
+@media (max-width: 340px) {
+
+    .mobileBrand {
+
+        font-size: 18.5px;
+
+    }
+
+}

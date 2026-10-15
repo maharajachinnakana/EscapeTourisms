@@ -1,0 +1,12 @@
+/* ==========================================================
+   PAGE CSS - /munnar-sightseeing/cochin-direction/
+   Only styles that belong to THIS page live here.
+   Shared styles: /css/taxi-service.css (do not copy them here).
+   Images for this page go in /munnar-sightseeing/cochin-direction/assets/images/
+   Video for this page goes in /munnar-sightseeing/cochin-direction/assets/video/hero.mp4
+========================================================== */
+
+/* Hero background image (also used as the video poster) */
+.tsHero {
+    --ts-hero-img: url("/munnar-sightseeing/cochin-direction/assets/images/hero.webp");
+}
