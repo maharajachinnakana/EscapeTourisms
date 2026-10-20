@@ -260,3 +260,8 @@
         text-align: left;
     }
 }
+
+.footerLocations{margin:14px 0 0;font-size:13.5px;line-height:1.7;color:rgba(255,255,255,.72)}
+.footerLocations strong{color:#fff;font-weight:600;margin-right:4px}
+.footerLocations a{color:inherit;text-decoration:underline;text-underline-offset:3px;text-decoration-color:rgba(255,255,255,.35)}
+.footerLocations a:hover{color:#fff}

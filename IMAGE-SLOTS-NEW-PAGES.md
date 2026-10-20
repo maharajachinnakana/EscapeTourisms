@@ -132,3 +132,11 @@ Shared car photos (used on every fare table) live in `/assets/images/vehicles/`.
   - `sandalwood-forest.webp`
   - `tea-museum.webp`
   - `thoovanam-waterfalls-trek.webp`
+
+## New vehicle pages (2026-10-20)
+Each has its own folder: /{slug}/assets/images/ (hero.webp + any photos) and /{slug}/assets/video/hero.mp4
+- /innova-munnar-sightseeing-taxi/
+- /etios-sedan-munnar-sightseeing-taxi/
+- /innova-taxi-pickup-drop-munnar/
+- /etios-sedan-taxi-pickup-drop-munnar/
+Shared vehicle photos: /assets/images/vehicles/{innova,innova-crysta,etios,swift}.webp
