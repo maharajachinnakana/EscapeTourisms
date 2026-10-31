@@ -23,7 +23,7 @@ main {
 
     background:
         radial-gradient(circle at 30% 30%,
-            rgba(15, 118, 110, .20),
+            rgba(184,155,98,.20),
             transparent 40%);
 
     color: rgba(255, 255, 255, .45);

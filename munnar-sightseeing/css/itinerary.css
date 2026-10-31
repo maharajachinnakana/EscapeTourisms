@@ -16,7 +16,7 @@
     list-style: none;
     position: relative;
     padding-left: 28px;
-    border-left: 2px solid rgba(15, 118, 110, .18);
+    border-left: 2px solid rgba(184,155,98,.18);
 }
 
 .itineraryItem {
@@ -37,7 +37,7 @@
     height: 12px;
     border-radius: 50%;
     background: var(--primary);
-    box-shadow: 0 0 0 4px rgba(15, 118, 110, .15);
+    box-shadow: 0 0 0 4px rgba(184,155,98,.15);
 }
 
 .itineraryTime {
@@ -51,7 +51,7 @@
 
 .itineraryItem h3 {
     font-size: 1.02rem;
-    color: #0B1F1C;
+    color: #17181a;
     margin-bottom: 4px;
 }
 

@@ -82,7 +82,7 @@
     border-radius: 32px;
 
     background:
-        rgba(10, 24, 25, .86);
+        rgba(18,18,19,.86);
 
     backdrop-filter:
         blur(30px);
@@ -165,7 +165,7 @@
 
     margin-bottom: 10px;
 
-    color: #8dd8d2;
+    color: #E6CC9A;
 
     font-size: 11px;
 
@@ -374,7 +374,7 @@
 
 .bookingField select option {
 
-    background: #102321;
+    background: #1a1b1d;
 
     color: #fff;
 
@@ -390,13 +390,13 @@
 .bookingField textarea:focus {
 
     border-color:
-        rgba(11, 95, 88, .95);
+        rgba(184,155,98,.95);
 
     background:
         rgba(255, 255, 255, .10);
 
     box-shadow:
-        0 0 0 3px rgba(11, 95, 88, .18);
+        0 0 0 3px rgba(184,155,98,.18);
 
 }
 
@@ -445,8 +445,8 @@
 
     background:
         linear-gradient(135deg,
-            #073F35,
-            #15803c);
+            #6B5A38,
+            #B89B62);
 
     color: #fff;
 
@@ -459,7 +459,7 @@
     cursor: pointer;
 
     box-shadow:
-        0 10px 30px rgba(11, 95, 88, .20);
+        0 10px 30px rgba(184,155,98,.20);
 
     transition:
         transform .3s ease,
@@ -474,7 +474,7 @@
         translateY(-2px);
 
     box-shadow:
-        0 16px 38px rgba(11, 95, 88, .38);
+        0 16px 38px rgba(184,155,98,.38);
 
 }
 
@@ -754,8 +754,8 @@ body.bookingOpen .floatingButtons {
 
     background:
         linear-gradient(135deg,
-            #073F35,
-            #15803c) !important;
+            #6B5A38,
+            #B89B62) !important;
 
     color: #fff !important;
 
@@ -766,7 +766,7 @@ body.bookingOpen .floatingButtons {
     font-weight: 700;
 
     box-shadow:
-        0 10px 30px rgba(11, 95, 88, .20);
+        0 10px 30px rgba(184,155,98,.20);
 
 }
 
@@ -832,8 +832,8 @@ body.bookingOpen .floatingButtons {
 
         background:
             linear-gradient(135deg,
-                #073F35,
-                #15803c) !important;
+                #6B5A38,
+                #B89B62) !important;
 
         color: #fff !important;
 
@@ -848,7 +848,7 @@ body.bookingOpen .floatingButtons {
         cursor: pointer !important;
 
         box-shadow:
-            0 10px 30px rgba(11, 95, 88, .20);
+            0 10px 30px rgba(184,155,98,.20);
 
     }
 
@@ -987,8 +987,8 @@ body.bookingOpen .floatingButtons {
 
         background:
             linear-gradient(to bottom,
-                rgba(10, 24, 25, .15),
-                rgba(10, 24, 25, .96) 35%) !important;
+                rgba(18,18,19,.15),
+                rgba(18,18,19,.96) 35%) !important;
 
         backdrop-filter:
             blur(16px);
@@ -1031,8 +1031,8 @@ body.bookingOpen .floatingButtons {
 
         background:
             linear-gradient(135deg,
-                #073F35,
-                #15803c) !important;
+                #6B5A38,
+                #B89B62) !important;
 
         color: #fff !important;
 
@@ -1045,7 +1045,7 @@ body.bookingOpen .floatingButtons {
         transform: none !important;
 
         box-shadow:
-            0 10px 30px rgba(11, 95, 88, .28);
+            0 10px 30px rgba(184,155,98,.28);
 
     }
 

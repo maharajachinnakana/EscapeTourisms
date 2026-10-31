@@ -50,9 +50,9 @@ html.tsJS .tsReveal.isIn {
     z-index: -3;
     background:
         var(--ts-hero-img, none) center / cover no-repeat,
-        radial-gradient(900px 520px at 82% 8%, rgba(28, 156, 134, .34), transparent 65%),
+        radial-gradient(900px 520px at 82% 8%, rgba(230,204,154,.34), transparent 65%),
         radial-gradient(760px 520px at 4% 96%, rgba(193, 127, 69, .22), transparent 62%),
-        linear-gradient(165deg, #15201e 0%, #121314 58%, #121314 100%);
+        linear-gradient(165deg, #1c1d1f 0%, #121314 58%, #121314 100%);
 }
 .tsHeroBg::before,
 .tsHeroBg::after {
@@ -65,7 +65,7 @@ html.tsJS .tsReveal.isIn {
 .tsHeroBg::before {
     width: 46vw; height: 46vw; max-width: 620px; max-height: 620px;
     right: -8vw; top: 8%;
-    background: rgba(28, 156, 134, .22);
+    background: rgba(230,204,154,.22);
     animation: tsDrift 16s ease-in-out infinite alternate;
 }
 .tsHeroBg::after {
@@ -121,7 +121,7 @@ html.tsJS .tsReveal.isIn {
 .tsHeroEyebrow,
 .tsEyebrow {
     display: block;
-    color: #8dd8d2;
+    color: #E6CC9A;
     font-size: 11px;
     font-weight: 800;
     letter-spacing: 2.4px;
@@ -172,7 +172,7 @@ html.tsJS .tsReveal.isIn {
     font-weight: 500;
     color: rgba(255, 255, 255, .88);
 }
-.tsChip i { color: #8dd8d2; font-size: 12px; }
+.tsChip i { color: #E6CC9A; font-size: 12px; }
 .tsChip--soft { background: rgba(255, 255, 255, .05); font-size: 12.5px; }
 
 .tsActions { display: flex; flex-wrap: wrap; gap: 14px; }
@@ -191,9 +191,9 @@ html.tsJS .tsReveal.isIn {
 }
 .tsBtn:hover { transform: translateY(-3px); }
 .tsBtn--primary {
-    background: linear-gradient(135deg, #25D366, #128C7E);
+    background: linear-gradient(135deg, #E6CC9A, #B89B62);
     color: #fff;
-    box-shadow: 0 14px 34px rgba(18, 140, 126, .38);
+    box-shadow: 0 14px 34px rgba(184,155,98,.38);
 }
 .tsBtn--glass {
     background: rgba(255, 255, 255, .08);
@@ -205,7 +205,7 @@ html.tsJS .tsReveal.isIn {
 .tsBtn--brand {
     background: var(--gradient);
     color: #fff;
-    box-shadow: 0 14px 34px rgba(14, 107, 92, .4);
+    box-shadow: 0 14px 34px rgba(184,155,98,.4);
 }
 
 /* hero price card */
@@ -217,7 +217,7 @@ html.tsJS .tsReveal.isIn {
     font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #8dd8d2;
+    color: #E6CC9A;
     margin-bottom: 10px;
 }
 .tsCardPrice {
@@ -302,14 +302,14 @@ html.tsJS .tsReveal.isIn {
     scroll-margin-top: 90px;
 }
 .tsSection--tint {
-    background: linear-gradient(180deg, #07130f 0%, #0a1f1b 50%, #07130f 100%);
+    background: linear-gradient(180deg, #121314 0%, #141415 50%, #121314 100%);
 }
 .tsSection--glow::before {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background: radial-gradient(640px 340px at 90% 0%, rgba(14, 107, 92, .22), transparent 70%);
+    background: radial-gradient(640px 340px at 90% 0%, rgba(184,155,98,.22), transparent 70%);
 }
 .tsWrap { position: relative; max-width: 1180px; margin: 0 auto; }
 .tsHead { margin-bottom: clamp(30px, 4vw, 52px); }
@@ -369,15 +369,15 @@ html.tsJS .tsReveal.isIn {
     padding: 22px 20px 20px;
     transition: transform .4s cubic-bezier(.22, 1, .36, 1), border-color .3s;
 }
-.tsVeh:hover { transform: translateY(-5px); border-color: rgba(141, 216, 210, .45); }
+.tsVeh:hover { transform: translateY(-5px); border-color: rgba(230,204,154,.45); }
 .tsVehIcon {
     width: 40px; height: 40px;
     display: grid; place-items: center;
     border-radius: 50%;
     margin-bottom: 18px;
-    background: rgba(14, 107, 92, .38);
-    border: 1px solid rgba(141, 216, 210, .28);
-    color: #8dd8d2;
+    background: rgba(184,155,98,.38);
+    border: 1px solid rgba(230,204,154,.28);
+    color: #E6CC9A;
     font-size: 15px;
 }
 .tsVehName { font-size: 14px; font-weight: 600; color: rgba(255, 255, 255, .78); }
@@ -418,7 +418,7 @@ html.tsJS .tsReveal.isIn {
     background: var(--gradient);
     border-color: transparent;
     color: #fff;
-    box-shadow: 0 10px 26px rgba(14, 107, 92, .45);
+    box-shadow: 0 10px 26px rgba(184,155,98,.45);
 }
 .tsPanel[hidden] { display: none; }
 .tsPanelNote { margin: 20px 0 0; }
@@ -441,7 +441,7 @@ html.tsJS .tsReveal.isIn {
     background: var(--gradient);
     color: #fff;
     font-size: 17px;
-    box-shadow: 0 10px 24px rgba(14, 107, 92, .4);
+    box-shadow: 0 10px 24px rgba(184,155,98,.4);
 }
 .tsNum {
     display: block;
@@ -476,11 +476,11 @@ html.tsJS .tsReveal.isIn {
 .tsTag {
     padding: 5px 11px;
     border-radius: 999px;
-    background: rgba(141, 216, 210, .12);
-    border: 1px solid rgba(141, 216, 210, .22);
+    background: rgba(230,204,154,.12);
+    border: 1px solid rgba(230,204,154,.22);
     font-size: 11.5px;
     font-weight: 600;
-    color: #a9e6e0;
+    color: #EBD6A8;
 }
 .tsTag--warm { background: rgba(193, 127, 69, .16); border-color: rgba(217, 160, 107, .32); color: #ecc29a; }
 .tsMeta {
@@ -536,8 +536,8 @@ html.tsJS .tsReveal.isIn {
 .tsNote h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; }
 .tsNote p { margin: 0 0 8px; font-size: 14.5px; line-height: 1.75; color: rgba(255, 255, 255, .8); }
 .tsNote p:last-child { margin-bottom: 0; }
-.tsNote--info { border-color: rgba(141, 216, 210, .3); border-left-color: #1C9C86; background: linear-gradient(135deg, rgba(28, 156, 134, .16), rgba(28, 156, 134, .04)); }
-.tsNote--info > i { color: #8dd8d2; }
+.tsNote--info { border-color: rgba(230,204,154,.3); border-left-color: #E6CC9A; background: linear-gradient(135deg, rgba(230,204,154,.16), rgba(230,204,154,.04)); }
+.tsNote--info > i { color: #E6CC9A; }
 
 /* ---------- plain text blocks ---------- */
 .tsText { max-width: 72ch; }
@@ -545,7 +545,7 @@ html.tsJS .tsReveal.isIn {
 .tsText h3 { margin: 28px 0 10px; font-size: 18px; font-weight: 700; }
 .tsList { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 11px; }
 .tsList li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.6; color: rgba(255, 255, 255, .82); }
-.tsList li i { color: #8dd8d2; font-size: 13px; margin-top: 5px; flex: 0 0 auto; }
+.tsList li i { color: #E6CC9A; font-size: 13px; margin-top: 5px; flex: 0 0 auto; }
 .tsList--x li i { color: var(--secondary-light); }
 .tsChecks {
     list-style: none; margin: 0; padding: 0;
@@ -562,7 +562,7 @@ html.tsJS .tsReveal.isIn {
 .tsChecks li span:first-child {
     flex: 0 0 auto;
     width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%;
-    background: rgba(28, 156, 134, .3); color: #8dd8d2; font-size: 11px; font-weight: 800;
+    background: rgba(230,204,154,.3); color: #E6CC9A; font-size: 11px; font-weight: 800;
 }
 
 /* ---------- included / not included ---------- */
@@ -574,7 +574,7 @@ html.tsJS .tsReveal.isIn {
 
 /* ---------- timeline ---------- */
 .tsTimeline { position: relative; list-style: none; margin: 0; padding: 0 0 0 30px; display: grid; gap: 14px; max-width: 760px; }
-.tsTimeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, #1C9C86, rgba(193, 127, 69, .6)); }
+.tsTimeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(180deg, #E6CC9A, rgba(193, 127, 69, .6)); }
 .tsTimeline li { position: relative; padding: 18px 22px; }
 .tsTimeline li::before {
     content: ""; position: absolute; left: -29px; top: 24px; width: 12px; height: 12px; border-radius: 50%;
@@ -595,7 +595,7 @@ html.tsJS .tsReveal.isIn {
     border-radius: 34px;
     border: 1px solid rgba(255, 255, 255, .16);
     background:
-        radial-gradient(520px 300px at 100% 0%, rgba(28, 156, 134, .38), transparent 70%),
+        radial-gradient(520px 300px at 100% 0%, rgba(230,204,154,.38), transparent 70%),
         radial-gradient(460px 300px at 0% 100%, rgba(193, 127, 69, .28), transparent 70%),
         linear-gradient(135deg, rgba(255, 255, 255, .09), rgba(255, 255, 255, .03));
     box-shadow: 0 30px 80px rgba(0, 0, 0, .35);
@@ -603,7 +603,7 @@ html.tsJS .tsReveal.isIn {
 .tsCtaCard > * { position: relative; z-index: 1; }
 .tsCtaCard .tsTitle { max-width: 18ch; }
 .tsCtaCard .tsLead { margin-bottom: 14px; }
-.tsCtaRoutes { margin: 6px 0 22px; font-size: 14px; font-weight: 600; color: #8dd8d2; line-height: 1.8; }
+.tsCtaRoutes { margin: 6px 0 22px; font-size: 14px; font-weight: 600; color: #E6CC9A; line-height: 1.8; }
 .tsCtaPrice { margin-bottom: 26px; font-size: 15px; color: rgba(255, 255, 255, .8); }
 .tsCtaPrice strong { font-size: 26px; font-weight: 800; letter-spacing: -1px; color: #fff; margin-left: 4px; }
 .tsCtaPhone { display: inline-flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 15px; color: rgba(255, 255, 255, .8); }
@@ -616,7 +616,7 @@ html.tsJS .tsReveal.isIn {
     padding: 20px 22px;
     transition: transform .35s cubic-bezier(.22, 1, .36, 1), border-color .3s;
 }
-.tsRelLink:hover { transform: translateY(-4px); border-color: rgba(141, 216, 210, .45); }
+.tsRelLink:hover { transform: translateY(-4px); border-color: rgba(230,204,154,.45); }
 .tsRelLink span { font-size: 15px; font-weight: 600; line-height: 1.35; position: relative; z-index: 1; }
 .tsRelLink i { position: relative; z-index: 1; color: var(--secondary-light); }
 
@@ -745,7 +745,7 @@ html.tsJS .tsReveal.isIn {
     width: 100%; aspect-ratio: 16 / 10; object-fit: contain;
     margin: -4px 0 12px;
     border-radius: 14px;
-    background: radial-gradient(120% 100% at 50% 100%, rgba(141, 216, 210, .16), transparent 70%);
+    background: radial-gradient(120% 100% at 50% 100%, rgba(230,204,154,.16), transparent 70%);
 }
 .tsVeh.hasImg .tsVehIcon { display: none; }
 

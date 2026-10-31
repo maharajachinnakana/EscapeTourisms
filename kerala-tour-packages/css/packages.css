@@ -26,8 +26,8 @@
 .packageCard {
     padding: 26px 22px;
     border-radius: 20px;
-    background: #F4F7F6;
-    border: 1px solid rgba(15, 118, 110, .10);
+    background: #F5F0E6;
+    border: 1px solid rgba(184,155,98,.10);
 }
 
 .packageDays {
@@ -45,7 +45,7 @@
 
 .packageCard h3 {
     font-size: 1.05rem;
-    color: #0B1F1C;
+    color: #17181a;
     margin-bottom: 8px;
 }
 

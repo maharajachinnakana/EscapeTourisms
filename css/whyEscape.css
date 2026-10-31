@@ -60,15 +60,15 @@
 
     background:
         linear-gradient(90deg,
-            rgba(4, 13, 11, .78) 0%,
-            rgba(4, 13, 11, .42) 36%,
-            rgba(4, 13, 11, .12) 62%,
-            rgba(4, 13, 11, .40) 100%),
+            rgba(8,8,9,.78) 0%,
+            rgba(8,8,9,.42) 36%,
+            rgba(8,8,9,.12) 62%,
+            rgba(8,8,9,.40) 100%),
         linear-gradient(180deg,
-            rgba(4, 13, 11, .58) 0%,
+            rgba(8,8,9,.58) 0%,
             transparent 30%,
             transparent 68%,
-            rgba(4, 13, 11, .68) 100%);
+            rgba(8,8,9,.68) 100%);
 }
 
 
@@ -92,7 +92,7 @@
 
     margin-bottom: 20px;
 
-    color: #8dd8d2;
+    color: #E6CC9A;
 
     font-size: 10px;
     font-weight: 800;
@@ -166,10 +166,7 @@
     border-radius: 28px;
 
     background:
-        rgba(8,
-            25,
-            22,
-            .42);
+        rgba(16,16,17,.42);
 
     box-shadow:
         0 35px 90px rgba(0,
@@ -242,7 +239,7 @@
             rgba(255, 255, 255, .025) 45%,
             rgba(0, 0, 0, .16) 100%);
 
-    color: #b5ebe5;
+    color: #E6CC9A;
 
     font-size: 20px;
 
@@ -268,7 +265,7 @@
 
     margin-bottom: 6px;
 
-    color: #8dd8d2;
+    color: #E6CC9A;
 
     font-size: 10px;
     font-weight: 800;
@@ -340,7 +337,7 @@
 
 
 .whyEscapeValue:hover .whyEscapeValueArrow {
-    color: #8dd8d2;
+    color: #E6CC9A;
 
     transform:
         translateX(4px);
@@ -374,10 +371,7 @@
     border-radius: 22px;
 
     background:
-        rgba(8,
-            25,
-            22,
-            .38);
+        rgba(16,16,17,.38);
 
     box-shadow:
         0 25px 70px rgba(0,
@@ -402,7 +396,7 @@
 
     margin-bottom: 13px;
 
-    color: #9de0da;
+    color: #E6CC9A;
 
     font-size: 10px;
     font-weight: 700;
@@ -553,10 +547,10 @@
     .whyEscapeOverlay {
         background:
             linear-gradient(180deg,
-                rgba(4, 13, 11, .68) 0%,
-                rgba(4, 13, 11, .15) 35%,
-                rgba(4, 13, 11, .12) 48%,
-                rgba(4, 13, 11, .78) 100%);
+                rgba(8,8,9,.68) 0%,
+                rgba(8,8,9,.15) 35%,
+                rgba(8,8,9,.12) 48%,
+                rgba(8,8,9,.78) 100%);
     }
 
 
@@ -627,10 +621,7 @@
         border-radius: 24px;
 
         background:
-            rgba(8,
-                25,
-                22,
-                .50);
+            rgba(16,16,17,.50);
     }
 
 

@@ -21,7 +21,7 @@
     align-items: flex-start;
     gap: 16px;
     padding: 18px 0;
-    border-bottom: 1px solid rgba(15, 118, 110, .10);
+    border-bottom: 1px solid rgba(184,155,98,.10);
     text-decoration: none;
     color: inherit;
 }
@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background: #F4F7F6;
+    background: #F5F0E6;
     color: var(--primary);
     font-size: 1.1rem;
     flex-shrink: 0;
@@ -47,7 +47,7 @@
 
 .contactRow strong {
     font-size: .95rem;
-    color: #0B1F1C;
+    color: #17181a;
 }
 
 .contactRow span {
@@ -58,7 +58,7 @@
 .contactCta {
     padding: 32px;
     border-radius: 22px;
-    background: linear-gradient(160deg, #0E6B5C, #073F35);
+    background: linear-gradient(160deg, #B89B62, #6B5A38);
     color: var(--white);
 }
 

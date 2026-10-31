@@ -12,9 +12,9 @@
         copper reads "tea & spice", gold stays for small accents.
         ======================================================= */
 
-    --primary: #0E6B5C;
-    --primary-dark: #073F35;
-    --primary-light: #1C9C86;
+    --primary: #B89B62;
+    --primary-dark: #6B5A38;
+    --primary-light: #E6CC9A;
 
     --secondary: #C17F45;
     --secondary-dark: #96602F;
@@ -62,8 +62,8 @@
 
     --gradient:
         linear-gradient(135deg,
-            #0E6B5C,
-            #1C9C86);
+            #B89B62,
+            #E6CC9A);
 
     --gradient-secondary:
         linear-gradient(135deg,

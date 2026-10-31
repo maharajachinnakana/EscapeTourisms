@@ -22,7 +22,7 @@
     position: relative;
     border-radius: 22px;
     overflow: hidden;
-    background: #F4F7F6;
+    background: #F5F0E6;
     box-shadow: var(--shadow-soft);
     transition: var(--transition);
 }
@@ -60,7 +60,7 @@
 
 .safariCardBody h3 {
     font-size: 1.1rem;
-    color: #0B1F1C;
+    color: #17181a;
     margin-bottom: 8px;
 }
 

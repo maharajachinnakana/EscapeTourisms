@@ -16,7 +16,7 @@
     var css = document.createElement("style");
     css.textContent =
         ".slotBox{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;box-sizing:border-box;width:100%;min-height:150px;margin:0 0 12px;padding:12px;background:#fff;color:#333;border:2px dashed #9aa3a0;border-radius:14px;font:600 12px/1.35 ui-monospace,Menlo,Consolas,monospace;text-align:center;word-break:break-all}" +
-        ".slotBox b{color:#0B5F58;font-size:11px;letter-spacing:.08em}" +
+        ".slotBox b{color:#9C8250;font-size:11px;letter-spacing:.08em}" +
         ".slotTag{position:absolute;z-index:60;right:10px;bottom:10px;max-width:calc(100% - 20px);padding:6px 10px;background:#fff;color:#222;border:1.5px dashed #888;border-radius:8px;font:600 11px/1.3 ui-monospace,Menlo,Consolas,monospace;word-break:break-all;pointer-events:none}";
     document.head.appendChild(css);
 

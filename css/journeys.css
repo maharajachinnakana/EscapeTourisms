@@ -54,7 +54,7 @@
 
     margin: 0;
 
-    color: #8dd8d2;
+    color: #E6CC9A;
 
     font-size: 11px;
 
@@ -125,7 +125,7 @@
 
     border-radius: 30px;
 
-    background: #102321;
+    background: #1a1b1d;
 
     box-shadow:
         0 35px 90px rgba(0, 0, 0, .35),
@@ -150,7 +150,7 @@
 
     border-radius: inherit;
 
-    background: #102321;
+    background: #1a1b1d;
 }
 
 
@@ -299,7 +299,7 @@
         border-radius: 28px;
 
         background:
-            rgba(20, 28, 25, .28);
+            rgba(24,24,25,.28);
 
         backdrop-filter:
             blur(28px) saturate(135%);
@@ -344,7 +344,7 @@
 
     margin-bottom: 14px;
 
-    color: #8dd8d2;
+    color: #E6CC9A;
 
     font-size: 11px;
 
@@ -736,7 +736,7 @@
 
         border-radius: 24px;
 
-        background: #102321;
+        background: #1a1b1d;
 
     }
 

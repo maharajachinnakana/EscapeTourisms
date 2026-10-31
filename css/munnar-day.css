@@ -83,7 +83,7 @@
 
     grid-row: 1;
 
-    color: #8dd8d2;
+    color: #E6CC9A;
 
     font-size: 11px;
 
@@ -162,7 +162,7 @@
 
     border-radius: 30px;
 
-    background: #102321;
+    background: #1a1b1d;
 
     isolation: isolate;
 
@@ -391,7 +391,7 @@
 
 .munnarDayCardLabel {
 
-    color: #8dd8d2;
+    color: #E6CC9A;
 
     font-size: 11px;
 
@@ -617,15 +617,15 @@
 .munnarDayPoint:hover i,
 .munnarDayPoint.active i {
 
-    border-color: #8dd8d2;
+    border-color: #E6CC9A;
 
-    background: #073F35;
+    background: #6B5A38;
 
     transform: scale(1.45);
 
     box-shadow:
-        0 0 0 6px rgba(141, 216, 210, .10),
-        0 0 18px rgba(11, 95, 88, .55);
+        0 0 0 6px rgba(230,204,154,.10),
+        0 0 18px rgba(184,155,98,.55);
 }
 
 
@@ -823,8 +823,8 @@
 
         background:
             linear-gradient(135deg,
-                rgba(10, 28, 27, .68),
-                rgba(8, 18, 18, .48));
+                rgba(19,19,20,.68),
+                rgba(18,19,20,.48));
 
         backdrop-filter:
             blur(24px) saturate(130%);

@@ -264,7 +264,7 @@ body.uiHidden .desktopHeader {
 .sliderBtn:hover {
 
     box-shadow:
-        0 12px 35px rgba(15, 118, 110, .30);
+        0 12px 35px rgba(184,155,98,.30);
 }
 
 .sliderBtn:hover .sliderBall {
@@ -282,7 +282,7 @@ body.uiHidden .desktopHeader {
 
 .whatsappBtn .sliderBall {
 
-    background: #25D366;
+    background: #E6CC9A;
 }
 
 .whatsappBtn:hover .sliderBall {

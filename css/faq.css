@@ -30,7 +30,7 @@
 
     border-radius: 999px;
 
-    background: rgba(15, 118, 110, .10);
+    background: rgba(184,155,98,.10);
 
     color: var(--primary-dark);
 
@@ -48,7 +48,7 @@
 
     margin: 0 0 44px;
 
-    color: #101917;
+    color: #18191b;
 
     font-size: clamp(28px, 3.4vw, 40px);
 
@@ -76,7 +76,7 @@
 
 .faqItem {
 
-    border: 1px solid rgba(15, 25, 20, .10);
+    border: 1px solid rgba(20,20,21,.10);
 
     border-radius: 16px;
 
@@ -114,7 +114,7 @@
 
     font-weight: 600;
 
-    color: #101917;
+    color: #18191b;
 }
 
 

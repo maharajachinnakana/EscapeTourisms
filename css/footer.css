@@ -5,7 +5,7 @@
 .siteFooter {
 
     position: relative;
-    background: #07211E;
+    background: #141415;
     color: rgba(255, 255, 255, .82);
     padding: 64px 6vw 0;
     overflow: hidden;
@@ -17,7 +17,7 @@
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(600px 300px at 15% 0%, rgba(20, 184, 166, .18), transparent 70%),
+        radial-gradient(600px 300px at 15% 0%, rgba(230,204,154,.18), transparent 70%),
         radial-gradient(500px 260px at 90% 10%, rgba(245, 158, 11, .10), transparent 70%);
     pointer-events: none;
 }

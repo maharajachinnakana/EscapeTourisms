@@ -26,8 +26,8 @@
     gap: 8px;
     padding: 28px 22px;
     border-radius: 20px;
-    background: #F4F7F6;
-    border: 1px solid rgba(15, 118, 110, .10);
+    background: #F5F0E6;
+    border: 1px solid rgba(184,155,98,.10);
     transition: var(--transition);
 }
 
@@ -37,7 +37,7 @@
 }
 
 .pricingCard--popular {
-    background: linear-gradient(160deg, #0E6B5C, #073F35);
+    background: linear-gradient(160deg, #B89B62, #6B5A38);
     color: var(--white);
 }
 
@@ -66,7 +66,7 @@
 
 .pricingCard h3 {
     font-size: 1.05rem;
-    color: #0B1F1C;
+    color: #17181a;
 }
 
 .pricingCard--popular h3 {

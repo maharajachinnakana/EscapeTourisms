@@ -28,7 +28,7 @@
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(180deg, rgba(7, 33, 30, .55) 0%, rgba(7, 33, 30, .55) 40%, rgba(7, 33, 30, .92) 100%);
+        linear-gradient(180deg, rgba(18,19,20,.55) 0%, rgba(18,19,20,.55) 40%, rgba(18,19,20,.92) 100%);
 }
 
 .pageHeroContent {
@@ -119,8 +119,8 @@
    until real photography is added. */
 .pageHero.pageHeroNoImage {
     background:
-        radial-gradient(circle at 15% 15%, rgba(28, 156, 134, .35), transparent 50%),
-        linear-gradient(160deg, #0B5F58 0%, #08211d 70%, #061713 100%);
+        radial-gradient(circle at 15% 15%, rgba(230,204,154,.35), transparent 50%),
+        linear-gradient(160deg, #9C8250 0%, #141415 70%, #0E0E0F 100%);
 }
 
 /* ==========================================================
@@ -149,8 +149,8 @@
     gap: 16px;
     padding: 24px;
     border-radius: 18px;
-    background: #F4F7F6;
-    border: 1px solid rgba(15, 118, 110, .10);
+    background: #F5F0E6;
+    border: 1px solid rgba(184,155,98,.10);
     scroll-margin-top: 100px;
 }
 
@@ -162,7 +162,7 @@
 
 .addonCard h3 {
     font-size: 1rem;
-    color: #0B1F1C;
+    color: #17181a;
     margin-bottom: 6px;
 }
 
@@ -174,7 +174,7 @@
 
 .pricingSection {
     padding: 70px 6vw;
-    background: #F4F7F6;
+    background: #F5F0E6;
 }
 
 /* ==========================================================
@@ -185,7 +185,7 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
-    border: 1px solid rgba(11, 95, 88, .12);
+    border: 1px solid rgba(184,155,98,.12);
 }
 
 .googleReviewsEmbed iframe {
@@ -216,7 +216,7 @@
 .sectionHeading {
     font-size: clamp(1.6rem, 3vw, 2.3rem);
     font-weight: 700;
-    color: #0B1F1C;
+    color: #17181a;
     max-width: 24ch;
     line-height: 1.25;
     margin-bottom: 14px;
@@ -235,7 +235,7 @@
 
 .relatedSection {
     padding: 80px 6vw;
-    background: #F4F7F6;
+    background: #F5F0E6;
 }
 
 .relatedContainer {
@@ -271,7 +271,7 @@
 }
 
 .relatedCard h3 {
-    color: #0B1F1C;
+    color: #17181a;
     font-size: 1.05rem;
 }
 
@@ -287,7 +287,7 @@
 
 .stepsSection {
     padding: 90px 6vw;
-    background: #F4F7F6;
+    background: #F5F0E6;
 }
 
 .stepsContainer {
@@ -324,7 +324,7 @@
 
 .stepCard h3 {
     font-size: 1.05rem;
-    color: #0B1F1C;
+    color: #17181a;
     margin-bottom: 8px;
 }
 

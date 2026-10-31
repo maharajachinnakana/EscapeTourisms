@@ -4,7 +4,7 @@
 
 .routesListSection {
     padding: 90px 6vw;
-    background: #F4F7F6;
+    background: #F5F0E6;
 }
 
 .routesListContainer {
@@ -28,7 +28,7 @@
     border-radius: 14px;
     background: var(--white);
     font-size: .9rem;
-    color: #0B1F1C;
+    color: #17181a;
     font-weight: 500;
 }
 
