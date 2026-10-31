@@ -1,0 +1,68 @@
+/* ==========================================================
+   THEME OVERRIDES — loaded last on every page.
+   Change colours here only. Delete this file's <link> to revert.
+========================================================== */
+:root {
+    --warm-white: #F3E9DC;
+    --burgundy: #7A1230;
+    --burgundy-deep: #5B0E24;
+    --burgundy-edge: #B0305A;
+    --heading-gray: #C4C6CA;
+}
+
+/* menu button: deep black ring, warm-white lines */
+.mobileMenuToggle,
+#desktopMenuBtn {
+    background: #050505 !important;
+    border-color: #000 !important;
+}
+.menuLine { background: var(--warm-white) !important; }
+#desktopMenuBtn i { color: var(--warm-white); }
+
+/* brand + Book Now lettering */
+.desktopBrand,
+.mobileBrand,
+.bookingBtnText,
+.mobileBookBtn,
+.desktopBookBtn { color: var(--warm-white) !important; }
+
+/* floating button icons */
+.floatBtn,
+.floatBtn i { color: var(--warm-white) !important; }
+
+/* headings: gray */
+main h1, main h2, main h3,
+.tsHeroTitle, .tsTitle, .sectionHeading, .faqHeading, .heroTitle,
+.tsCard h3, .tsGlass h3 { color: var(--heading-gray); }
+.tsHeroTitle em { color: transparent; }
+
+/* prices + important points: burgundy highlight */
+.priceHl {
+    display: inline-block;
+    padding: .04em .38em .08em;
+    border-radius: .35em;
+    background: linear-gradient(135deg, var(--burgundy), var(--burgundy-deep));
+    border: 1px solid var(--burgundy-edge);
+    color: var(--warm-white);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: 0;
+    white-space: nowrap;
+    box-shadow: 0 4px 14px rgba(122, 18, 48, .35);
+}
+main p strong, main li strong, main td strong {
+    background: rgba(122, 18, 48, .55);
+    color: var(--warm-white);
+    padding: 0 .3em;
+    border-radius: .3em;
+    font-weight: 700;
+}
+.tbPriceVal { color: var(--warm-white); }
+.tbPrice strong {
+    display: inline-block;
+    padding: .02em .3em .06em;
+    border-radius: .3em;
+    background: linear-gradient(135deg, var(--burgundy), var(--burgundy-deep));
+    border: 1px solid var(--burgundy-edge);
+    box-shadow: 0 4px 14px rgba(122, 18, 48, .35);
+}
