@@ -61,7 +61,7 @@ main {
 
     border-radius: 999px;
 
-    background: rgba(255, 255, 255, .06);
+    background: rgba(255, 255, 255, .08);
     backdrop-filter: blur(8px) saturate(220%);
     -webkit-backdrop-filter: blur(8px) saturate(220%);
     border: 1px solid rgba(170, 175, 185, .75);
@@ -85,16 +85,14 @@ main {
     padding: 0 14px;
 }
 
+/* colour fill removed: same pure liquid glass as the floating buttons */
 .mobileBookBtn::before {
-
     content: "";
     position: absolute;
-    inset: 4px;
+    inset: 0;
     border-radius: inherit;
     z-index: -1;
-    filter: blur(12px);
-
-    background: var(--gradient);
+    background: linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.03));
 }
 
 .mobileBookBtn:hover {
