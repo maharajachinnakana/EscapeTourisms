@@ -12,7 +12,7 @@
     min-height: 600svh;
 
 
-    background: #07110f;
+    background: #121314;
 
     color: #fff;
 
@@ -594,7 +594,7 @@
 
     border-radius: 50%;
 
-    background: #07110f;
+    background: #121314;
 
     transition:
         background .3s ease,

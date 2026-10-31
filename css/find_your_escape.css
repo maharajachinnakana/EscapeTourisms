@@ -18,7 +18,7 @@
 
     overflow: hidden;
 
-    background: #06100e;
+    background: #121314;
 
     color: #fff;
 
@@ -1072,7 +1072,7 @@
 
     border-radius: 15px;
 
-    background: #0c1815;
+    background: #17191a;
 
 }
 
@@ -2373,7 +2373,7 @@
     position: relative;
     width: 100%;
     padding: 140px 6vw 120px;
-    background: #07110f;
+    background: #121314;
     color: #fff;
     overflow: hidden;
 }
@@ -2741,7 +2741,7 @@
 }
 
 .customizeTripField select option {
-    background: #07110f;
+    background: #121314;
     color: #fff;
 }
 
@@ -2790,7 +2790,7 @@
             #FCCF31 10%,
             #F55555 100%);
 
-    color: #07110f;
+    color: #121314;
 
     font-size: 10px;
     font-weight: 900;

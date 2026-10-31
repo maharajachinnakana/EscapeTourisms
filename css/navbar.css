@@ -962,3 +962,46 @@ body.uiHidden .mobileHeader {
     }
 
 }
+
+
+/* ==========================================================
+   MENU TREE (main item + arrow -> sub pages)
+========================================================== */
+.menuGroup { display: block; }
+.menuRow { display: flex; align-items: stretch; gap: 4px; }
+.menuRow > a { flex: 1; min-width: 0; }
+.menuArrow {
+    flex: 0 0 44px;
+    display: grid; place-items: center;
+    border: 1px solid rgba(255, 255, 255, .14);
+    border-radius: 13px;
+    background: rgba(255, 255, 255, .05);
+    color: #fff; cursor: pointer; font-size: 13px;
+    transition: background .3s ease;
+}
+.menuArrow:hover { background: rgba(255, 255, 255, .14); }
+.menuChev { width: 9px; height: 9px; border-right: 2px solid #fff; border-bottom: 2px solid #fff; transform: translateY(-2px) rotate(45deg); transition: transform .3s ease; }
+.menuGroup.open > .menuRow > .menuArrow .menuChev { transform: translateY(2px) rotate(225deg); }
+#desktopMenu { width: 330px; background: rgba(16, 18, 20, .94); }
+.mobileMenu { background: rgba(16, 18, 20, .94); }
+.menuSub {
+    display: none;
+    margin: 4px 0 6px 14px;
+    padding-left: 10px;
+    border-left: 1px solid rgba(255, 255, 255, .18);
+    flex-direction: column;
+    gap: 2px;
+}
+.menuGroup.open > .menuSub { display: flex; }
+.desktopMenuContent .menuSub a,
+.mobileMenu nav .menuSub a {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .82);
+    border-radius: 11px;
+}
+.desktopMenuContent a.isCurrent,
+.mobileMenu nav a.isCurrent { background: rgba(255, 255, 255, .12); }
+#desktopMenu .desktopMenuContent,
+.mobileMenu nav { max-height: calc(100vh - 170px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }

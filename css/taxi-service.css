@@ -11,7 +11,7 @@
 
 .tsMain {
     min-height: 0;
-    background: #06100e;
+    background: #121314;
     color: #fff;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@ html.tsJS .tsReveal.isIn {
     align-items: flex-end;
     padding: 150px 6vw 76px;
     overflow: hidden;
-    background: #06100e;
+    background: #121314;
 }
 .tsHeroBg {
     position: absolute;
@@ -52,7 +52,7 @@ html.tsJS .tsReveal.isIn {
         var(--ts-hero-img, none) center / cover no-repeat,
         radial-gradient(900px 520px at 82% 8%, rgba(28, 156, 134, .34), transparent 65%),
         radial-gradient(760px 520px at 4% 96%, rgba(193, 127, 69, .22), transparent 62%),
-        linear-gradient(165deg, #0a2d27 0%, #07130f 58%, #06100e 100%);
+        linear-gradient(165deg, #15201e 0%, #121314 58%, #121314 100%);
 }
 .tsHeroBg::before,
 .tsHeroBg::after {
@@ -95,7 +95,7 @@ html.tsJS .tsReveal.isIn {
     z-index: -1;
     background:
         linear-gradient(90deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, .18) 55%, rgba(0, 0, 0, 0)),
-        linear-gradient(180deg, rgba(0, 0, 0, .10), transparent 45%, #06100e 100%);
+        linear-gradient(180deg, rgba(0, 0, 0, .10), transparent 45%, #121314 100%);
 }
 .tsHeroInner {
     position: relative;
@@ -268,7 +268,7 @@ html.tsJS .tsReveal.isIn {
 /* ---------- quick jump chips ---------- */
 .tsJump {
     padding: 0 6vw;
-    background: #06100e;
+    background: #121314;
 }
 .tsJumpRow {
     max-width: 1180px;
@@ -578,7 +578,7 @@ html.tsJS .tsReveal.isIn {
 .tsTimeline li { position: relative; padding: 18px 22px; }
 .tsTimeline li::before {
     content: ""; position: absolute; left: -29px; top: 24px; width: 12px; height: 12px; border-radius: 50%;
-    background: #06100e; border: 3px solid #E3B23C; z-index: 2;
+    background: #121314; border: 3px solid #E3B23C; z-index: 2;
 }
 .tsTimeline li > * { position: relative; z-index: 1; }
 .tsTimeline strong { display: block; font-size: 15px; font-weight: 700; margin-bottom: 4px; }
@@ -735,7 +735,7 @@ html.tsJS .tsReveal.isIn {
 .tsHero:has(.tsHeroVideo.isReady) .tsHeroShade {
     background:
         linear-gradient(90deg, rgba(0, 0, 0, .62), rgba(0, 0, 0, .28) 60%, rgba(0, 0, 0, .12)),
-        linear-gradient(180deg, rgba(0, 0, 0, .18), transparent 40%, #06100e 100%);
+        linear-gradient(180deg, rgba(0, 0, 0, .18), transparent 40%, #121314 100%);
 }
 
 /* ---------- vehicle photo (shared /assets/images/vehicles/) ---------- */
@@ -748,3 +748,19 @@ html.tsJS .tsReveal.isIn {
     background: radial-gradient(120% 100% at 50% 100%, rgba(141, 216, 210, .16), transparent 70%);
 }
 .tsVeh.hasImg .tsVehIcon { display: none; }
+
+/* ---------- empty media slots (white blank placeholders) ---------- */
+img.slotEmpty {
+    background: #fff;
+    object-fit: contain !important;
+    border: 1px solid #d5d9e0;
+}
+.tsVeh.hasImg img.slotEmpty { margin-bottom: 12px; }
+.slotBadge {
+    position: relative; margin: 18px auto; width: min(92%, 640px);
+    display: grid; gap: 4px; padding: 12px 16px; border-radius: 14px;
+    background: #fff; color: #111827; font-size: 12px; line-height: 1.4;
+    border: 2px dashed #c4c9d1; z-index: 3; word-break: break-all;
+}
+.slotBadge strong { font-size: 12px; letter-spacing: .08em; color: #6b7280; }
+.slotBadge span { font-family: ui-monospace, Menlo, Consolas, monospace; }
