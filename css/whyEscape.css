@@ -92,7 +92,7 @@
 
     margin-bottom: 20px;
 
-    color: #E6CC9A;
+    color: #E2B04A;
 
     font-size: 10px;
     font-weight: 800;
@@ -239,7 +239,7 @@
             rgba(255, 255, 255, .025) 45%,
             rgba(0, 0, 0, .16) 100%);
 
-    color: #E6CC9A;
+    color: #E2B04A;
 
     font-size: 20px;
 
@@ -265,7 +265,7 @@
 
     margin-bottom: 6px;
 
-    color: #E6CC9A;
+    color: #E2B04A;
 
     font-size: 10px;
     font-weight: 800;
@@ -337,7 +337,7 @@
 
 
 .whyEscapeValue:hover .whyEscapeValueArrow {
-    color: #E6CC9A;
+    color: #E2B04A;
 
     transform:
         translateX(4px);
@@ -396,7 +396,7 @@
 
     margin-bottom: 13px;
 
-    color: #E6CC9A;
+    color: #E2B04A;
 
     font-size: 10px;
     font-weight: 700;

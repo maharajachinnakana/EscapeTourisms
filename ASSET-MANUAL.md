@@ -30,11 +30,7 @@ While a file is missing, the page shows a **white dashed box** with the exact pa
 
 | File path | Type | Spec | Appears as |
 |---|---|---|---|
-| `/assets/images/journeys/ascend.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Escape Tourisms FAQ |
-| `/assets/images/journeys/beyond.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Contact Escape Tourisms Munnar |
-| `/assets/images/journeys/explore.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | About Escape Tourisms Munnar |
 | `/assets/images/logo/logo.webp` | image | Square PNG/WebP 512×512 · ≤ 40 KB | Escape Tourisms |
-| `/assets/images/munnar-day/first-light.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | First light over the mountains of Munnar |
 | `/assets/images/vehicles/ertiga.webp` | image | 1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view | Ertiga taxi in Munnar |
 | `/assets/images/vehicles/etios.webp` | image | 1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view | Etios sedan taxi in Munnar |
 | `/assets/images/vehicles/innova-crysta.webp` | image | 1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view | Innova Crysta taxi in Munnar |
@@ -137,12 +133,16 @@ Tip: vehicle photos show on every fare table. Use the **same car, same angle, cl
 ### Munnar Sightseeing (hub) — `/munnar-sightseeing/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
-| 1 | `/munnar-sightseeing/assets/images/kundala-lake.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Kundala Lake - Munnar sightseeing |
-| 2 | `/assets/images/munnar-day/tea-country.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Top Station Munnar |
-| 3 | `/assets/images/munnar-day/golden-hour.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Eravikulam National Park Munnar |
-| 4 | `/assets/images/munnar-day/under-stars.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Attukad Waterfalls Munnar |
-| 5 | `/munnar-sightseeing/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
-| 6 | `/munnar-sightseeing/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 1 | `/assets/images/journeys/explore.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Mattupetty Dam Munnar |
+| 2 | `/assets/images/journeys/beyond.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Echo Point Munnar |
+| 3 | `/munnar-sightseeing/assets/images/kundala-lake.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Kundala Lake - Munnar sightseeing |
+| 4 | `/assets/images/munnar-day/tea-country.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Top Station Munnar |
+| 5 | `/assets/images/munnar-day/golden-hour.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Eravikulam National Park Munnar |
+| 6 | `/assets/images/munnar-day/first-light.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Tea garden view point Munnar |
+| 7 | `/assets/images/munnar-day/under-stars.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Attukad Waterfalls Munnar |
+| 8 | `/munnar-sightseeing/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 9 | `/munnar-sightseeing/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 10 | `/assets/images/journeys/ascend.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Hero background (page.css) |
 
 ### Munnar to Top Station — `/munnar-sightseeing/mattupetty-top-station/`
 | # | File path (exact) | Type | Spec | What it shows |
@@ -216,65 +216,101 @@ Tip: vehicle photos show on every fare table. Use the **same car, same angle, cl
 These pages already had their media paths in your original project — **keep the files you already have at the same paths**. White boxes appear only for files that are not in the folder yet.
 
 ### About — `/about/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/about/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/about/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Camping — `/camping/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
-| 1 | `/assets/images/munnar-day/under-stars.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Munnar camping under the stars |
+| 1 | `/camping/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/camping/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Contact — `/contact/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/contact/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/contact/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### FAQ — `/faq/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/faq/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/faq/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Home — `/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
 | 1 | `/assets/images/services/taxi-services.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Private taxi service in Munnar and Kerala |
 | 2 | `/assets/images/why-escape/munnar-road.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Scenic mountain road in Munnar Kerala |
-| 3 | `/assets/images/find-escape/find-your-next-escape-bg.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Munnar mountain road through Kerala tea plantations |
-| 4 | `/assets/images/find-escape/munnar-recommendation.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Jeep journey through the Munnar hills |
-| 5 | `/assets/images/services/pickup-drop.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
-| 6 | `/assets/images/services/munnar-sightseeing.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
-| 7 | `/assets/images/services/offroad-jeep.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
-| 8 | `/assets/images/services/kerala-tour-packages.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
-| 9 | `/assets/images/services/camping.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
-| 10 | `/assets/images/services/rooms-stays.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
-| 11 | `/assets/images/services/resorts-nature-stays.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 3 | `/assets/images/journeys/ascend.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Munnar, Kerala |
+| 4 | `/assets/images/find-escape/find-your-next-escape-bg.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Munnar mountain road through Kerala tea plantations |
+| 5 | `/assets/images/find-escape/munnar-recommendation.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Jeep journey through the Munnar hills |
+| 6 | `/assets/images/munnar-day/first-light.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | First light over the mountains of Munnar |
+| 7 | `/assets/images/services/pickup-drop.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 8 | `/assets/images/services/munnar-sightseeing.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 9 | `/assets/images/services/offroad-jeep.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 10 | `/assets/images/services/kerala-tour-packages.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 11 | `/assets/images/services/camping.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 12 | `/assets/images/services/rooms-stays.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+| 13 | `/assets/images/services/resorts-nature-stays.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Chaduranga Para — `/jeep-safari/chaduranga-para/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/jeep-safari/chaduranga-para/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/jeep-safari/chaduranga-para/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Jeep Safari — `/jeep-safari/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
-| 1 | `/assets/images/munnar-day/golden-hour.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Kolukkumalai sunrise jeep safari |
+| 1 | `/jeep-safari/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/jeep-safari/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Kolukkumalai Jeep Safari — `/jeep-safari/kolukkumalai/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/jeep-safari/kolukkumalai/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/jeep-safari/kolukkumalai/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Kerala Taxi Package — `/kerala-taxi-package/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/assets/images/journeys/beyond.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Kerala taxi package tour |
 
 ### Kerala Tour Packages — `/kerala-tour-packages/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/kerala-tour-packages/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/kerala-tour-packages/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Kochi Airport to Munnar — `/kochi-airport-to-munnar-taxi/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/kochi-airport-to-munnar-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/kochi-airport-to-munnar-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Munnar Adventures — `/munnar-sightseeing/adventures/`
 _No page-specific files (uses shared files only)._
 
 ### Munnar to Alleppey — `/munnar-to-alleppey-taxi/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/munnar-to-alleppey-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/munnar-to-alleppey-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Munnar to Kodaikanal — `/munnar-to-kodaikanal-taxi/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/munnar-to-kodaikanal-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/munnar-to-kodaikanal-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Munnar to Madurai — `/munnar-to-madurai-taxi/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/munnar-to-madurai-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/munnar-to-madurai-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Neelakurinji Season — `/neelakurinji-flower-season-munnar/`
 _No page-specific files (uses shared files only)._
@@ -282,7 +318,8 @@ _No page-specific files (uses shared files only)._
 ### Pickup & Drop — `/pickup-drop-taxi/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
-| 1 | `/assets/images/services/pickup-taxi.webp` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | Airport pickup and drop taxi Kerala |
+| 1 | `/pickup-drop-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/pickup-drop-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Privacy Policy — `/privacy-policy/`
 _No page-specific files (uses shared files only)._
@@ -291,7 +328,10 @@ _No page-specific files (uses shared files only)._
 _No page-specific files (uses shared files only)._
 
 ### Travel Guide — `/travel-guide/`
-_No page-specific files (uses shared files only)._
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/travel-guide/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/travel-guide/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### 404 page — `/404.html`
 _No page-specific files (uses shared files only)._

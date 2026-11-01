@@ -18,8 +18,8 @@
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(650px 340px at 12% 10%, rgba(184,155,98,.28), transparent 70%),
-        radial-gradient(500px 280px at 92% 15%, rgba(193, 127, 69, .16), transparent 70%);
+        radial-gradient(650px 340px at 12% 10%, rgba(184,137,43,.28), transparent 70%),
+        radial-gradient(500px 280px at 92% 15%, rgba(184,137,43, .16), transparent 70%);
     pointer-events: none;
 }
 

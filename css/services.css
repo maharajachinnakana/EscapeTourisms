@@ -28,7 +28,7 @@
 .mainServicesEyebrow,
 .serviceEyebrow {
     display: block;
-    color: #E6CC9A;
+    color: #E2B04A;
     font-size: 10px;
     font-weight: 800;
     line-height: 1.2;
@@ -150,7 +150,7 @@
 
     margin-top: 12px;
 
-    background: rgba(230,204,154,.65);
+    background: rgba(226,176,74,.65);
 }
 
 
