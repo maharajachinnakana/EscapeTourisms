@@ -1003,29 +1003,9 @@ body.uiHidden .mobileHeader {
 #desktopMenu .desktopMenuContent,
 .mobileMenu nav { max-height: calc(100vh - 170px); overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; }
 
-/* ---- Menu items: rounded glass pills (match Book Now / floating buttons) ---- */
-.desktopMenuContent a,
-.mobileMenu nav a,
-.desktopMenuContent .menuSub a,
-.mobileMenu nav .menuSub a {
-    border-radius: 999px !important;
-    background: linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.04)) !important;
-    border: 1px solid rgba(255,255,255,.18);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 6px 14px rgba(0,0,0,.28);
-    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
-}
-.desktopMenuContent a:hover,
-.mobileMenu nav a:hover { background: linear-gradient(135deg, rgba(255,255,255,.22), rgba(255,255,255,.08)) !important; }
-.desktopMenuContent a.isCurrent,
-.mobileMenu nav a.isCurrent { background: linear-gradient(135deg, rgba(217,169,59,.30), rgba(217,169,59,.10)) !important; border-color: rgba(217,169,59,.45); }
-.menuArrow {
-    border-radius: 50% !important;
-    flex: 0 0 48px;
-    background: linear-gradient(135deg, rgba(255,255,255,.14), rgba(255,255,255,.04));
-    border: 1px solid rgba(255,255,255,.18);
-    box-shadow: inset 0 1px 0 rgba(255,255,255,.12), 0 6px 14px rgba(0,0,0,.28);
-    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
-}
-.menuRow { gap: 8px; align-items: center; }
+/* ---- Menu: original flat items; round arrow circle; rounded-corner box for current page ---- */
+.menuArrow { border-radius: 50% !important; flex: 0 0 46px; }
+.menuRow { align-items: center; }
 .menuRow > .menuArrow { align-self: stretch; }
-.menuSub { gap: 6px; }
+.desktopMenuContent a.isCurrent,
+.mobileMenu nav a.isCurrent { background: rgba(255, 255, 255, .12); border-radius: 14px; }
