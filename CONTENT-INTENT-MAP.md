@@ -59,3 +59,8 @@ Status: DONE = rewritten around its own queries; DONE = planned rewrite (needs y
 
 ## Added 2026-11-01 (DONE)
 athirappilly-to-munnar-taxi, munnar-to-varkala-taxi, eravikulam-national-park-taxi, tea-museum-taxi-munnar, marayoor-taxi-from-munnar, kochi-city-to-munnar-taxi, how-to-reach-munnar, one-way-taxi-from-munnar, munnar-group-family-taxi, munnar-driver-with-local-help, munnar-places-to-visit
+
+## Added 2026-11-02 (DONE)
+munnar-taxi-rates, munnar-to-ooty-taxi, munnar-to-bangalore-taxi, munnar-to-vagamon-taxi, munnar-to-wayanad-taxi, munnar-to-trivandrum-kovalam-taxi, idukki-dam-taxi-from-munnar, anakulam-jeep-safari, meesapulimala-trek-jeep-transfer, lakkam-waterfalls-taxi-from-munnar, devikulam-taxi-from-munnar, suryanelli-taxi-from-munnar, munnar-tempo-traveller-rental, munnar-car-rental-with-driver, munnar-in-monsoon, munnar-in-winter
+Fixed: 7 existing pages that were missing from sitemap/menu (thekkady, honeymoon, itinerary, railway, coimbatore airport, trivandrum airport, cochin sightseeing).
+NOT built (no verified data / needs owner terms): Chennai, Kanyakumari, Anachal safari, cancellation/payment policy.
