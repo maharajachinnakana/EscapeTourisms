@@ -56,3 +56,6 @@ Status: DONE = rewritten around its own queries; DONE = planned rewrite (needs y
 4. Facts: distances/times are rounded estimates; no fake prices, no guaranteed sightings.
 5. Local/GEO: place names, route stages, hours of operation, Munnar/Devikulam/Chinnakanal mentions where true.
 6. Schema: Service + FAQPage + BreadcrumbList + WebPage (speakable) + LocalBusiness.
+
+## Added 2026-11-01 (DONE)
+athirappilly-to-munnar-taxi, munnar-to-varkala-taxi, eravikulam-national-park-taxi, tea-museum-taxi-munnar, marayoor-taxi-from-munnar, kochi-city-to-munnar-taxi, how-to-reach-munnar, one-way-taxi-from-munnar, munnar-group-family-taxi, munnar-driver-with-local-help, munnar-places-to-visit
