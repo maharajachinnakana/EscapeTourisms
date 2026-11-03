@@ -64,3 +64,6 @@ athirappilly-to-munnar-taxi, munnar-to-varkala-taxi, eravikulam-national-park-ta
 munnar-taxi-rates, munnar-to-ooty-taxi, munnar-to-bangalore-taxi, munnar-to-vagamon-taxi, munnar-to-wayanad-taxi, munnar-to-trivandrum-kovalam-taxi, idukki-dam-taxi-from-munnar, anakulam-jeep-safari, meesapulimala-trek-jeep-transfer, lakkam-waterfalls-taxi-from-munnar, devikulam-taxi-from-munnar, suryanelli-taxi-from-munnar, munnar-tempo-traveller-rental, munnar-car-rental-with-driver, munnar-in-monsoon, munnar-in-winter
 Fixed: 7 existing pages that were missing from sitemap/menu (thekkady, honeymoon, itinerary, railway, coimbatore airport, trivandrum airport, cochin sightseeing).
 NOT built (no verified data / needs owner terms): Chennai, Kanyakumari, Anachal safari, cancellation/payment policy.
+
+## Added 2026-11-03 (DONE)
+munnar-distance-chart, munnar-fare-calculator (JS), munnar-2-3-4-day-taxi-packages, innova-vs-ertiga-munnar, kolukkumalai-vs-top-station-sunrise, munnar-taxi-vs-jeep, ta/ml/hi munnar-taxi (hreflang with /munnar-sightseeing/). js/track.js = WhatsApp/call/email click events (dataLayer + gtag).

@@ -56,13 +56,23 @@
       "permanent": true
     },
     {
-      "source": "/munnar-to-thekkady-taxi",
-      "destination": "/munnar-sightseeing/thekkady-route/",
+      "source": "/Places%20to%20Visit%20/MUNNAR/Thekkady%20direction%20/kolukkumalai/kolukkumalai.html",
+      "destination": "/jeep-safari/kolukkumalai/",
       "permanent": true
     },
     {
-      "source": "/munnar-to-thekkady-taxi/",
-      "destination": "/munnar-sightseeing/thekkady-route/",
+      "source": "/Places to Visit /MUNNAR/Thekkady direction /kolukkumalai/kolukkumalai.html",
+      "destination": "/jeep-safari/kolukkumalai/",
+      "permanent": true
+    },
+    {
+      "source": "/Places%20to%20Visit%20/:path*",
+      "destination": "/munnar-places-to-visit/",
+      "permanent": true
+    },
+    {
+      "source": "/Places to Visit /:path*",
+      "destination": "/munnar-places-to-visit/",
       "permanent": true
     }
   ],

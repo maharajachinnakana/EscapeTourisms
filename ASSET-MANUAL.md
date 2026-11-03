@@ -276,6 +276,12 @@ These pages already had their media paths in your original project — **keep th
 | 1 | `/faq/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
 | 2 | `/faq/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
+### hi/munnar-taxi — `/hi/munnar-taxi/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/hi/munnar-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/hi/munnar-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
 ### how-to-reach-munnar — `/how-to-reach-munnar/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
@@ -304,6 +310,12 @@ These pages already had their media paths in your original project — **keep th
 | 11 | `/assets/images/services/camping.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 | 12 | `/assets/images/services/rooms-stays.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 | 13 | `/assets/images/services/resorts-nature-stays.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
+### innova-vs-ertiga-munnar — `/innova-vs-ertiga-munnar/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/innova-vs-ertiga-munnar/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/innova-vs-ertiga-munnar/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Chaduranga Para — `/jeep-safari/chaduranga-para/`
 | # | File path (exact) | Type | Spec | What it shows |
@@ -346,6 +358,12 @@ These pages already had their media paths in your original project — **keep th
 | 1 | `/kochi-city-to-munnar-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
 | 2 | `/kochi-city-to-munnar-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
+### kolukkumalai-vs-top-station-sunrise — `/kolukkumalai-vs-top-station-sunrise/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/kolukkumalai-vs-top-station-sunrise/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/kolukkumalai-vs-top-station-sunrise/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
 ### lakkam-waterfalls-taxi-from-munnar — `/lakkam-waterfalls-taxi-from-munnar/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
@@ -364,17 +382,41 @@ These pages already had their media paths in your original project — **keep th
 | 1 | `/meesapulimala-trek-jeep-transfer/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
 | 2 | `/meesapulimala-trek-jeep-transfer/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
+### ml/munnar-taxi — `/ml/munnar-taxi/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/ml/munnar-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/ml/munnar-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
+### munnar-2-3-4-day-taxi-packages — `/munnar-2-3-4-day-taxi-packages/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/munnar-2-3-4-day-taxi-packages/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/munnar-2-3-4-day-taxi-packages/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
 ### munnar-car-rental-with-driver — `/munnar-car-rental-with-driver/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
 | 1 | `/munnar-car-rental-with-driver/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
 | 2 | `/munnar-car-rental-with-driver/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
+### munnar-distance-chart — `/munnar-distance-chart/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/munnar-distance-chart/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/munnar-distance-chart/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
 ### munnar-driver-with-local-help — `/munnar-driver-with-local-help/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
 | 1 | `/munnar-driver-with-local-help/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
 | 2 | `/munnar-driver-with-local-help/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
+### munnar-fare-calculator — `/munnar-fare-calculator/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/munnar-fare-calculator/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/munnar-fare-calculator/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### munnar-group-family-taxi — `/munnar-group-family-taxi/`
 | # | File path (exact) | Type | Spec | What it shows |
@@ -421,6 +463,12 @@ _No page-specific files (uses shared files only)._
 | 1 | `/munnar-taxi-rates/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
 | 2 | `/munnar-taxi-rates/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
+### munnar-taxi-vs-jeep — `/munnar-taxi-vs-jeep/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/munnar-taxi-vs-jeep/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/munnar-taxi-vs-jeep/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
 ### munnar-tempo-traveller-rental — `/munnar-tempo-traveller-rental/`
 | # | File path (exact) | Type | Spec | What it shows |
 |---|---|---|---|---|
@@ -438,6 +486,12 @@ _No page-specific files (uses shared files only)._
 |---|---|---|---|---|
 | 1 | `/munnar-to-bangalore-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
 | 2 | `/munnar-to-bangalore-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
+### munnar-to-cochin-airport-aluva-taxi — `/munnar-to-cochin-airport-aluva-taxi/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/munnar-to-cochin-airport-aluva-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/munnar-to-cochin-airport-aluva-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### Munnar to Kodaikanal — `/munnar-to-kodaikanal-taxi/`
 | # | File path (exact) | Type | Spec | What it shows |
@@ -516,6 +570,12 @@ _No page-specific files (uses shared files only)._
 |---|---|---|---|---|
 | 1 | `/suryanelli-taxi-from-munnar/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
 | 2 | `/suryanelli-taxi-from-munnar/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
+
+### ta/munnar-taxi — `/ta/munnar-taxi/`
+| # | File path (exact) | Type | Spec | What it shows |
+|---|---|---|---|---|
+| 1 | `/ta/munnar-taxi/assets/images/hero.webp` | image | 1920×1080 (16:9) · WebP · ≤ 250 KB | Hero poster / background (also shown while the video loads) |
+| 2 | `/ta/munnar-taxi/assets/video/hero.mp4` | video | 1920×1080 or 1280×720 · MP4 (H.264) · 8–15 s loop · no audio · ≤ 4 MB | Video |
 
 ### tea-museum-taxi-munnar — `/tea-museum-taxi-munnar/`
 | # | File path (exact) | Type | Spec | What it shows |
