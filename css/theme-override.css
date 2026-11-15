@@ -81,3 +81,14 @@ main p strong, main li strong, main td strong { color: var(--gold-light); backgr
 .tsReviewQr img { width: 132px; height: 132px; background: #fff; padding: 8px; border-radius: 14px; }
 .tsReviewQr small { font-size: 12px; opacity: .85; }
 @media (max-width: 640px) { .tsReviewCard { flex-direction: column; align-items: flex-start; padding: 22px; } .tsReviewQr { display: none; } }
+
+/* Traveller reviews */
+.tsReviewGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.tsReviewItem { margin: 0; padding: 20px; border-radius: 20px; background: var(--matte-brown); border: 1px solid var(--matte-brown-edge); display: flex; flex-direction: column; justify-content: flex-start; gap: 14px; }
+.tsReviewItem blockquote { margin: 0; flex: 1; }
+.tsReviewItem blockquote p { margin: 0; color: #f3e9dc; line-height: 1.6; }
+.tsStars { color: var(--gold); letter-spacing: 2px; font-size: 14px; } .tsStars i { font-style: normal; opacity: .3; }
+.tsReviewItem figcaption { color: var(--gold-light); font-weight: 600; font-size: 14px; }
+.tsReviewItem figcaption span { display: block; font-weight: 400; font-size: 12px; opacity: .75; }
+.tsReviewNote { margin-top: 18px; }
+.tsReviewNote a { color: var(--gold-light); }
