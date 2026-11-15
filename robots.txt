@@ -1,4 +1,6 @@
 # Escape Tourisms - https://www.escapetourisms.com
+# LLM guide: https://www.escapetourisms.com/llms.txt and https://www.escapetourisms.com/llms-full.txt
+
 User-agent: *
 Allow: /
 
@@ -8,5 +10,47 @@ Disallow: /partials/
 Disallow: /docs/
 Disallow: /*.md$
 Disallow: /404.html
+
+# Search engines
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /partials/
+Disallow: /docs/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+Disallow: /partials/
+Disallow: /docs/
+
+# AI search and answer crawlers
+User-agent: GPTBot
+Allow: /
+Disallow: /admin/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /admin/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin/
 
 Sitemap: https://www.escapetourisms.com/sitemap.xml

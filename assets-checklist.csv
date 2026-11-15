@@ -1,5 +1,6 @@
 Page,URL,File path,Type,Spec,What it shows,Group,Added? (Y/N)
 SHARED,(many pages),/assets/images/logo/logo.webp,image,Square PNG/WebP 512×512 · ≤ 40 KB,Used on 79 pages,SHARED,
+SHARED,(many pages),/assets/images/reviews/google-review-qr.svg,image,1200×800 (3:2) · WebP · ≤ 120 KB,Used on 76 pages,SHARED,
 SHARED,(many pages),/assets/images/vehicles/ertiga.webp,image,1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view,Used on 7 pages,SHARED,
 SHARED,(many pages),/assets/images/vehicles/etios.webp,image,1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view,Used on 8 pages,SHARED,
 SHARED,(many pages),/assets/images/vehicles/innova-crysta.webp,image,1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view,Used on 8 pages,SHARED,

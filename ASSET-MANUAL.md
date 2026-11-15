@@ -31,6 +31,7 @@ While a file is missing, the page shows a **white dashed box** with the exact pa
 | File path | Type | Spec | Appears as |
 |---|---|---|---|
 | `/assets/images/logo/logo.webp` | image | Square PNG/WebP 512×512 · ≤ 40 KB | Escape Tourisms |
+| `/assets/images/reviews/google-review-qr.svg` | image | 1200×800 (3:2) · WebP · ≤ 120 KB | QR code to write a Google review for Escape Tourisms |
 | `/assets/images/vehicles/ertiga.webp` | image | 1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view | Ertiga taxi in Munnar |
 | `/assets/images/vehicles/etios.webp` | image | 1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view | Etios sedan taxi in Munnar |
 | `/assets/images/vehicles/innova-crysta.webp` | image | 1200×800 (3:2) · WebP · ≤ 100 KB · vehicle side/3-quarter view | Innova Crysta taxi in Munnar |
