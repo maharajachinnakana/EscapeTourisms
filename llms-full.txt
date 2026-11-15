@@ -8,7 +8,7 @@ Bases: Munnar, Devikulam, Chinnakanal (Idukki, Kerala 685612). Drivers can help 
 Munnar local sightseeing, per day: Swift Dzire ₹2,000; Etios ₹2,300; Ertiga ₹2,500; off-road Jeep ₹3,000; Innova Crysta ₹3,500; Traveller Urbania ₹4,500.
 Kerala taxi package, per day (100 km included, extra ₹18 per km, pickup point to pickup point): Etios ₹2,500; Ertiga ₹2,700; Innova ₹3,000; Innova Crysta ₹3,500; Jeep ₹3,500; Traveller Urbania ₹4,500.
 Jeep safari: Munnar local safari ₹3,000 per day; Kolukkumalai sunrise ₹3,200 per trip; Chaduranga Para ₹3,500 per trip; Bose Peak trekking add-on from ₹700 per head plus waiting charges.
-Pickup and drop (per vehicle; first fare when a one-way taxi is available, second when not): Cochin airport to Munnar ₹4,000 / ₹5,500; Munnar to Cochin airport or Aluva ₹3,500 / ₹4,500; Aluva or Ernakulam station to Munnar ₹3,500 / ₹4,500; Munnar to Alleppey ₹4,500 / ₹6,500.
+Pickup and drop (per vehicle; first fare when a one-way taxi is available, second when not): Cochin airport to Munnar ₹4,000 / ₹5,500; Munnar to Cochin airport or Aluva ₹3,500 / ₹4,500; Aluva or Ernakulam station to Munnar ₹3,500 / ₹4,500; Munnar to Alleppey ₹4,500 / ₹6,500; Alleppey to Munnar sedan ₹6,500, larger vehicle ₹7,500, with tea break and short stops included.
 
 ## About Escape Tourisms
 URL: https://www.escapetourisms.com/about/
@@ -31,6 +31,42 @@ A: Call or WhatsApp +91 9497665450.
 - Innova / Innova Crysta | 5–7 travellers, comfort
 - Off-road Jeep | Kolukkumalai and rough tracks
 - Traveller / Urbania | Large groups
+
+## Alleppey (Alappuzha) to Munnar Taxi
+URL: https://www.escapetourisms.com/alleppey-to-munnar-taxi/
+Alleppey (Alappuzha) to Munnar taxi: sedan ₹6,500, larger vehicle ₹7,500, tea break and short stops included. Houseboat checkout pickup. WhatsApp.
+Q: How much is the Alleppey (Alappuzha) to Munnar taxi?
+A: Sedan ₹6,500 and larger vehicle ₹7,500, per vehicle, including a tea break and short stops on the way.
+Q: What does the fare include?
+A: A tea break and short stops on the way are included. Confirm any extras, such as long detours or entry tickets, on WhatsApp.
+Q: Can I choose the vehicle?
+A: Yes. Choose a sedan for up to 4 travellers or a larger vehicle for bigger groups, and confirm on WhatsApp.
+Q: How far is it?
+A: Roughly 170 km.
+Q: How long does it take?
+A: About 5 hours without long stops.
+Q: Can you pick up from Kumarakom?
+A: Yes, share the resort or jetty name.
+Q: Can we stop at waterfalls?
+A: Yes, if daylight and weather allow.
+Q: Which vehicle is best?
+A: Sedan for up to 4, Ertiga or Innova for families with luggage.
+Q: Can I travel after a late houseboat checkout?
+A: Yes, but the hill stretch is slower at night. Ask us about timing.
+Q: Is the fare per person?
+A: No, per vehicle.
+Q: Does the fare include stops?
+A: Yes, a tea break and short stops on the way are included.
+Q: Do you also do Munnar to Alleppey?
+A: Yes. See the Munnar to Alleppey page.
+- Vehicle | Fare (per vehicle)
+- Sedan (up to 4 travellers) | ₹6,500
+- Larger vehicle (SUV or MUV, for bigger groups) | ₹7,500
+- Vehicle | Seats | Pick it when
+- Etios / Swift Dzire | Up to 4 | Solo, couple or small family
+- Ertiga | Up to 6 | Family of 5–6, moderate luggage
+- Innova / Crysta | Up to 7 | Comfort, more luggage, long drive
+- Traveller / Urbania | Larger groups | Group travel; confirm seating on WhatsApp
 
 ## Anakulam Jeep Safari
 URL: https://www.escapetourisms.com/anakulam-jeep-safari/
@@ -1402,6 +1438,41 @@ A: Yes, a food stop can be requested. Food expenses are separate.
 Q: Is sunset guaranteed?
 A: No. Cloud, mist, rain and visibility can affect whether the sun is visible.
 
+## Munnar Taxi for Foreign Tourists
+URL: https://www.escapetourisms.com/munnar-taxi-for-foreign-tourists/
+Munnar taxi for international visitors: English, Hindi, Tamil and Malayalam driver help, published rupee fares, Cochin airport pickup. Book on WhatsApp.
+Q: Is there an English-speaking taxi driver in Munnar?
+A: Yes. Our drivers can help in English, Tamil, Malayalam and Hindi. Tell us your language when you book.
+Q: How much is a taxi in Munnar for tourists?
+A: Local sightseeing starts at ₹2,000 per day for a Swift Dzire, ₹2,300 Etios, ₹2,500 Ertiga, ₹3,500 Innova Crysta and ₹4,500 Traveller Urbania, per vehicle.
+Q: Can foreign tourists book on WhatsApp?
+A: Yes. Use +91 94976 65450 with your country code and send your dates, group size and flight or train details.
+Q: How do I pay?
+A: We accept cash in Indian rupees and UPI. Cash is simplest for international visitors; there are ATMs in Munnar town and at Cochin airport. Ask us on WhatsApp if you need another option.
+Q: Are prices per person?
+A: No. Fares are per vehicle, so the group shares one fare.
+Q: Can you pick me up from Cochin airport?
+A: Yes. From ₹4,000 per vehicle, or ₹5,500 when a one-way taxi is not available.
+Q: How long is the drive from the airport to Munnar?
+A: Roughly 3.5 to 4.5 hours depending on traffic, stops and weather.
+Q: Is the taxi available at night or early morning?
+A: We operate 24 hours, every day. Share your flight time so we can plan the pickup.
+Q: Can the driver act as a guide?
+A: Drivers are local and share information about places on the route. For jeep safaris and treks, confirm the plan on WhatsApp.
+Q: What should I carry?
+A: Keep your passport and a printed or digital copy of your booking. Hotels usually ask for ID at check-in.
+Q: Is Munnar suitable in the monsoon?
+A: It is green but roads can be wet. See our monsoon guide before you plan.
+Q: Can I visit more of Kerala after Munnar?
+A: Yes. We drop to Alleppey, Thekkady, Varkala, Trivandrum and more. See the Pickup & Drop hub.
+- Service | Fare (per vehicle)
+- Munnar sightseeing, Swift Dzire (per day) | ₹2,000
+- Munnar sightseeing, Etios (per day) | ₹2,300
+- Munnar sightseeing, Ertiga (per day) | ₹2,500
+- Munnar sightseeing, Innova Crysta (per day) | ₹3,500
+- Cochin airport to Munnar | From ₹4,000
+- Kolukkumalai sunrise jeep safari (per trip) | ₹3,200
+
 ## Munnar Taxi Rates
 URL: https://www.escapetourisms.com/munnar-taxi-rates/
 Munnar taxi rates: Dzire ₹2,000, Etios ₹2,300, Ertiga ₹2,500, Crysta ₹3,500, jeep safari fares and the Kerala taxi package rule in one place.
@@ -1788,6 +1859,34 @@ A: After monsoon.
 - Innova / Crysta | Up to 7 | Comfort, more luggage, long drive
 - Traveller / Urbania | Larger groups | Group travel; confirm seating on WhatsApp
 
+## Munnar Travel Tips for International Visitors
+URL: https://www.escapetourisms.com/munnar-travel-tips-for-international-visitors/
+Munnar travel tips for international visitors: how to reach from Cochin, how many days, what to carry, seasons and taxi help. Book on WhatsApp.
+Q: What is the best way to get from Cochin to Munnar?
+A: A private taxi is the simplest, with door-to-door pickup and the option to stop on the way.
+Q: How long is the drive?
+A: Roughly 3.5 to 4.5 hours from Cochin airport depending on traffic and stops.
+Q: How many days should I spend in Munnar?
+A: Two to three days for the main sights; more if you add jeep safaris or treks.
+Q: What should I pack?
+A: ID, comfortable shoes, a light rain jacket and warm layers.
+Q: Do hotels need my passport?
+A: Hotels in India usually ask for ID at check-in. Carry your passport and visa copy.
+Q: Is Munnar good in the monsoon?
+A: It is lush and green, but allow extra travel time on wet roads.
+Q: Can I do Munnar in a day from Cochin?
+A: It is a long day; two nights is more comfortable.
+Q: How do I book a taxi from abroad?
+A: Message us on WhatsApp +91 94976 65450 with dates and flight details.
+Q: Are taxi fares per person?
+A: No. Fares are per vehicle.
+Q: Can I see Kerala beyond Munnar?
+A: Yes. We drop to Alleppey, Thekkady, Varkala and Trivandrum.
+- Option | Notes
+- Private taxi from Cochin airport | Door to door, flexible stops, from ₹4,000 per vehicle
+- Train to Aluva or Ernakulam, then taxi | Roughly 3.5 to 4.5 hours onward by road
+- Bus | Cheaper but slower; schedules change, so check locally
+
 ## Neelakurinji Flower Season, Munnar
 URL: https://www.escapetourisms.com/neelakurinji-flower-season-munnar/
 Neelakurinji is blooming in Munnar's Chokramudi and Mattupetty hills in 2026. Book a trekking guide and taxi transport with Escape Tourisms.
@@ -1846,6 +1945,7 @@ A: Yes, pickup and drop at stays across Munnar.
 - Munnar to Cochin airport / Aluva | 110–120 km | ₹3,500 (₹4,500) | Details
 - Aluva / Ernakulam station to Munnar | ~110–130 km | ₹3,500 (₹4,500) | Details
 - Munnar to Alleppey (Alappuzha) | ~170 km | ₹4,500 (₹6,500) | Details
+- Alleppey to Munnar | ~170 km | Sedan ₹6,500 / larger ₹7,500 | Details
 - Munnar to Kodaikanal | 167–172 km | On WhatsApp | Details
 - Munnar to Madurai | ~155 km | On WhatsApp | Details
 
