@@ -74,6 +74,16 @@
       "source": "/Places to Visit /:path*",
       "destination": "/munnar-places-to-visit/",
       "permanent": true
+    },
+    {
+      "source": "/taxi/taxi(1).html",
+      "destination": "/munnar-sightseeing/",
+      "permanent": true
+    },
+    {
+      "source": "/taxi/airport-transfer.html",
+      "destination": "/pickup-drop-taxi/",
+      "permanent": true
     }
   ],
   "headers": [
