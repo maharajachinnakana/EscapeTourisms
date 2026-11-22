@@ -8,7 +8,7 @@ Bases: Munnar, Devikulam, Chinnakanal (Idukki, Kerala 685612). Drivers can help 
 Munnar local sightseeing, per day: Swift Dzire ₹2,000; Etios ₹2,300; Ertiga ₹2,500; off-road Jeep ₹3,000; Innova Crysta ₹3,500; Traveller Urbania ₹4,500.
 Kerala taxi package, per day (100 km included, extra ₹18 per km, pickup point to pickup point): Etios ₹2,500; Ertiga ₹2,700; Innova ₹3,000; Innova Crysta ₹3,500; Jeep ₹3,500; Traveller Urbania ₹4,500.
 Jeep safari: Munnar local safari ₹3,000 per day; Kolukkumalai sunrise ₹3,200 per trip; Chaduranga Para ₹3,500 per trip; Bose Peak trekking add-on from ₹700 per head plus waiting charges.
-Pickup and drop (per vehicle; first fare when a one-way taxi is available, second when not): Cochin airport to Munnar ₹4,000 / ₹5,500; Munnar to Cochin airport or Aluva ₹3,500 / ₹4,500; Aluva or Ernakulam station to Munnar ₹3,500 / ₹4,500; Munnar to Alleppey ₹4,500 / ₹6,500; Alleppey to Munnar sedan ₹6,500, larger vehicle ₹7,500, with tea break and short stops included.
+Pickup and drop (per vehicle; first fare when a one-way taxi is available, second when not): Cochin airport to Munnar ₹4,000 / ₹5,500; Munnar to Cochin airport or Aluva ₹3,500 / ₹4,500; Aluva or Ernakulam station to Munnar ₹3,500 / ₹4,500; Munnar to Alleppey ₹4,500 / ₹6,500; Thekkady homestay (Ben Cottage, Kumily) from ₹2,100 per room with breakfast; Thekkady package for 2 (room, sightseeing cab, breakfast, dinner) from ₹7,000; Alleppey to Munnar sedan ₹6,500, larger vehicle ₹7,500, with tea break and short stops included.
 
 ## About Escape Tourisms
 URL: https://www.escapetourisms.com/about/
@@ -117,6 +117,35 @@ A: Yes, from Munnar. See the Alleppey page or the Thekkady sightseeing route.
 - Ertiga | Up to 6 | Family of 5–6, moderate luggage
 - Innova / Crysta | Up to 7 | Comfort, more luggage, long drive
 - Traveller / Urbania | Larger groups | Group travel; confirm seating on WhatsApp
+
+## Ben Cottage Thekkady Homestay
+URL: https://www.escapetourisms.com/ben-cottage-thekkady/
+Ben Cottage homestay in Kumily, Thekkady: AC rooms, breakfast included from ₹2,100, free parking, garden. Add a taxi. Book on WhatsApp.
+Q: Where is Ben Cottage?
+A: Kumily, Thekkady, about 1.5 km from Kumily main centre.
+Q: How much is a room at Ben Cottage?
+A: From ₹2,100 per room per night with breakfast, confirmed on WhatsApp for your dates.
+Q: Is breakfast included?
+A: Yes, in the ₹2,100 rate.
+Q: Are the rooms air-conditioned?
+A: The property lists air-conditioned queen-size rooms and says AC and non-AC options are available. Confirm on booking.
+Q: Is there Wi-Fi and parking?
+A: Wi-Fi and free parking are listed by the property.
+Q: Can we get dinner?
+A: Home-cooked Kerala meals are served in a shared dining area. Ask us about dinner when you book.
+Q: What time is check-in?
+A: From 2 PM. Check-out is by 11 AM.
+Q: Can you arrange a taxi from Munnar?
+A: Yes. See the Munnar to Thekkady taxi page or the Thekkady package.
+Q: Can I book directly with the property?
+A: Yes, you can also visit the Ben Cottage website. Booking through us lets us add the taxi and sightseeing in one plan.
+- Item | Details
+- Room | Queen-size room, air-conditioned, spacious and well furnished
+- In the room | Wi-Fi, RO drinking water, refrigerator
+- Outdoors | Garden, balcony with nature views, campfire and BBQ
+- Parking | Free, spacious car parking
+- Food | Home-cooked Kerala meals in a shared dining area
+- Extras | Spice garden visit, elephant safari and bath, jeep safari and sightseeing arrangements
 
 ## Munnar Camping
 URL: https://www.escapetourisms.com/camping/
@@ -2037,6 +2066,57 @@ Q: Can I buy tea there?
 A: Tea is sold on the premises; ask at the counter.
 Q: Is it worth the visit?
 A: If you want tea history and a short rest from hill roads, yes.
+
+## Thekkady Homestay Booking
+URL: https://www.escapetourisms.com/thekkady-homestay/
+Book a Thekkady homestay in Kumily from ₹2,100 per room with breakfast, plus an optional taxi and sightseeing package. Book on WhatsApp.
+Q: Do you offer homestay booking in Thekkady?
+A: Yes. We book Ben Cottage in Kumily, Thekkady, and can add a taxi or a full package.
+Q: How much is a Thekkady homestay room?
+A: From ₹2,100 per room per night with breakfast. Confirm the rate for your dates on WhatsApp.
+Q: Is breakfast included?
+A: Yes, breakfast is included in the ₹2,100 rate.
+Q: What are the check-in and check-out times?
+A: Check-in is from 2 PM and check-out is by 11 AM, as listed by the property.
+Q: Is the homestay close to Periyar and Kumily?
+A: It is about 1.5 km from Kumily main centre. Confirm travel time to Periyar boating and the tiger reserve gate on WhatsApp.
+Q: Can I book a taxi from Munnar to the homestay?
+A: Yes. See our Munnar to Thekkady taxi page, or book the full package.
+Q: Is there parking?
+A: Free parking is listed by the property.
+Q: How do I pay?
+A: We accept cash and UPI. Ask us on WhatsApp about advance payment for your booking.
+
+## Thekkady Tour Package
+URL: https://www.escapetourisms.com/thekkady-tour-package/
+Thekkady package for 2: room, sightseeing cab, breakfast and dinner from ₹7,000. Periyar boating, spice garden, jeep safari. Book on WhatsApp.
+Q: How much is a Thekkady package?
+A: From ₹7,000 for 2 travellers: ₹3,500 for the room and ₹3,500 for the sightseeing cab.
+Q: What is included in the package?
+A: The room, a sightseeing cab, breakfast and dinner.
+Q: Why does the price change?
+A: It depends on the season and the number of guests, and can go up or down.
+Q: Which places can we choose?
+A: Periyar boating, Elephant Junction, spice garden tour, Kathakali and Kalari show, Chaba Park, and Chathram and Gavi jeep safaris.
+Q: Are entry tickets included?
+A: Confirm for each activity on WhatsApp, as fees depend on what you choose.
+Q: Where will we stay?
+A: At our Thekkady stay partner, Ben Cottage in Kumily.
+Q: Can you pick us up from Munnar or Cochin?
+A: Yes, a taxi can be added. See the Munnar to Thekkady taxi page.
+Q: Can we add more days?
+A: Yes. Tell us your dates and we quote the full plan.
+Q: How do I book?
+A: Send dates and number of guests on WhatsApp +91 94976 65450.
+- Part | Starting price
+- Room, with breakfast and dinner | ₹3,500
+- Sightseeing cab | ₹3,500
+- Total for 2 travellers | From ₹7,000
+- What changes | Effect
+- Season | Peak travel dates may cost more; quieter dates may cost less
+- Number of guests | More guests need a larger vehicle or more rooms
+- Length of stay | Extra nights or sightseeing days are added to the total
+- Activities | Tickets and activity fees depend on what you choose
 
 ## Munnar Travel Guide
 URL: https://www.escapetourisms.com/travel-guide/
