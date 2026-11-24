@@ -56,6 +56,11 @@
       "permanent": true
     },
     {
+      "source": "/taxi/taxi\\(1\\).html",
+      "destination": "/munnar-sightseeing/",
+      "permanent": true
+    },
+    {
       "source": "/Places%20to%20Visit%20/MUNNAR/Thekkady%20direction%20/kolukkumalai/kolukkumalai.html",
       "destination": "/jeep-safari/kolukkumalai/",
       "permanent": true
