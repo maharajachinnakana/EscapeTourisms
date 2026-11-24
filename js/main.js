@@ -1360,6 +1360,8 @@ Thank you.`;
             );
 
 
+        try { if (window.escapeTrackLead) window.escapeTrackLead("form", "enquiry-form"); } catch (e) {}
+
         window.open(
             whatsappURL,
             "_blank"

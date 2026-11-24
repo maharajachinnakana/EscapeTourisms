@@ -74,6 +74,51 @@
       "source": "/Places to Visit /:path*",
       "destination": "/munnar-places-to-visit/",
       "permanent": true
+    },
+    {
+      "source": "/taxi/kerala-sightseeninh-taxi.html",
+      "destination": "/munnar-sightseeing/",
+      "permanent": true
+    },
+    {
+      "source": "/taxi/kerala-taxi-service.html",
+      "destination": "/kerala-taxi-package/",
+      "permanent": true
+    },
+    {
+      "source": "/taxi/kerala-temple-tours.html",
+      "destination": "/kerala-tour-packages/",
+      "permanent": true
+    },
+    {
+      "source": "/taxi/Cochin-airport-taxi.html",
+      "destination": "/kochi-airport-to-munnar-taxi/",
+      "permanent": true
+    },
+    {
+      "source": "/taxi/airport-transfer.html",
+      "destination": "/pickup-drop-taxi/",
+      "permanent": true
+    },
+    {
+      "source": "/taxi/chinnakanal-taxi-service.html",
+      "destination": "/chinnakanal-taxi-service/",
+      "permanent": true
+    },
+    {
+      "source": "/resorts",
+      "destination": "/munnar-resort-pickup-drop-taxi/",
+      "permanent": true
+    },
+    {
+      "source": "/rooms-stays",
+      "destination": "/thekkady-homestay/",
+      "permanent": true
+    },
+    {
+      "source": "/taxi/:path*",
+      "destination": "/munnar-sightseeing/",
+      "permanent": true
     }
   ],
   "headers": [
