@@ -764,3 +764,7 @@ img.slotEmpty {
 }
 .slotBadge strong { font-size: 12px; letter-spacing: .08em; color: #6b7280; }
 .slotBadge span { font-family: ui-monospace, Menlo, Consolas, monospace; }
+
+/* MOBILE FIT PATCH — shared taxi-service pages */
+@media (max-width: 768px) { .tsHero { min-height: auto; min-height: 78svh; align-items: flex-start; padding: 132px 18px 48px; } .tsHeroInner, .tsHeroCopy, .tsHeroCard { width: 100%; max-width: 100%; min-width: 0; } .tsHeroTitle, .tsTitle { max-width: 100%; overflow-wrap: anywhere; hyphens: auto; font-size: clamp(2rem, 9vw, 3rem); line-height: 1.08; } .tsHeroLead, .tsHeroCopy p, .tsHeroCard p, .tsGlass p, .tsGlass li { max-width: 100%; overflow-wrap: anywhere; } .tsHeroChips { display: flex; flex-wrap: wrap; max-width: 100%; gap: 8px; } .tsHeroChips > * { max-width: 100%; white-space: normal; } .tsHeroActions, .tsActions, .tsBtnRow { display: flex; flex-wrap: wrap; gap: 10px; max-width: 100%; } .tsHeroActions > a, .tsActions > a, .tsBtnRow > a { max-width: 100%; min-width: 0; } .tsGrid, .tsCards, .tsQuick, .tsFlowBlock { min-width: 0; } .tsCard, .tsGlass, .tsQuick > *, .tsGrid > * { min-width: 0; max-width: 100%; } .tsMain { width: 100%; max-width: 100%; overflow-x: clip; } }
+@media (max-width: 420px) { .tsHero { padding-left: 16px; padding-right: 16px; padding-top: 118px; } .tsHeroTitle, .tsTitle { letter-spacing: -.02em; } .tsGlass, .tsCard { padding-left: 16px; padding-right: 16px; } }
