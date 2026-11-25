@@ -351,3 +351,7 @@
         justify-content: center;
     }
 }
+
+/* MOBILE FIT PATCH — inner route pages */
+@media (max-width: 768px) { .pageHero, .pageHeroContent, .pageHeroActions, .pageHeroBtn, .pageHeroBtnGhost { min-width: 0; max-width: 100%; } .pageHeroTitle { font-size: clamp(1.9rem, 8.5vw, 2.8rem); overflow-wrap: anywhere; hyphens: auto; } .pageHeroText { max-width: 100%; overflow-wrap: anywhere; } .pageHeroActions { width: 100%; } .pageHeroBtn, .pageHeroBtnGhost { white-space: normal; text-align: center; } .addonsGrid, .relatedGrid, .stepsGrid { grid-template-columns: minmax(0, 1fr); } .addonCard, .relatedCard, .stepCard { min-width: 0; } }
+@media (max-width: 420px) { .pageHero { padding-left: 16px; padding-right: 16px; } }
